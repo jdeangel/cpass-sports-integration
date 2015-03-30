@@ -1,4 +1,55 @@
 #s-header__site{
 	float:left;
 	width:100%;
+
+	.m-primaryNav__header{ 
+		&.b-siteLogo{}
+	}
+	#nav-primary{ }
+
+	@include breakpoint($bp-mobile1-1 $bp-mobile2-1+1rem){
+	   @include grid-mobile1;//4 columns
+	   .m-primaryNav__header{
+	   	  width:100%; float:left;
+	   }
+	   #nav-primary{
+	   	  width:100%; float:left;
+	   }
+	 }
+	 @include breakpoint(($bp-mobile2-1+1rem) $bp-tablet-1){
+	   @include grid-mobile2;//6 columns
+	   .m-primaryNav__header{
+	   	  width:100%; float:left;
+	   }
+	   #nav-primary{
+	   	  width:100%; float:left;
+	   }
+	 }
+	 @include breakpoint($bp-tablet-1 $bp-desktop1-1){
+	   @include grid-tablet;//8 columns
+	   .m-primaryNav__header{
+	   	@include grid-span(4, 1);
+	   }
+	   #nav-primary{
+	   	@include grid-span(4, 5);
+	   }
+	 }
+	 @include breakpoint($bp-desktop1-1 $bp-desktop2-1){
+	   @include grid-desktop1;//12 columns
+	   .m-primaryNav__header{
+	   	@include grid-span(8, 1);
+	   }
+	   #nav-primary{
+	   	@include grid-span(4, 9);
+	   }
+	 }
+	 @include breakpoint($bp-desktop2-1){
+	   @include grid-desktop2; //16 columns
+	   .m-primaryNav__header{
+	   	@include grid-span(10, 1);
+	   }
+	   #nav-primary{
+	   	@include grid-span(6, 7);
+	   }
+	 }
 }

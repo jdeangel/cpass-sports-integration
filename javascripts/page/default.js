@@ -1,6 +1,4 @@
 $(document).ready(function(){
-	$('.site-logo').css('display', 'block');
-	$('.site-logo').text('[changed by jQuery]');
 
 	$('#mainCarousel').carousel({
 		interval:false,

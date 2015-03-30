@@ -10,6 +10,10 @@
  @import "l-backpage";
  @import "l-backpage--sidebarx2";
  @import "l-frontpage";
+ @import "l-bio";
+ @import "l-sportcards";
+ @import "l-index";
+ @import "l-sport";
 
 
 body{
@@ -29,6 +33,10 @@ body{
 		#s-header__site{}
 	}//end #header
 	#prefix{
+		width:100%;
+		float:left;
+	}
+	#s-prefix--home{
 		width:100%;
 		float:left;
 	}

@@ -1,0 +1,48 @@
+.template-index{
+	#core{
+		.main{
+			.facts{
+				ul{
+					li{
+						list-style: none;
+					}
+
+				}
+			}
+
+		}//end .main
+		.sidebar{
+			ul{
+				li{
+					list-style: none;
+				}
+			}
+
+		}//end .sidebar
+
+		@include breakpoint($bp-tablet-1 $bp-desktop2-6){
+		  @include grid-tablet;
+
+		  .main{
+		  	@include grid-span(4,3);
+		  }//end .main
+		  .sidebar{
+		  	@include grid-span(2,7);
+		  }//end .sidebar
+		}//end $bp-tablet
+
+		@include breakpoint($bp-desktop2-6 ){
+		  @include grid-desktop2;
+
+		  .main{
+		  	@include grid-span(12,1);
+		  }//end .main
+		  .sidebar{
+		  	@include grid-span(4,13);
+		  	ul li a{
+		  		@include adjust-font-size-to($font-size-med-2);
+		  	}
+		  }//end .sidebar
+		}//end $bp-desktop2-6
+	}
+}
