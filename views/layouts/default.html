@@ -1,39 +1,45 @@
 <!DOCTYPE html>
+
 <!--[if IE 8]> <html class="ie8" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+
   <head>
     <r:comment><!-- meta charset gets set automatically by CleanSlate --></r:comment>
-    <title><r:page:first_non_blank_attr names="title, name" /> | <r:site:name /> | West Virginia University</title>
+    <title><r:page:first_non_blank_attr names="title, name" /> | <r:site_name /> | West Virginia University</title>
     <meta name="description" content="<r:page:meta_description />" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10">
 
-    <link href="//code.wvu.edu/stylesheets/1423170339/global-stylesheet/5.0/stylesheets/global.css" rel="stylesheet">
+
+
+    <script type="text/javascript" src="http://fast.fonts.net/jsapi/e64c1663-a4f6-4eb4-af95-a29c7c6098b1.js"></script>
+
+    <link href="//code.wvu.edu/stylesheets/global-stylesheet/4.0/stylesheets/global.css" rel="stylesheet">
+
     <r:include_stylesheet name="styles" />
 
     <!--[if lt IE 9]>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
     <![endif]-->
     <!-- HTML5 Shiv is *required* for IE to recognize HTML5 tags. -->
 
   </head>
   <body class="template-<r:page:template:name /> page-<r:page:id />">
 
-    <r:partial name="layouts/masthead--v1" theme="Code" />
 
-    <div class="container">
+    <div class="cs-injection"></div>
+    <div id="page-wrap">
 
-      <r:partial name="header" />
 
-      <r:comment><!-- What are layouts and <r:yield />? http://goo.gl/ieyaAJ --></r:comment>
-      <r:yield />
+    <r:partial name="s-header" />
 
-      <footer class="wvu-footer">
-        <r:partial name="layouts/footer__contact--v1" theme="Code" />
-        <r:partial name="layouts/footer__credits--v2" theme="Code" />
-        <r:partial name="layouts/footer__icons--v1" theme="Code" />
-      </footer> <!-- /.wvu-footer -->
-    
-    </div> <!-- /.container -->
+
+
+    <r:yield />
+
+
+
+    <r:partial name="s-footer"/>
 
     <r:partial name="layouts/browser-update-org--v2" theme="Code" />
 
@@ -42,5 +48,15 @@
       <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+
+    
+    <r:include_javascript name="lib/vendor/eq.min, lib/overthrow-sidescroller.all.min, lib/jquery.min, lib/vendor/jquery.smooth-scroll.min, lib/vendor/perfect-scrollbar.min, lib/vendor/bootstrap/collapse.min, lib/vendor/bootstrap/carousel.min, lib/vendor/bootstrap/dropdown.min, page/default" />
+
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54cba33a637679f0" async="async"></script>
+
+
+
+    </div> <!--end #page-wrap-->
   </body>
 </html>

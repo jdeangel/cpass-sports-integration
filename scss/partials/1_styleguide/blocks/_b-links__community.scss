@@ -1,0 +1,29 @@
+.b-links__community{
+  ul{width:100%;}
+  .nav-list{
+  	a{}
+  }//end navlist
+  .b-community__lap{
+  	
+  }//end .b-community__lap
+  .b-community__fit{
+  	
+  }//end .b-community__lap
+  .b-community__nysp{
+  	
+  }//end .b-community__nysp
+  .b-community__icpe{
+  	
+  }//end .b-community__nysp		
+
+  &[data-eq-state="large"]{
+    div{
+      width:46%;
+      float:left;
+      margin-right:3%;
+      margin-left:3%;
+    }
+    .b-community__lap, .b-community__nysp{margin-left:1%;}
+    .b-community__fit, .b-community__icpe{margin-right:1%;}            
+  }
+}

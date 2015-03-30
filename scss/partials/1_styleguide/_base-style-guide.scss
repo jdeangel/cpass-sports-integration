@@ -1,0 +1,89 @@
+////////////////////////
+// Style Guide Partials
+//
+// Your Style Guide
+// Build sub folders and partials in this folder, with everything being imported, in cascading order, into this file.
+//
+// All Style Guide selectors should go in here, regardless of layout or design (but separating the two in here is a good idea).
+////////////////////////
+
+///////////////////////////////
+// Sample color palette setup
+//$cs-primary: $WVUBlue;
+//$cs-secondary: $WVUBlue;
+//$cs-scheme: complement;
+//$cs-hue-offset: 60;
+//$cs-brightness-offest: 40;
+//$cs-colorblind:deuteranopia;
+//////////////
+//$primary: cs-primary();
+//$secondary: tint(cs-secondary(), 80) ; // too light, darkening this up a bit.
+//$tertiary: cs-tertiary();
+//$quadrary: cs-quadrary();
+//@include cs-test($primary $secondary $tertiary $quadrary $white $black);
+////////////////////////////////
+@import 'colors';
+@import 'typography-base';
+@import 'typography-college';
+@import 'typography-program';
+
+
+
+
+
+/*------------------------------------*\
+    Objects: generic items
+\*------------------------------------*/
+@import "objects/icons";
+@import "objects/buttons";
+@import "objects/blocks";
+@import "objects/lists";
+@import "objects/tooltip";
+@import "objects/accordion";
+@import "objects/tabs";
+@import "objects/sections";
+@import "objects/article";
+@import "objects/comments";
+@import "objects/forms";
+@import "objects/messages";
+@import "objects/form-search";
+@import "objects/pagename";
+@import "objects/breadcrumbs";
+@import "objects/sidescroller";
+@import "objects/perfectScrollbar";
+@import "objects/addthis";
+@import "objects/obj-roundedPhoto";
+
+
+/*------------------------------------*\
+    Blocks: items that are specific to theme styles
+\*------------------------------------*/
+@import "blocks/b-social";
+@import "blocks/b-contact__info";
+@import "blocks/b-contact__links";
+@import "blocks/b-cta__about";
+@import "blocks/b-cta__events";
+@import "blocks/b-cta__news";
+@import "blocks/b-featuredLink";
+@import "blocks/b-links__academics";
+@import "blocks/b-links__students";
+@import "blocks/b-links__alumni";
+@import "blocks/b-links__community";
+@import "blocks/b-logo";
+@import "blocks/b-mastLinks";
+@import "blocks/b-search";
+@import "blocks/b-footer__site_feature";
+@import "blocks/b-footer__return";
+
+
+
+
+//////////////////////////////
+// CSS Resets
+//
+// Choose your CSS Reset method:
+//  If you'd like a hard reset, uncomment `compass/reset`.
+//  If you'd prefer a soft reset, uncomment `normalize`
+//////////////////////////////
+// @import 'compass/reset';
+// @import 'normalize';

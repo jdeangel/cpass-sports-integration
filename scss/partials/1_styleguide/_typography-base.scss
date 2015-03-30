@@ -1,0 +1,69 @@
+/////////////////////////////////////////
+//IMPORTED FONTS
+//
+////////////////////////////////////////
+
+
+$font-lowres: Arial, verdana, sans-serif;
+$font-paragraph: 'Neue Helvetica W02', $font-lowres;
+
+
+$BlkCn: 'Neue Helvetica W02', $font-lowres; //font-weight: 900;
+$BdCn: 'Neue Helvetica W01', $font-lowres; //font-weight: 800;
+$Bd: 'Neue Helvetica W02', $font-lowres; //font-weight: 500;
+$Roman: 'Neue Helvetica W02', $font-lowres; //font-weight: 400;
+$Obl: 'Neue Helvetica W02', $font-lowres; //font-weight: 400;
+$LtCn: 'Neue Helvetica W01', $font-lowres; //font-weight: 200;
+$Lt: 'Neue Helvetica W02', $font-lowres; //font-weight: 300;
+
+$font-primary: $Roman, Helvetica, arial, verdana, sans-serif;
+$font-secondary: "Garamond", Georgia, "Times New Roman", Serif;
+$font-mono: Menlo, Monaco, Consolas, "Courier New", monospace;
+
+
+html{
+    @include establish-baseline;
+    //@include adjust-leading-to(18);
+    font-family: $font-paragraph;
+    color:$black;
+    background:transparent;
+    font-size: $root-font-size+px;
+}
+body{
+    @include establish-baseline;
+    //@include adjust-leading-to(18);
+    font-family: $font-paragraph;
+    font-size: $root-font-size+px;
+}
+
+.font-BlkCn{
+	font-family:$BlkCn;
+	font-weight:900;
+}
+.font-BdCn{
+	font-family:$BdCn;
+	font-weight:800;
+}
+.font-Bd{
+	font-family:$Bd;
+	font-weight:500;
+}
+.font-Roman{
+	font-family:$Roman;
+	font-weight:400;
+}
+.font-Obl{
+	font-family:$Obl;
+	font-weight:400;
+}
+.font-LtCn{
+	font-family:$LtCn;
+	font-weight:300;
+}
+.font-Lt{
+	font-family:$Lt;
+	font-weight:200;
+}
+
+
+

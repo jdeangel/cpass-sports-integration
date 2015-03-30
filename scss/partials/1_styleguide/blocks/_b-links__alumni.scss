@@ -1,0 +1,25 @@
+.b-links__alumni{
+  .nav-list li{
+  	a{ 
+      @extend .font-Roman;
+      
+      }//end a
+  }//end long-menu-navlist
+  .b-alumni__main{
+  	
+  }//end .b-alumni__main
+  .b-alumni__giving{
+  	
+  }//end .b-alumni__giving
+
+  &[data-eq-state="large"]{
+    div{
+    	width:46%;
+    	float:left;
+    	margin-right:3%;
+    	margin-left:3%;
+    }
+    .b-alumni__main{margin-left:1%;}
+    .b-alumni__giving{margin-right:1%;}            
+  }
+}

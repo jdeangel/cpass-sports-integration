@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<r:partial name="components/s-prefix__default"/>
+
+<section id="core">
+ <div class="container">
+  <aside class="sidebar sidebar--left" role="complementary">
+   <r:editable_region name="l-sidebar" />
+  </aside> <!-- /.sidebar -->
+
+  <main class="main" role="main">
+    <article>
+     <r:editable_region name="main" />
+    </article>
+  </main><!-- /.main -->
+
+  <aside class="sidebar sidebar--right" role="complementary">
+   <r:editable_region name="sidebar" />
+  </aside> <!-- /.sidebar -->
+
+ </div>
+</section><!--/#core-->
+
+ <r:partial name="components/s-postfix__default"/>

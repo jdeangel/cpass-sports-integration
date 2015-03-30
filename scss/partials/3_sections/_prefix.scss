@@ -1,0 +1,26 @@
+#prefix{
+	 @include rhythm($ms-8n, 0, 0, $ms-2n, $font-size-small-2);
+
+ &.home{}//end #pefix.home
+ &.dark{
+ 	.breadcrumbs a{	
+ 		color:$vb-Gold;	
+ 		&:hover{
+ 			color:tint($vb-Gold,30);
+ 		}
+ 	}
+ 	//.util span{ color:shade($secondary,20); }
+ 	.btn{
+ 		@include standard-box-shadow(shade($black,10));
+ 		@include adjust-font-size-to($font-size-small-2);
+ 	}
+ 	.page-name{
+ 		color:$white;
+ 		text-shadow: $black, 0, ms(-5), ms(-8), 0;
+ 	}
+
+ }//end #prefix.dark
+ &.light{}//end #prefix.light
+
+}
+

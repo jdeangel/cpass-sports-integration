@@ -1,11 +1,18 @@
 ---
 layout: default
 ---
-    
-<main class="main sixteen columns" role="main">
-  <r:editable_region name="main" />
-</main><!-- /.main -->
+<r:partial name="components/s-prefix__home"/>
 
-<aside class="wvu-sidebar six columns" role="complementary">
-  <r:editable_region name="sidebar" />
-</aside> <!-- /.wvu-sidebar -->
+
+<section id="core" >    
+  <div class="container">
+    <main class="main" role="main">
+      <article>
+        <r:editable_region name="main" />
+      </article>
+    </main><!-- /.main -->
+  </div><!--end container-->
+</section><!--end #core-->
+
+
+<r:partial name="components/s-postfix__default"/>

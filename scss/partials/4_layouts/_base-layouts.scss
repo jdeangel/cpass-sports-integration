@@ -1,0 +1,74 @@
+////////////////////////
+// Layouts Partials
+//
+// Your SMACSS Layouts go here
+// Build sub folders and partials in this folder, with everything being imported, in cascading order, into this file.
+////////////////////////
+ 
+ @import "s-header";
+ @import "s-footer";
+ @import "l-backpage";
+ @import "l-backpage--sidebarx2";
+ @import "l-frontpage";
+
+
+body{    
+   background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAN0lEQVQIW2MUkZT/z4AF8LIzMDBikwRJfP6JRRImATIMRSeyBIokugRcEpsEWFJRQf4/yHJsAAAVuxUpz+378gAAAABJRU5ErkJggg==) repeat;
+
+
+	#page-wrap{		
+		background: radial-gradient(farthest-corner at 50% -98%, rgba(255, 254, 251, 0.15) 4%, rgba(0, 40, 85, 0.25) 67%, rgba(9, 11, 14, 0.65));
+		float:left;
+		width:100%;
+	}
+
+	#header{
+		width:100%;
+		float:left;
+		#s-header__cpass{}
+		#s-header__site{}
+	}//end #header
+	#prefix{
+		width:100%;
+		float:left;
+	}
+	#core{
+		width:100%;
+		float:left;
+	}
+	#postfix{
+		width:100%;
+		float:left;
+	}
+	#footer{
+		width:100%;
+		float:left;
+		#s-footer__site{}
+		#s-footer__cpass--wrapper{}
+		#s-footer__wvu--wrapper{}
+	}//end #footer
+
+	.container{
+		width:84.715%;
+		@include breakpoint($bp-mobile1-1){
+			width:92%;
+		}
+		@include breakpoint($bp-tablet-1){
+			min-width:ms(16);
+			width:95%;
+		}
+		@include breakpoint($bp-desktop1-1){
+			min-width:ms(17);
+			width:84.715%;
+		}
+		@include breakpoint($bp-desktop2-1){
+			width:84.715%;
+			min-width:ms(18);
+		}
+		@include breakpoint($bp-desktop2-5){
+			width:84.715%;
+			max-width:ms(19);
+		}
+	}//end .container
+	
+}//end body

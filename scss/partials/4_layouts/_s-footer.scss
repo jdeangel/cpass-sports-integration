@@ -1,0 +1,70 @@
+#footer{
+  padding:0;
+  float:left;
+  width:100%;
+  font-size:$base-font-size;
+  color:$white;
+
+ ul{
+   padding:0;margin:0;
+    li{
+      list-style:none;
+    a{
+    }
+    }//end li
+  }//end ul
+
+  .nav-list li{
+    width:100%;
+    float:left;
+    @include rhythm(0, 0, 0, $ms-8n, $font-size-med);
+    border-color:transparent;
+
+
+    a{
+      width:100%;
+      float:left;
+
+      text-transform: none;
+    }
+  }//end .navlist li
+
+
+   //begin mobile styling
+    @include breakpoint($bp-mobile1-1 $bp-mobile2-1){
+      .nav-list li a{ }
+    }
+
+    @include breakpoint($bp-mobile2-2-608 $bp-tablet-1){
+      .nav-list li a{ }
+    }//end $bp-mobile-2
+
+    @include breakpoint($bp-tablet-1 $bp-desktop1-1){
+      .nav-list li{
+        
+        a{ 
+          @include adjust-font-size-to($font-size-small-2); 
+          }//end a
+      }//end li
+    }//end $bp-tablet
+
+    @include breakpoint($bp-desktop1-1 $bp-desktop1-4){
+      .nav-list li a{ }
+    }//end $bp-desktop-1
+
+    @include breakpoint($bp-desktop1-4 $bp-desktop2-1){
+      .nav-list li a{ }
+    }//end $bp-desktop-1
+
+    @include breakpoint($bp-desktop2-1 $bp-desktop2-6){
+      .nav-list li a{ }
+      }//end $bp-desktop-2
+
+    @include breakpoint($bp-desktop2-6){
+      .nav-list li a{ }
+      }//end $bp-desktop-2
+
+
+}//#footer
+
+
