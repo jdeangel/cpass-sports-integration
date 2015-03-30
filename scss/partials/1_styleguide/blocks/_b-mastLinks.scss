@@ -1,12 +1,12 @@
 .b-mastLinks{
 	ul{ list-style:none; padding:0; margin:0;}
-	li{ 
-		display:inline; 
+	li{
+		display:inline;
 		float:left;
 		padding: 0 ms(-3);
 		border-right:tint($coolblack,5) ms(-9) solid;
 		border-left:tint($coolblack, 10) ms(-11) solid;
-		&:last-child{ 
+		&:last-child{
 			padding-right:0;
 			border-right:0;
 		}
@@ -17,10 +17,13 @@
 
 
 	}
-	a{ 
+	a{
 		color:$white;
 		@extend .font-Bd;
 		@include adjust-font-size-to($font-size-small-2);
+		&:hover{
+			border-bottom: ms(-9) solid $WVUGold;
+		}
 	 }
 	.b-mastLinks__WVU{}
 	.b-mastLinks__academics{}

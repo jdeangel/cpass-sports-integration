@@ -48,7 +48,6 @@ shared_themes:
 editable_region:
   main: |
     <h1><%= Faker::Lorem.sentence(5) %></h1>
-    <h1>Physical Education Teacher Education</h1>
     <p class="kicker"><%= Faker::Lorem.paragraph(2, true, 5) %></p>
     <h2><%= Faker::Lorem.sentence(3) %></h2>
     <p><%= Faker::Lorem.paragraph(3, true, 5) %></p>

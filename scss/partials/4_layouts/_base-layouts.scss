@@ -4,7 +4,7 @@
 // Your SMACSS Layouts go here
 // Build sub folders and partials in this folder, with everything being imported, in cascading order, into this file.
 ////////////////////////
- 
+
  @import "s-header";
  @import "s-footer";
  @import "l-backpage";
@@ -12,12 +12,12 @@
  @import "l-frontpage";
 
 
-body{    
-   background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAN0lEQVQIW2MUkZT/z4AF8LIzMDBikwRJfP6JRRImATIMRSeyBIokugRcEpsEWFJRQf4/yHJsAAAVuxUpz+378gAAAABJRU5ErkJggg==) repeat;
+body{
+   //background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAN0lEQVQIW2MUkZT/z4AF8LIzMDBikwRJfP6JRRImATIMRSeyBIokugRcEpsEWFJRQf4/yHJsAAAVuxUpz+378gAAAABJRU5ErkJggg==) repeat;
+  background:$WVUBlue;
 
-
-	#page-wrap{		
-		background: radial-gradient(farthest-corner at 50% -98%, rgba(255, 254, 251, 0.15) 4%, rgba(0, 40, 85, 0.25) 67%, rgba(9, 11, 14, 0.65));
+	#page-wrap{
+		background: radial-gradient(farthest-corner at 50% -98%, rgba(255, 254, 251, 0.015) 4%, rgba(0, 40, 85, 0.025) 67%, rgba(9, 11, 14, 0.065));
 		float:left;
 		width:100%;
 	}
@@ -70,5 +70,5 @@ body{
 			max-width:ms(19);
 		}
 	}//end .container
-	
+
 }//end body

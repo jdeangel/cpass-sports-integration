@@ -1,2 +1,19 @@
 #header{
+  .b-social a{
+    text-shadow: 0 ms(-2) ms(-1) darken($WVUBlue, 5);
+    box-shadow: 0 ms(-4) ms(-3) darken($WVUBlue, 5);
+  }
+  .b-mastLinks li{
+    padding: 0 ms(-3);
+		border-right:tint($WVUBlue,5) ms(-9) solid;
+		border-left:darken($WVUBlue, 5) ms(-11) solid;
+		&:last-child{
+			padding-right:0;
+			border-right:0;
+		}
+		&:first-child{
+			padding-left:0;
+			border-left:0;
+		}
+  }
 }

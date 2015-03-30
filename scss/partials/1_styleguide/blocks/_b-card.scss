@@ -1,0 +1,11 @@
+.b-card{
+ .b-card__name{}
+ .b-card__sport{}
+ .b-card__position{}
+ .b-card__duration{}
+ .b-card__hometown{}
+ .b-card__description{}
+
+ &:hover, &:focus{}
+ &:active{}
+}

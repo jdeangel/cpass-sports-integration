@@ -122,7 +122,11 @@ $(document).ready(function(){
 	$('#postfix--thumbs').perfectScrollbar({
 		suppressScrollY: true,
 		minScrollBarLength: 167
+	});
 
+	$('#m-homeScroller--thumbs').perfectScrollbar({
+		suppressScrollY: true,
+		minScrollBarLength: 167
 	});
 
 	overthrow.sidescroller(

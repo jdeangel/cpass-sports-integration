@@ -4,13 +4,13 @@
 // Your SMACSS Layouts go here
 // Build sub folders and partials in this folder, with everything being imported, in cascading order, into this file.
 ////////////////////////
- 
-body.template-frontpage{   
-  
+
+body.template-frontpage{
+
    #page-wrap{
-   	    @include bgImage;
-    } 
-  
+   	    //@include bgImage;
+    }
+
 
 	#header{
 		#s-header__cpass{}
@@ -53,5 +53,5 @@ body.template-frontpage{
 		#s-footer__cpass--wrapper{}
 		#s-footer__wvu--wrapper{}
 	}//end #footer
-	
+
 }//end body
