@@ -2347,6 +2347,10 @@ kbd {
   background-color: #333;
   border-radius: 3px;
   -webkit-box-shadow: inset 0 -1px 0 #000000;
+  -webkit-box-shadow: inset 0 -1px 0 #000000;
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 -1px 0 #000000;
+  -webkit-box-shadow: inset 0 -1px 0 #000000;
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
   box-shadow: inset 0 -1px 0 #000000;
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
@@ -3600,6 +3604,10 @@ output {
   border: 1px solid #ccc;
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px #000000;
+  -webkit-box-shadow: inset 0 1px 1px #000000;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px #000000;
+  -webkit-box-shadow: inset 0 1px 1px #000000;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px #000000;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -3609,6 +3617,10 @@ output {
 .form-control:focus {
   border-color: #66afe9;
   outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px #000000, 0 0 8px #66AFE9;
+  -webkit-box-shadow: inset 0 1px 1px #000000, 0 0 8px #66AFE9;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px #000000, 0 0 8px #66AFE9;
   -webkit-box-shadow: inset 0 1px 1px #000000, 0 0 8px #66AFE9;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
   box-shadow: inset 0 1px 1px #000000, 0 0 8px #66AFE9;
@@ -3916,12 +3928,20 @@ select[multiple].input-lg,
 .has-success .form-control {
   border-color: #3c763d;
   -webkit-box-shadow: inset 0 1px 1px #000000;
+  -webkit-box-shadow: inset 0 1px 1px #000000;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px #000000;
+  -webkit-box-shadow: inset 0 1px 1px #000000;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px #000000;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 .has-success .form-control:focus {
   border-color: #2b542c;
+  -webkit-box-shadow: inset 0 1px 1px #000000, 0 0 6px #67b168;
+  -webkit-box-shadow: inset 0 1px 1px #000000, 0 0 6px #67b168;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
+  box-shadow: inset 0 1px 1px #000000, 0 0 6px #67b168;
   -webkit-box-shadow: inset 0 1px 1px #000000, 0 0 6px #67b168;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
   box-shadow: inset 0 1px 1px #000000, 0 0 6px #67b168;
@@ -3947,12 +3967,20 @@ select[multiple].input-lg,
 .has-warning .form-control {
   border-color: #8a6d3b;
   -webkit-box-shadow: inset 0 1px 1px #000000;
+  -webkit-box-shadow: inset 0 1px 1px #000000;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px #000000;
+  -webkit-box-shadow: inset 0 1px 1px #000000;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px #000000;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 .has-warning .form-control:focus {
   border-color: #66512c;
+  -webkit-box-shadow: inset 0 1px 1px #000000, 0 0 6px #c0a16b;
+  -webkit-box-shadow: inset 0 1px 1px #000000, 0 0 6px #c0a16b;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
+  box-shadow: inset 0 1px 1px #000000, 0 0 6px #c0a16b;
   -webkit-box-shadow: inset 0 1px 1px #000000, 0 0 6px #c0a16b;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
   box-shadow: inset 0 1px 1px #000000, 0 0 6px #c0a16b;
@@ -3978,12 +4006,20 @@ select[multiple].input-lg,
 .has-error .form-control {
   border-color: #a94442;
   -webkit-box-shadow: inset 0 1px 1px #000000;
+  -webkit-box-shadow: inset 0 1px 1px #000000;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px #000000;
+  -webkit-box-shadow: inset 0 1px 1px #000000;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px #000000;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 .has-error .form-control:focus {
   border-color: #843534;
+  -webkit-box-shadow: inset 0 1px 1px #000000, 0 0 6px #ce8483;
+  -webkit-box-shadow: inset 0 1px 1px #000000, 0 0 6px #ce8483;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
+  box-shadow: inset 0 1px 1px #000000, 0 0 6px #ce8483;
   -webkit-box-shadow: inset 0 1px 1px #000000, 0 0 6px #ce8483;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
   box-shadow: inset 0 1px 1px #000000, 0 0 6px #ce8483;
@@ -4140,6 +4176,10 @@ select[multiple].input-lg,
 .btn:active, .btn.active {
   outline: 0;
   background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px #000000;
+  -webkit-box-shadow: inset 0 3px 5px #000000;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px #000000;
   -webkit-box-shadow: inset 0 3px 5px #000000;
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px #000000;
@@ -4421,8 +4461,13 @@ tbody.collapse.in {
   background-color: #fff;
   border: 1px solid #ccc;
   border: 1px solid #000000;
+  border: 1px solid #000000;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px #000000;
+  -webkit-box-shadow: 0 6px 12px #000000;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px #000000;
   -webkit-box-shadow: 0 6px 12px #000000;
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   box-shadow: 0 6px 12px #000000;
@@ -4635,6 +4680,10 @@ tbody.collapse.in {
 }
 
 .btn-group.open .dropdown-toggle {
+  -webkit-box-shadow: inset 0 3px 5px #000000;
+  -webkit-box-shadow: inset 0 3px 5px #000000;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px #000000;
   -webkit-box-shadow: inset 0 3px 5px #000000;
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px #000000;
@@ -5059,6 +5108,10 @@ tbody.collapse.in {
   padding-left: 15px;
   border-top: 1px solid transparent;
   -webkit-box-shadow: inset 0 1px 0 #FFFFFF;
+  -webkit-box-shadow: inset 0 1px 0 #FFFFFF;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 1px 0 #FFFFFF;
+  -webkit-box-shadow: inset 0 1px 0 #FFFFFF;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 0 #FFFFFF;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
@@ -5259,6 +5312,10 @@ tbody.collapse.in {
   padding: 10px 15px;
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
+  -webkit-box-shadow: inset 0 1px 0 #FFFFFF, 0 1px 0 #FFFFFF;
+  -webkit-box-shadow: inset 0 1px 0 #FFFFFF, 0 1px 0 #FFFFFF;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 1px 0 #FFFFFF, 0 1px 0 #FFFFFF;
   -webkit-box-shadow: inset 0 1px 0 #FFFFFF, 0 1px 0 #FFFFFF;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 0 #FFFFFF, 0 1px 0 #FFFFFF;
@@ -5996,6 +6053,10 @@ a.thumbnail.active {
   background-color: #f5f5f5;
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 2px #000000;
+  -webkit-box-shadow: inset 0 1px 2px #000000;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 2px #000000;
+  -webkit-box-shadow: inset 0 1px 2px #000000;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 1px 2px #000000;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -6010,6 +6071,10 @@ a.thumbnail.active {
   color: #fff;
   text-align: center;
   background-color: #337ab7;
+  -webkit-box-shadow: inset 0 -1px 0 #000000;
+  -webkit-box-shadow: inset 0 -1px 0 #000000;
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 -1px 0 #000000;
   -webkit-box-shadow: inset 0 -1px 0 #000000;
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 -1px 0 #000000;
@@ -6288,6 +6353,10 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   background-color: #fff;
   border: 1px solid transparent;
   border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px #000000;
+  -webkit-box-shadow: 0 1px 1px #000000;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 1px #000000;
   -webkit-box-shadow: 0 1px 1px #000000;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px #000000;
@@ -6682,12 +6751,17 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   border: 1px solid #e3e3e3;
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px #000000;
+  -webkit-box-shadow: inset 0 1px 1px #000000;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px #000000;
+  -webkit-box-shadow: inset 0 1px 1px #000000;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 1px 1px #000000;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 .well blockquote {
   border-color: #ddd;
+  border-color: #000000;
   border-color: #000000;
   border-color: rgba(0, 0, 0, 0.15);
 }
@@ -6773,8 +6847,13 @@ button.close {
   background-color: #fff;
   border: 1px solid #999;
   border: 1px solid #000000;
+  border: 1px solid #000000;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
+  -webkit-box-shadow: 0 3px 9px #000000;
+  -webkit-box-shadow: 0 3px 9px #000000;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 9px #000000;
   -webkit-box-shadow: 0 3px 9px #000000;
   -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   box-shadow: 0 3px 9px #000000;
@@ -6857,6 +6936,10 @@ button.close {
   }
 
   .modal-content {
+    -webkit-box-shadow: 0 5px 15px #000000;
+    -webkit-box-shadow: 0 5px 15px #000000;
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px #000000;
     -webkit-box-shadow: 0 5px 15px #000000;
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     box-shadow: 0 5px 15px #000000;
@@ -6997,8 +7080,13 @@ button.close {
   background-clip: padding-box;
   border: 1px solid #ccc;
   border: 1px solid #000000;
+  border: 1px solid #000000;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
+  -webkit-box-shadow: 0 5px 10px #000000;
+  -webkit-box-shadow: 0 5px 10px #000000;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px #000000;
   -webkit-box-shadow: 0 5px 10px #000000;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 10px #000000;
@@ -7055,6 +7143,7 @@ button.close {
   border-bottom-width: 0;
   border-top-color: #999999;
   border-top-color: #000000;
+  border-top-color: #000000;
   border-top-color: rgba(0, 0, 0, 0.25);
   bottom: -11px;
 }
@@ -7072,6 +7161,7 @@ button.close {
   border-left-width: 0;
   border-right-color: #999999;
   border-right-color: #000000;
+  border-right-color: #000000;
   border-right-color: rgba(0, 0, 0, 0.25);
 }
 .popover.right > .arrow:after {
@@ -7086,6 +7176,7 @@ button.close {
   margin-left: -11px;
   border-top-width: 0;
   border-bottom-color: #999999;
+  border-bottom-color: #000000;
   border-bottom-color: #000000;
   border-bottom-color: rgba(0, 0, 0, 0.25);
   top: -11px;
@@ -7103,6 +7194,7 @@ button.close {
   margin-top: -11px;
   border-right-width: 0;
   border-left-color: #999999;
+  border-left-color: #000000;
   border-left-color: #000000;
   border-left-color: rgba(0, 0, 0, 0.25);
 }
@@ -7204,6 +7296,7 @@ button.close {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 2px #000000;
+  text-shadow: 0 1px 2px #000000;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 .carousel-control.left {
@@ -7303,6 +7396,7 @@ button.close {
   padding-bottom: 20px;
   color: #fff;
   text-align: center;
+  text-shadow: 0 1px 2px #000000;
   text-shadow: 0 1px 2px #000000;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
@@ -8083,6 +8177,10 @@ table tbody tr th, table thead tr th {
   background: url(../images/noise.png) #28507c;
   text-shadow: #001833 0 1px 0px;
   -webkit-box-shadow: #2C2A29 0 3px 2px, #FFFEFB 0 1px 4px inset;
+  -webkit-box-shadow: #2C2A29 0 3px 2px, #FFFEFB 0 1px 4px inset;
+  -webkit-box-shadow: rgba(44, 42, 41, 0.5) 0 3px 2px, rgba(255, 254, 251, 0.2) 0 1px 4px inset;
+  box-shadow: #2C2A29 0 3px 2px, #FFFEFB 0 1px 4px inset;
+  -webkit-box-shadow: #2C2A29 0 3px 2px, #FFFEFB 0 1px 4px inset;
   -webkit-box-shadow: rgba(44, 42, 41, 0.5) 0 3px 2px, rgba(255, 254, 251, 0.2) 0 1px 4px inset;
   box-shadow: #2C2A29 0 3px 2px, #FFFEFB 0 1px 4px inset;
   box-shadow: rgba(44, 42, 41, 0.5) 0 3px 2px, rgba(255, 254, 251, 0.2) 0 1px 4px inset;
@@ -8223,6 +8321,7 @@ article dl dt {
   -webkit-box-shadow: #4b4949 0 0.146em 0.07em 0;
   box-shadow: #4b4949 0 0.146em 0.07em 0;
   text-shadow: 0 0.07em 0 #FFFEFB;
+  text-shadow: 0 0.07em 0 #FFFEFB;
   text-shadow: 0 0.07em 0 rgba(255, 254, 251, 0.1);
   border: 1px solid #335377;
   border-top: 1px solid #195393;
@@ -8260,6 +8359,10 @@ article dl dl dt {
   margin-bottom: 15px;
   margin-bottom: 0.96668719rem;
   background-color: #99a9bb;
+  -webkit-box-shadow: #2C2A29 0 1px 1px, #FFFEFB 0 1px 1px inset;
+  -webkit-box-shadow: #2C2A29 0 1px 1px, #FFFEFB 0 1px 1px inset;
+  -webkit-box-shadow: rgba(44, 42, 41, 0.1) 0 1px 1px, rgba(255, 254, 251, 0.2) 0 1px 1px inset;
+  box-shadow: #2C2A29 0 1px 1px, #FFFEFB 0 1px 1px inset;
   -webkit-box-shadow: #2C2A29 0 1px 1px, #FFFEFB 0 1px 1px inset;
   -webkit-box-shadow: rgba(44, 42, 41, 0.1) 0 1px 1px, rgba(255, 254, 251, 0.2) 0 1px 1px inset;
   box-shadow: #2C2A29 0 1px 1px, #FFFEFB 0 1px 1px inset;
@@ -9481,6 +9584,7 @@ ul li, .sidebar li, aside li {
 .btn:visited {
   color: #ffcf70;
   text-shadow: 0 0.07em 0 #FFFEFB;
+  text-shadow: 0 0.07em 0 #FFFEFB;
   text-shadow: 0 0.07em 0 rgba(255, 254, 251, 0.68541);
   text-decoration: none;
 }
@@ -9573,6 +9677,7 @@ ul li, .sidebar li, aside li {
 }
 .btn.icon:visited {
   color: #ffcf70;
+  text-shadow: 0 0.07em 0 #FFFEFB;
   text-shadow: 0 0.07em 0 #FFFEFB;
   text-shadow: 0 0.07em 0 rgba(255, 254, 251, 0.68541);
   text-decoration: none;
@@ -9717,6 +9822,7 @@ ul li, .sidebar li, aside li {
 .btn--small:visited {
   color: #ffcf70;
   text-shadow: 0 0.07em 0 #FFFEFB;
+  text-shadow: 0 0.07em 0 #FFFEFB;
   text-shadow: 0 0.07em 0 rgba(255, 254, 251, 0.68541);
   text-decoration: none;
 }
@@ -9810,6 +9916,7 @@ ul li, .sidebar li, aside li {
 }
 .btn--large:visited, p a.action:visited {
   color: #ffcf70;
+  text-shadow: 0 0.07em 0 #FFFEFB;
   text-shadow: 0 0.07em 0 #FFFEFB;
   text-shadow: 0 0.07em 0 rgba(255, 254, 251, 0.68541);
   text-decoration: none;
@@ -9969,6 +10076,7 @@ p a.action:hover {
     left: 0;
     width: 100%;
     background: #000000;
+    background: #000000;
     background: rgba(0, 0, 0, 0.5);
     color: #fffefb;
     padding: 2.427em;
@@ -10038,6 +10146,7 @@ p a.action:hover {
   bottom: 0;
   left: 0;
   width: 100%;
+  background: #000000;
   background: #000000;
   background: rgba(0, 0, 0, 0.5);
   color: #fffefb;
@@ -10126,6 +10235,10 @@ p a.action:hover {
   padding: 1.618em;
   background: #fffefb;
   border: 1px solid #948f8d;
+  -webkit-box-shadow: 0.3em 0.3em 1em 0 #000000;
+  -webkit-box-shadow: 0.3em 0.3em 1em 0 #000000;
+  -webkit-box-shadow: 0.3em 0.3em 1em 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0.3em 0.3em 1em 0 #000000;
   -webkit-box-shadow: 0.3em 0.3em 1em 0 #000000;
   -webkit-box-shadow: 0.3em 0.3em 1em 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0.3em 0.3em 1em 0 #000000;
@@ -10337,6 +10450,10 @@ form input, form textarea, form .form-control {
   border: 1px solid #ffebaf;
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px #000000;
+  -webkit-box-shadow: inset 0 1px 1px #000000;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px #000000;
+  -webkit-box-shadow: inset 0 1px 1px #000000;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px #000000;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -10352,6 +10469,10 @@ form input, form textarea, form .form-control {
   transition-duration: 0.2s;
   -webkit-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
+  -webkit-box-shadow: #FFFEFB 0 0.07em 0, inset #2C2A29 0 0.07em 0;
+  -webkit-box-shadow: #FFFEFB 0 0.07em 0, inset #2C2A29 0 0.07em 0;
+  -webkit-box-shadow: rgba(255, 254, 251, 0.867) 0 0.07em 0, inset rgba(44, 42, 41, 0.4774) 0 0.07em 0;
+  box-shadow: #FFFEFB 0 0.07em 0, inset #2C2A29 0 0.07em 0;
   -webkit-box-shadow: #FFFEFB 0 0.07em 0, inset #2C2A29 0 0.07em 0;
   -webkit-box-shadow: rgba(255, 254, 251, 0.867) 0 0.07em 0, inset rgba(44, 42, 41, 0.4774) 0 0.07em 0;
   box-shadow: #FFFEFB 0 0.07em 0, inset #2C2A29 0 0.07em 0;
@@ -10433,6 +10554,7 @@ form input.btn:active, form input.button:active, form input.submit:active, form 
 form input.btn:visited, form input.button:visited, form input.submit:visited, form textarea.btn:visited, form textarea.button:visited, form textarea.submit:visited, form .form-control.btn:visited, form .form-control.button:visited, form .form-control.submit:visited {
   color: #ffcf70;
   text-shadow: 0 0.07em 0 #FFFEFB;
+  text-shadow: 0 0.07em 0 #FFFEFB;
   text-shadow: 0 0.07em 0 rgba(255, 254, 251, 0.68541);
   text-decoration: none;
 }
@@ -10451,6 +10573,10 @@ form input.btn.disabled:before:hover:before, form input.btn.disabled:before:focu
 }
 form input.checkbox, form input.radio, form input[type="checkbox"], form input[type="radio"], form textarea.checkbox, form textarea.radio, form textarea[type="checkbox"], form textarea[type="radio"], form .form-control.checkbox, form .form-control.radio, form .form-control[type="checkbox"], form .form-control[type="radio"] {
   -webkit-box-shadow: #FFFEFB 0 0.07em 0, inset #2C2A29 0 0.07em 0;
+  -webkit-box-shadow: #FFFEFB 0 0.07em 0, inset #2C2A29 0 0.07em 0;
+  -webkit-box-shadow: rgba(255, 254, 251, 0) 0 0.07em 0, inset rgba(44, 42, 41, 0) 0 0.07em 0;
+  box-shadow: #FFFEFB 0 0.07em 0, inset #2C2A29 0 0.07em 0;
+  -webkit-box-shadow: #FFFEFB 0 0.07em 0, inset #2C2A29 0 0.07em 0;
   -webkit-box-shadow: rgba(255, 254, 251, 0) 0 0.07em 0, inset rgba(44, 42, 41, 0) 0 0.07em 0;
   box-shadow: #FFFEFB 0 0.07em 0, inset #2C2A29 0 0.07em 0;
   box-shadow: rgba(255, 254, 251, 0) 0 0.07em 0, inset rgba(44, 42, 41, 0) 0 0.07em 0;
@@ -10468,6 +10594,7 @@ form label {
   padding-bottom: 0.59690587rem;
   margin-bottom: 15px;
   margin-bottom: 0.96668719rem;
+  text-shadow: 0 0.07em 0 #2C2A29;
   text-shadow: 0 0.07em 0 #2C2A29;
   text-shadow: 0 0.07em 0 rgba(44, 42, 41, 0.1618);
   font-family: "Neue Helvetica W02", Arial, verdana, sans-serif;
@@ -10566,6 +10693,7 @@ form .submit input:active, form .submit button:active {
 form .submit input:visited, form .submit button:visited {
   color: #ffcf70;
   text-shadow: 0 0.07em 0 #FFFEFB;
+  text-shadow: 0 0.07em 0 #FFFEFB;
   text-shadow: 0 0.07em 0 rgba(255, 254, 251, 0.68541);
   text-decoration: none;
 }
@@ -10615,6 +10743,10 @@ div.message.warning {
   margin-bottom: 1.251375rem;
   text-shadow: #4c1714 0 -1px 1px, #cb615c 0 1px 1px;
   -webkit-box-shadow: #FFC656 0 1px 25px inset, #2C2A29 0 2px 5px;
+  -webkit-box-shadow: #FFC656 0 1px 25px inset, #2C2A29 0 2px 5px;
+  -webkit-box-shadow: rgba(255, 198, 86, 0.5) 0 1px 25px inset, rgba(44, 42, 41, 0.4) 0 2px 5px;
+  box-shadow: #FFC656 0 1px 25px inset, #2C2A29 0 2px 5px;
+  -webkit-box-shadow: #FFC656 0 1px 25px inset, #2C2A29 0 2px 5px;
   -webkit-box-shadow: rgba(255, 198, 86, 0.5) 0 1px 25px inset, rgba(44, 42, 41, 0.4) 0 2px 5px;
   box-shadow: #FFC656 0 1px 25px inset, #2C2A29 0 2px 5px;
   box-shadow: rgba(255, 198, 86, 0.5) 0 1px 25px inset, rgba(44, 42, 41, 0.4) 0 2px 5px;
@@ -10641,6 +10773,7 @@ div.message.warning:before {
 }
 div.message.notice {
   background: #ECC602 url(../images/noise.png);
+  background: #ECC602 url(../images/noise.png);
   background: rgba(236, 198, 2, 0.5) url(../images/noise.png);
   padding: 32px;
   padding: 2rem;
@@ -10661,6 +10794,10 @@ div.message.notice {
   margin-bottom: 20px;
   margin-bottom: 1.251375rem;
   -webkit-box-shadow: #FFFEFB 0 1px 25px inset, #2C2A29 0 2px 5px;
+  -webkit-box-shadow: #FFFEFB 0 1px 25px inset, #2C2A29 0 2px 5px;
+  -webkit-box-shadow: rgba(255, 254, 251, 0.5) 0 1px 25px inset, rgba(44, 42, 41, 0.4) 0 2px 5px;
+  box-shadow: #FFFEFB 0 1px 25px inset, #2C2A29 0 2px 5px;
+  -webkit-box-shadow: #FFFEFB 0 1px 25px inset, #2C2A29 0 2px 5px;
   -webkit-box-shadow: rgba(255, 254, 251, 0.5) 0 1px 25px inset, rgba(44, 42, 41, 0.4) 0 2px 5px;
   box-shadow: #FFFEFB 0 1px 25px inset, #2C2A29 0 2px 5px;
   box-shadow: rgba(255, 254, 251, 0.5) 0 1px 25px inset, rgba(44, 42, 41, 0.4) 0 2px 5px;
@@ -10668,6 +10805,7 @@ div.message.notice {
 div.message.notice:before {
   content: "NOTICE:";
   font-family: "Neue Helvetica W01", Arial, verdana, sans-serif;
+  color: #000000;
   color: #000000;
   color: rgba(0, 0, 0, 0.2);
   width: 30%;
@@ -10958,6 +11096,10 @@ div.message .close {
   width: 32px;
   height: 222px;
   -webkit-box-shadow: -1px 1px 10px 0 #232120;
+  -webkit-box-shadow: -1px 1px 10px 0 #232120;
+  -webkit-box-shadow: -1px 1px 10px 0 rgba(35, 33, 32, 0.3);
+  box-shadow: -1px 1px 10px 0 #232120;
+  -webkit-box-shadow: -1px 1px 10px 0 #232120;
   -webkit-box-shadow: -1px 1px 10px 0 rgba(35, 33, 32, 0.3);
   box-shadow: -1px 1px 10px 0 #232120;
   box-shadow: -1px 1px 10px 0 rgba(35, 33, 32, 0.3);
@@ -10983,6 +11125,10 @@ div.message .close {
 }
 .at4-share-outer-right #at4-share .at4-share-btn:hover, .at4-share-outer-right #at4-share .at4-share-btn:focus {
   -webkit-box-shadow: -1px 2px 10px 0 #232120;
+  -webkit-box-shadow: -1px 2px 10px 0 #232120;
+  -webkit-box-shadow: -1px 2px 10px 0 rgba(35, 33, 32, 0.5);
+  box-shadow: -1px 2px 10px 0 #232120;
+  -webkit-box-shadow: -1px 2px 10px 0 #232120;
   -webkit-box-shadow: -1px 2px 10px 0 rgba(35, 33, 32, 0.5);
   box-shadow: -1px 2px 10px 0 #232120;
   box-shadow: -1px 2px 10px 0 rgba(35, 33, 32, 0.5);
@@ -11006,6 +11152,10 @@ div.message .close {
   padding-right: 38px;
 }
 .at4-share-outer-right #at4-share .at4-share-btn.at-svc-compact {
+  -webkit-box-shadow: 0 2px 10px 0 #232120;
+  -webkit-box-shadow: 0 2px 10px 0 #232120;
+  -webkit-box-shadow: 0 2px 10px 0 rgba(35, 33, 32, 0.2);
+  box-shadow: 0 2px 10px 0 #232120;
   -webkit-box-shadow: 0 2px 10px 0 #232120;
   -webkit-box-shadow: 0 2px 10px 0 rgba(35, 33, 32, 0.2);
   box-shadow: 0 2px 10px 0 #232120;
@@ -11202,12 +11352,17 @@ nav .b-social a:hover {
   margin-bottom: 15px;
   margin-bottom: 0.96674035rem;
   -webkit-box-shadow: 0 2px 6px 0 black inset, 0 2px 5px #262B30;
+  -webkit-box-shadow: 0 2px 6px 0 black inset, 0 2px 5px #262B30;
+  -webkit-box-shadow: 0 2px 6px 0 black inset, 0 2px 5px rgba(38, 43, 48, 0.65);
+  box-shadow: 0 2px 6px 0 black inset, 0 2px 5px #262B30;
+  -webkit-box-shadow: 0 2px 6px 0 black inset, 0 2px 5px #262B30;
   -webkit-box-shadow: 0 2px 6px 0 black inset, 0 2px 5px rgba(38, 43, 48, 0.65);
   box-shadow: 0 2px 6px 0 black inset, 0 2px 5px #262B30;
   box-shadow: 0 2px 6px 0 black inset, 0 2px 5px rgba(38, 43, 48, 0.65);
   border-top: 1px solid #13171d;
 }
 .b-social--wrapper .b-social:after {
+  color: #FFFEFB;
   color: #FFFEFB;
   color: rgba(255, 254, 251, 0.3);
   text-shadow: 0 1px 0 #232120;
@@ -11216,14 +11371,21 @@ nav .b-social a:hover {
 }
 .b-social--wrapper .b-social a {
   -webkit-box-shadow: 0 4px 6px #000000;
+  -webkit-box-shadow: 0 4px 6px #000000;
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 4px 6px #000000;
+  -webkit-box-shadow: 0 4px 6px #000000;
   -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
   box-shadow: 0 4px 6px #000000;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
   text-shadow: 0 4px 6px #000000;
+  text-shadow: 0 4px 6px #000000;
   text-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
   float: left;
   color: #FFFEFB;
+  color: #FFFEFB;
   color: rgba(255, 254, 251, 0.3);
+  border-color: #FFFEFB;
   border-color: #FFFEFB;
   border-color: rgba(255, 254, 251, 0.1);
 }
@@ -11379,6 +11541,7 @@ nav .b-social a:hover {
 .b-contact__links ul li a.contact:visited {
   color: #ffcf70;
   text-shadow: 0 0.07em 0 #FFFEFB;
+  text-shadow: 0 0.07em 0 #FFFEFB;
   text-shadow: 0 0.07em 0 rgba(255, 254, 251, 0.68541);
   text-decoration: none;
 }
@@ -11520,6 +11683,7 @@ nav .b-social a:hover {
 }
 .b-contact__links ul li a.request-info:visited {
   color: #ffcf70;
+  text-shadow: 0 0.07em 0 #FFFEFB;
   text-shadow: 0 0.07em 0 #FFFEFB;
   text-shadow: 0 0.07em 0 rgba(255, 254, 251, 0.68541);
   text-decoration: none;
@@ -11663,6 +11827,7 @@ nav .b-social a:hover {
 .b-contact__links ul li a.faculty:visited {
   color: #ffcf70;
   text-shadow: 0 0.07em 0 #FFFEFB;
+  text-shadow: 0 0.07em 0 #FFFEFB;
   text-shadow: 0 0.07em 0 rgba(255, 254, 251, 0.68541);
   text-decoration: none;
 }
@@ -11804,6 +11969,7 @@ nav .b-social a:hover {
 }
 .b-contact__links ul li a.feedback:visited {
   color: #ffcf70;
+  text-shadow: 0 0.07em 0 #FFFEFB;
   text-shadow: 0 0.07em 0 #FFFEFB;
   text-shadow: 0 0.07em 0 rgba(255, 254, 251, 0.68541);
   text-decoration: none;
@@ -11947,6 +12113,7 @@ nav .b-social a:hover {
 .b-contact__links ul li a.btn-arrow:visited {
   color: #ffcf70;
   text-shadow: 0 0.07em 0 #FFFEFB;
+  text-shadow: 0 0.07em 0 #FFFEFB;
   text-shadow: 0 0.07em 0 rgba(255, 254, 251, 0.68541);
   text-decoration: none;
 }
@@ -12089,6 +12256,7 @@ nav .b-social a:hover {
 .b-contact__links ul li a.contact.min:visited {
   color: #ffcf70;
   text-shadow: 0 0.07em 0 #FFFEFB;
+  text-shadow: 0 0.07em 0 #FFFEFB;
   text-shadow: 0 0.07em 0 rgba(255, 254, 251, 0.68541);
   text-decoration: none;
 }
@@ -12218,6 +12386,7 @@ nav .b-social a:hover {
 }
 .b-contact__links ul li a.request-info.min:visited {
   color: #ffcf70;
+  text-shadow: 0 0.07em 0 #FFFEFB;
   text-shadow: 0 0.07em 0 #FFFEFB;
   text-shadow: 0 0.07em 0 rgba(255, 254, 251, 0.68541);
   text-decoration: none;
@@ -12349,6 +12518,7 @@ nav .b-social a:hover {
 .b-contact__links ul li a.faculty.min:visited {
   color: #ffcf70;
   text-shadow: 0 0.07em 0 #FFFEFB;
+  text-shadow: 0 0.07em 0 #FFFEFB;
   text-shadow: 0 0.07em 0 rgba(255, 254, 251, 0.68541);
   text-decoration: none;
 }
@@ -12479,6 +12649,7 @@ nav .b-social a:hover {
 .b-contact__links ul li a.feedback.min:visited {
   color: #ffcf70;
   text-shadow: 0 0.07em 0 #FFFEFB;
+  text-shadow: 0 0.07em 0 #FFFEFB;
   text-shadow: 0 0.07em 0 rgba(255, 254, 251, 0.68541);
   text-decoration: none;
 }
@@ -12608,6 +12779,7 @@ nav .b-social a:hover {
 }
 .b-contact__links ul li a.btn-arrow.min:visited {
   color: #ffcf70;
+  text-shadow: 0 0.07em 0 #FFFEFB;
   text-shadow: 0 0.07em 0 #FFFEFB;
   text-shadow: 0 0.07em 0 rgba(255, 254, 251, 0.68541);
   text-decoration: none;
@@ -12765,6 +12937,7 @@ nav .b-social a:hover {
 }
 .b-cta__about .nav-list li a:visited {
   color: #ffcf70;
+  text-shadow: 0 0.07em 0 #FFFEFB;
   text-shadow: 0 0.07em 0 #FFFEFB;
   text-shadow: 0 0.07em 0 rgba(255, 254, 251, 0.68541);
   text-decoration: none;
@@ -12927,6 +13100,7 @@ nav .b-social a:hover {
 .b-cta__about .nav-list li.dropdown.open .dropdown-toggle:visited {
   color: #ffcf70;
   text-shadow: 0 0.07em 0 #FFFEFB;
+  text-shadow: 0 0.07em 0 #FFFEFB;
   text-shadow: 0 0.07em 0 rgba(255, 254, 251, 0.68541);
   text-decoration: none;
 }
@@ -13007,6 +13181,7 @@ nav .b-social a:hover {
   padding: 0 10px;
   background: url("../images/noise.png") repeat;
   background-color: #000000;
+  background-color: #000000;
   background-color: rgba(0, 0, 0, 0.95);
   width: 100%;
   border-bottom-width: 1px;
@@ -13067,15 +13242,19 @@ nav .b-social a:hover {
   *zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#80121110', endColorstr='#80000000');
   background-color: #121110;
+  background-color: #121110;
   background-color: rgba(18, 17, 16, 0.5);
   border: 0;
   color: #fffefb;
+  text-shadow: #000000 0 -1px 0;
   text-shadow: #000000 0 -1px 0;
   text-shadow: rgba(0, 0, 0, 0.5) 0 -1px 0;
   background-image: url(../images/noise.png);
   padding: 0.47745751em 1em;
   border: 0.07em solid #1F1D1D;
+  border: 0.07em solid #1F1D1D;
   border: 0.07em solid rgba(31, 29, 29, 0.5);
+  border-bottom: 0.07em solid #000000;
   border-bottom: 0.07em solid #000000;
   border-bottom: 0.07em solid rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: black 0 0.146em 0.07em 0;
@@ -13116,9 +13295,11 @@ nav .b-social a:hover {
 }
 .b-cta__events .title .title__link:hover {
   background-color: #040404;
+  background-color: #040404;
   background-color: rgba(4, 4, 4, 0.5);
 }
 .b-cta__events .title .title__link:active {
+  background-color: #000000;
   background-color: #000000;
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -13142,10 +13323,12 @@ nav .b-social a:hover {
 }
 .b-cta__events .title .title__link:active {
   background: #464342;
+  background: #464342;
   background: rgba(70, 67, 66, 0.5);
 }
 .b-cta__events .title .title__link:visited {
   color: #ffcf70;
+  text-shadow: 0 0.07em 0 #FFFEFB;
   text-shadow: 0 0.07em 0 #FFFEFB;
   text-shadow: 0 0.07em 0 rgba(255, 254, 251, 0.68541);
   text-decoration: none;
@@ -13191,6 +13374,10 @@ nav .b-social a:hover {
   padding-bottom: 9px;
   padding-bottom: 0.58589228rem;
   border-color: black;
+  -webkit-box-shadow: 0 1px 0 0 #2C2A29;
+  -webkit-box-shadow: 0 1px 0 0 #2C2A29;
+  -webkit-box-shadow: 0 1px 0 0 rgba(44, 42, 41, 0.75);
+  box-shadow: 0 1px 0 0 #2C2A29;
   -webkit-box-shadow: 0 1px 0 0 #2C2A29;
   -webkit-box-shadow: 0 1px 0 0 rgba(44, 42, 41, 0.75);
   box-shadow: 0 1px 0 0 #2C2A29;
@@ -13288,6 +13475,7 @@ nav .b-social a:hover {
 }
 .b-cta__events .b-wvuCalendar li .b-wvuCalendar__event:visited {
   color: #ffcf70;
+  text-shadow: 0 0.07em 0 #FFFEFB;
   text-shadow: 0 0.07em 0 #FFFEFB;
   text-shadow: 0 0.07em 0 rgba(255, 254, 251, 0.68541);
   text-decoration: none;
@@ -13406,6 +13594,7 @@ nav .b-social a:hover {
   margin-bottom: 0px;
   margin-bottom: 0rem;
   color: #FFFEFB;
+  color: #FFFEFB;
   color: rgba(255, 254, 251, 0.7);
   display: inline;
   margin-right: 6px;
@@ -13476,6 +13665,10 @@ nav .b-social a:hover {
   padding-bottom: 9px;
   padding-bottom: 0.58589228rem;
   border-color: black;
+  -webkit-box-shadow: 0 1px 0 0 #2C2A29;
+  -webkit-box-shadow: 0 1px 0 0 #2C2A29;
+  -webkit-box-shadow: 0 1px 0 0 rgba(44, 42, 41, 0.75);
+  box-shadow: 0 1px 0 0 #2C2A29;
   -webkit-box-shadow: 0 1px 0 0 #2C2A29;
   -webkit-box-shadow: 0 1px 0 0 rgba(44, 42, 41, 0.75);
   box-shadow: 0 1px 0 0 #2C2A29;
@@ -13593,12 +13786,20 @@ nav .b-social a:hover {
   color: white;
   background: url(../images/noise.png) repeat #0078eb;
   -webkit-box-shadow: 0 2px 2px 0px #14191F;
+  -webkit-box-shadow: 0 2px 2px 0px #14191F;
+  -webkit-box-shadow: 0 2px 2px 0px rgba(20, 25, 31, 0.5);
+  box-shadow: 0 2px 2px 0px #14191F;
+  -webkit-box-shadow: 0 2px 2px 0px #14191F;
   -webkit-box-shadow: 0 2px 2px 0px rgba(20, 25, 31, 0.5);
   box-shadow: 0 2px 2px 0px #14191F;
   box-shadow: 0 2px 2px 0px rgba(20, 25, 31, 0.5);
 }
 .b-featuredLink h3:hover:before, .b-featuredLink h3:focus:before {
   background: url(../images/noise.png) repeat #0078eb;
+  -webkit-box-shadow: 2px 3px 1px 0 #14191F;
+  -webkit-box-shadow: 2px 3px 1px 0 #14191F;
+  -webkit-box-shadow: 2px 3px 1px 0 rgba(20, 25, 31, 0.5);
+  box-shadow: 2px 3px 1px 0 #14191F;
   -webkit-box-shadow: 2px 3px 1px 0 #14191F;
   -webkit-box-shadow: 2px 3px 1px 0 rgba(20, 25, 31, 0.5);
   box-shadow: 2px 3px 1px 0 #14191F;
@@ -13717,6 +13918,10 @@ nav .b-social a:hover {
   border: 0.07em solid #12171c;
   border-bottom: 0.07em solid black;
   -webkit-box-shadow: #000000 0 0.146em 0.07em 0;
+  -webkit-box-shadow: #000000 0 0.146em 0.07em 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.6) 0 0.146em 0.07em 0;
+  box-shadow: #000000 0 0.146em 0.07em 0;
+  -webkit-box-shadow: #000000 0 0.146em 0.07em 0;
   -webkit-box-shadow: rgba(0, 0, 0, 0.6) 0 0.146em 0.07em 0;
   box-shadow: #000000 0 0.146em 0.07em 0;
   box-shadow: rgba(0, 0, 0, 0.6) 0 0.146em 0.07em 0;
@@ -13766,6 +13971,10 @@ nav .b-social a:hover {
 }
 .b-links__academics .b-academics__programs__c2 a:hover, .b-links__academics .b-academics__programs__c2 a:focus, .b-links__academics .b-academics__programs__c3 a:hover, .b-links__academics .b-academics__programs__c3 a:focus, .b-links__academics .b-academics__programs__c4 a:hover, .b-links__academics .b-academics__programs__c4 a:focus {
   -webkit-box-shadow: #343434 0 0.07em 0.146em;
+  -webkit-box-shadow: #343434 0 0.07em 0.146em;
+  -webkit-box-shadow: rgba(52, 52, 52, 0.64) 0 0.07em 0.146em;
+  box-shadow: #343434 0 0.07em 0.146em;
+  -webkit-box-shadow: #343434 0 0.07em 0.146em;
   -webkit-box-shadow: rgba(52, 52, 52, 0.64) 0 0.07em 0.146em;
   box-shadow: #343434 0 0.07em 0.146em;
   box-shadow: rgba(52, 52, 52, 0.64) 0 0.07em 0.146em;
@@ -13776,6 +13985,7 @@ nav .b-social a:hover {
 }
 .b-links__academics .b-academics__programs__c2 a:visited, .b-links__academics .b-academics__programs__c3 a:visited, .b-links__academics .b-academics__programs__c4 a:visited {
   color: #ffcf70;
+  text-shadow: 0 0.07em 0 #FFFEFB;
   text-shadow: 0 0.07em 0 #FFFEFB;
   text-shadow: 0 0.07em 0 rgba(255, 254, 251, 0.68541);
   text-decoration: none;
@@ -14137,6 +14347,10 @@ nav a.b-siteLogo[data-eq-state="large"] {
 .b-search .form-search__search-type input[type="radio"]:checked:after {
   background-color: #eaaa00;
   -webkit-box-shadow: inset 0 0 0 1px #EAAA00, inset 0 2px 2px #EAAA00, 0 1px 1px #EAAA00, 0 0 2px 2px hset-alpha(#eaaa00, 0.4);
+  -webkit-box-shadow: inset 0 0 0 1px #EAAA00, inset 0 2px 2px #EAAA00, 0 1px 1px #EAAA00, 0 0 2px 2px hset-alpha(#eaaa00, 0.4);
+  -webkit-box-shadow: inset 0 0 0 1px rgba(234, 170, 0, 0.4), inset 0 2px 2px rgba(234, 170, 0, 0.4), 0 1px 1px rgba(234, 170, 0, 0.8), 0 0 2px 2px hset-alpha(#eaaa00, 0.4);
+  box-shadow: inset 0 0 0 1px #EAAA00, inset 0 2px 2px #EAAA00, 0 1px 1px #EAAA00, 0 0 2px 2px hset-alpha(#eaaa00, 0.4);
+  -webkit-box-shadow: inset 0 0 0 1px #EAAA00, inset 0 2px 2px #EAAA00, 0 1px 1px #EAAA00, 0 0 2px 2px hset-alpha(#eaaa00, 0.4);
   -webkit-box-shadow: inset 0 0 0 1px rgba(234, 170, 0, 0.4), inset 0 2px 2px rgba(234, 170, 0, 0.4), 0 1px 1px rgba(234, 170, 0, 0.8), 0 0 2px 2px hset-alpha(#eaaa00, 0.4);
   box-shadow: inset 0 0 0 1px #EAAA00, inset 0 2px 2px #EAAA00, 0 1px 1px #EAAA00, 0 0 2px 2px hset-alpha(#eaaa00, 0.4);
   box-shadow: inset 0 0 0 1px rgba(234, 170, 0, 0.4), inset 0 2px 2px rgba(234, 170, 0, 0.4), 0 1px 1px rgba(234, 170, 0, 0.8), 0 0 2px 2px hset-alpha(#eaaa00, 0.4);
@@ -14224,6 +14438,7 @@ nav a.b-siteLogo[data-eq-state="large"] {
   float: left;
   color: #000;
   text-shadow: 0 0.07em 0 #2C2A29;
+  text-shadow: 0 0.07em 0 #2C2A29;
   text-shadow: 0 0.07em 0 rgba(44, 42, 41, 0.1618);
   background-color: #2c2a29;
   text-transform: uppercase;
@@ -14269,6 +14484,7 @@ nav a.b-siteLogo[data-eq-state="large"] {
 .m-links h3 a {
   color: #fffefb;
   background-color: #002855;
+  background-color: #002855;
   background-color: rgba(0, 40, 85, 0.3);
   width: 100%;
   float: left;
@@ -14289,6 +14505,7 @@ nav a.b-siteLogo[data-eq-state="large"] {
   border-bottom-style: solid;
   padding-bottom: 6px;
   padding-bottom: 0.35302525rem;
+  border-color: #004088;
   border-color: #004088;
   border-color: rgba(0, 64, 136, 0.3);
   border-top: 0;
@@ -14319,6 +14536,10 @@ nav a.b-siteLogo[data-eq-state="large"] {
   padding: 0.47745751em 1em;
   border: 0.07em solid #12171c;
   border-bottom: 0.07em solid black;
+  -webkit-box-shadow: #000000 0 0.146em 0.07em 0;
+  -webkit-box-shadow: #000000 0 0.146em 0.07em 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.6) 0 0.146em 0.07em 0;
+  box-shadow: #000000 0 0.146em 0.07em 0;
   -webkit-box-shadow: #000000 0 0.146em 0.07em 0;
   -webkit-box-shadow: rgba(0, 0, 0, 0.6) 0 0.146em 0.07em 0;
   box-shadow: #000000 0 0.146em 0.07em 0;
@@ -14383,6 +14604,10 @@ nav a.b-siteLogo[data-eq-state="large"] {
 }
 .m-links .nav-list li a:hover, .m-links .nav-list li a:focus {
   -webkit-box-shadow: #343434 0 0.07em 0.146em;
+  -webkit-box-shadow: #343434 0 0.07em 0.146em;
+  -webkit-box-shadow: rgba(52, 52, 52, 0.64) 0 0.07em 0.146em;
+  box-shadow: #343434 0 0.07em 0.146em;
+  -webkit-box-shadow: #343434 0 0.07em 0.146em;
   -webkit-box-shadow: rgba(52, 52, 52, 0.64) 0 0.07em 0.146em;
   box-shadow: #343434 0 0.07em 0.146em;
   box-shadow: rgba(52, 52, 52, 0.64) 0 0.07em 0.146em;
@@ -14393,6 +14618,7 @@ nav a.b-siteLogo[data-eq-state="large"] {
 }
 .m-links .nav-list li a:visited {
   color: #ffcf70;
+  text-shadow: 0 0.07em 0 #FFFEFB;
   text-shadow: 0 0.07em 0 #FFFEFB;
   text-shadow: 0 0.07em 0 rgba(255, 254, 251, 0.68541);
   text-decoration: none;
@@ -14434,6 +14660,10 @@ nav a.b-siteLogo[data-eq-state="large"] {
   margin: 0;
   padding: 0;
   border-bottom: #ffc656 8px solid;
+  -webkit-box-shadow: 0 2px 2px 0 #2C2A29;
+  -webkit-box-shadow: 0 2px 2px 0 #2C2A29;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(44, 42, 41, 0.5);
+  box-shadow: 0 2px 2px 0 #2C2A29;
   -webkit-box-shadow: 0 2px 2px 0 #2C2A29;
   -webkit-box-shadow: 0 2px 2px 0 rgba(44, 42, 41, 0.5);
   box-shadow: 0 2px 2px 0 #2C2A29;
@@ -14592,12 +14822,20 @@ nav a.b-siteLogo[data-eq-state="large"] {
     color: white;
     background: url(../images/noise.png) repeat #0078eb;
     -webkit-box-shadow: 0 2px 0px 0px #14191F;
+    -webkit-box-shadow: 0 2px 0px 0px #14191F;
+    -webkit-box-shadow: 0 2px 0px 0px rgba(20, 25, 31, 0.5);
+    box-shadow: 0 2px 0px 0px #14191F;
+    -webkit-box-shadow: 0 2px 0px 0px #14191F;
     -webkit-box-shadow: 0 2px 0px 0px rgba(20, 25, 31, 0.5);
     box-shadow: 0 2px 0px 0px #14191F;
     box-shadow: 0 2px 0px 0px rgba(20, 25, 31, 0.5);
   }
   .m-primaryNav .m-primaryNav__navbar-nav a:hover:before, .m-primaryNav .m-primaryNav__navbar-nav a:focus:before {
     background: url(../images/noise.png) repeat #0078eb;
+    -webkit-box-shadow: 2px 0 0px 0px #14191F;
+    -webkit-box-shadow: 2px 0 0px 0px #14191F;
+    -webkit-box-shadow: 2px 0 0px 0px rgba(20, 25, 31, 0.5);
+    box-shadow: 2px 0 0px 0px #14191F;
     -webkit-box-shadow: 2px 0 0px 0px #14191F;
     -webkit-box-shadow: 2px 0 0px 0px rgba(20, 25, 31, 0.5);
     box-shadow: 2px 0 0px 0px #14191F;
@@ -14673,12 +14911,20 @@ nav a.b-siteLogo[data-eq-state="large"] {
     color: #004088;
     background: url(../images/noise.png) repeat white;
     -webkit-box-shadow: 0 2px 2px 0px #14191F;
+    -webkit-box-shadow: 0 2px 2px 0px #14191F;
+    -webkit-box-shadow: 0 2px 2px 0px rgba(20, 25, 31, 0.5);
+    box-shadow: 0 2px 2px 0px #14191F;
+    -webkit-box-shadow: 0 2px 2px 0px #14191F;
     -webkit-box-shadow: 0 2px 2px 0px rgba(20, 25, 31, 0.5);
     box-shadow: 0 2px 2px 0px #14191F;
     box-shadow: 0 2px 2px 0px rgba(20, 25, 31, 0.5);
   }
   .m-primaryNav .m-primaryNav__navbar-nav li.apply a:hover:before, .m-primaryNav .m-primaryNav__navbar-nav li.apply a:focus:before {
     background: url(../images/noise.png) repeat white;
+    -webkit-box-shadow: 2px 3px 1px 0 #14191F;
+    -webkit-box-shadow: 2px 3px 1px 0 #14191F;
+    -webkit-box-shadow: 2px 3px 1px 0 rgba(20, 25, 31, 0.5);
+    box-shadow: 2px 3px 1px 0 #14191F;
     -webkit-box-shadow: 2px 3px 1px 0 #14191F;
     -webkit-box-shadow: 2px 3px 1px 0 rgba(20, 25, 31, 0.5);
     box-shadow: 2px 3px 1px 0 #14191F;
@@ -14781,6 +15027,7 @@ nav .navbar-header .navbar-toggle .icon-bar {
 nav .navbar-header .navbar-brand {
   background: none;
   color: #005eb8;
+  text-shadow: 0 0.07em 0 #FFFEFB;
   text-shadow: 0 0.07em 0 #FFFEFB;
   text-shadow: 0 0.07em 0 rgba(255, 254, 251, 0.68541);
   font-size: 16px;
@@ -15095,6 +15342,10 @@ nav #nav-primary.collapse.in .navbar--more a::after {
   border-radius: 0 70% 70%  0;
   border-right: #f0ebe3 1px solid;
   -webkit-box-shadow: #2C2A29 10px 0px 7px -7px;
+  -webkit-box-shadow: #2C2A29 10px 0px 7px -7px;
+  -webkit-box-shadow: rgba(44, 42, 41, 0.5) 10px 0px 7px -7px;
+  box-shadow: #2C2A29 10px 0px 7px -7px;
+  -webkit-box-shadow: #2C2A29 10px 0px 7px -7px;
   -webkit-box-shadow: rgba(44, 42, 41, 0.5) 10px 0px 7px -7px;
   box-shadow: #2C2A29 10px 0px 7px -7px;
   box-shadow: rgba(44, 42, 41, 0.5) 10px 0px 7px -7px;
@@ -15126,6 +15377,10 @@ nav #nav-primary.collapse.in .navbar--more a::after {
   background-position: -371px -775px;
   border-radius: 70% 0 0 70%;
   border-left: #f0ebe3 1px solid;
+  -webkit-box-shadow: #2C2A29 -10px 0px 7px -7px;
+  -webkit-box-shadow: #2C2A29 -10px 0px 7px -7px;
+  -webkit-box-shadow: rgba(44, 42, 41, 0.5) -10px 0px 7px -7px;
+  box-shadow: #2C2A29 -10px 0px 7px -7px;
   -webkit-box-shadow: #2C2A29 -10px 0px 7px -7px;
   -webkit-box-shadow: rgba(44, 42, 41, 0.5) -10px 0px 7px -7px;
   box-shadow: #2C2A29 -10px 0px 7px -7px;
@@ -15247,6 +15502,10 @@ nav #nav-primary.collapse.in .navbar--more a::after {
   border-radius: 0 70% 70%  0;
   border-right: #f0ebe3 1px solid;
   -webkit-box-shadow: #2C2A29 10px 0px 7px -7px;
+  -webkit-box-shadow: #2C2A29 10px 0px 7px -7px;
+  -webkit-box-shadow: rgba(44, 42, 41, 0.5) 10px 0px 7px -7px;
+  box-shadow: #2C2A29 10px 0px 7px -7px;
+  -webkit-box-shadow: #2C2A29 10px 0px 7px -7px;
   -webkit-box-shadow: rgba(44, 42, 41, 0.5) 10px 0px 7px -7px;
   box-shadow: #2C2A29 10px 0px 7px -7px;
   box-shadow: rgba(44, 42, 41, 0.5) 10px 0px 7px -7px;
@@ -15278,6 +15537,10 @@ nav #nav-primary.collapse.in .navbar--more a::after {
   background-position: -371px -716px;
   border-radius: 70% 0 0 70%;
   border-left: #f0ebe3 1px solid;
+  -webkit-box-shadow: #2C2A29 -10px 0px 7px -7px;
+  -webkit-box-shadow: #2C2A29 -10px 0px 7px -7px;
+  -webkit-box-shadow: rgba(44, 42, 41, 0.5) -10px 0px 7px -7px;
+  box-shadow: #2C2A29 -10px 0px 7px -7px;
   -webkit-box-shadow: #2C2A29 -10px 0px 7px -7px;
   -webkit-box-shadow: rgba(44, 42, 41, 0.5) -10px 0px 7px -7px;
   box-shadow: #2C2A29 -10px 0px 7px -7px;
@@ -16596,6 +16859,7 @@ nav #nav-primary.collapse.in .navbar--more a::after {
   -webkit-box-shadow: black 0 5px 10px 0 inset;
   box-shadow: black 0 5px 10px 0 inset;
   background: #121110;
+  background: #121110;
   background: rgba(18, 17, 16, 0.65);
   padding-bottom: 16px;
 }
@@ -17037,6 +17301,7 @@ nav #nav-primary.collapse.in .navbar--more a::after {
   width: 100%;
   float: left;
   background: #1F1D1D;
+  background: #1F1D1D;
   background: rgba(31, 29, 29, 0.55);
   margin-top: -3px;
 }
@@ -17044,6 +17309,10 @@ nav #nav-primary.collapse.in .navbar--more a::after {
   background: #002855;
   border-color: #001022;
   border-top-color: #003674;
+  -webkit-box-shadow: 0 3px 1px #001022, 0 8px 10px #121110, 0 3px 8px #003674 inset;
+  -webkit-box-shadow: 0 3px 1px #001022, 0 8px 10px #121110, 0 3px 8px #003674 inset;
+  -webkit-box-shadow: 0 3px 1px #001022, 0 8px 10px #121110, 0 3px 8px rgba(0, 54, 116, 0.5) inset;
+  box-shadow: 0 3px 1px #001022, 0 8px 10px #121110, 0 3px 8px #003674 inset;
   -webkit-box-shadow: 0 3px 1px #001022, 0 8px 10px #121110, 0 3px 8px #003674 inset;
   -webkit-box-shadow: 0 3px 1px #001022, 0 8px 10px #121110, 0 3px 8px rgba(0, 54, 116, 0.5) inset;
   box-shadow: 0 3px 1px #001022, 0 8px 10px #121110, 0 3px 8px #003674 inset;
@@ -17922,4 +18191,5 @@ body .container {
 
 /*# sourceMappingURL=styles.css.map */
 
+/*# sourceMappingURL=../stylesheets/styles.css.map */
 /*# sourceMappingURL=../stylesheets/styles.css.map */
