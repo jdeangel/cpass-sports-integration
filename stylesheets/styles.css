@@ -15216,11 +15216,11 @@ nav #nav-primary.collapse.in .navbar--more a::after {
   box-shadow: #615c5a 0 2px 2px 0 inset, #645333 0 1px 4px 0;
 }
 
-.sidescroll-nextprev .sidescroll-nextprev-links {
+.m-homeScroller .sidescroll-nextprev .sidescroll-nextprev-links {
   top: -10px;
 }
-.sidescroll-nextprev .sidescroll-nextprev-links a {
-  height: 177px;
+.m-homeScroller .sidescroll-nextprev .sidescroll-nextprev-links a {
+  height: 287px;
   width: 3.27254253em;
   opacity: 1;
   filter: alpha(opacity=100);
@@ -15238,12 +15238,12 @@ nav #nav-primary.collapse.in .navbar--more a::after {
   -webkit-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
 }
-.sidescroll-nextprev .sidescroll-nextprev-links a.sidescroll-prev {
+.m-homeScroller .sidescroll-nextprev .sidescroll-nextprev-links a.sidescroll-prev {
   background: url(../images/postfix-arrows.png) no-repeat 2000px 2000px, url(../images/noise.png) repeat, #ede7dc -webkit-gradient(linear, left top, right top, from(rgba(249, 247, 244, 0.1)), color-stop(rgba(232, 224, 210, 0.3)), to(rgba(220, 208, 186, 0)));
   background: url(../images/postfix-arrows.png) no-repeat 2000px 2000px, url(../images/noise.png) repeat, #ede7dc -webkit-linear-gradient(left, rgba(249, 247, 244, 0.1), rgba(232, 224, 210, 0.3), rgba(220, 208, 186, 0));
   background: url(../images/postfix-arrows.png) no-repeat 2000px 2000px, url(../images/noise.png) repeat, #ede7dc linear-gradient(to right, rgba(249, 247, 244, 0.1), rgba(232, 224, 210, 0.3), rgba(220, 208, 186, 0));
   left: -32px;
-  background-position: 12px -775px;
+  background-position: 12px -716px;
   border-radius: 0 70% 70%  0;
   border-right: #f0ebe3 1px solid;
   -webkit-box-shadow: #2C2A29 10px 0px 7px -7px;
@@ -15259,10 +15259,10 @@ nav #nav-primary.collapse.in .navbar--more a::after {
   -webkit-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
 }
-.sidescroll-nextprev .sidescroll-nextprev-links a.sidescroll-prev:hover {
+.m-homeScroller .sidescroll-nextprev .sidescroll-nextprev-links a.sidescroll-prev:hover {
   background-position: 12px -352px;
 }
-.sidescroll-nextprev .sidescroll-nextprev-links a.sidescroll-prev.disabled {
+.m-homeScroller .sidescroll-nextprev .sidescroll-nextprev-links a.sidescroll-prev.disabled {
   opacity: 0;
   filter: alpha(opacity=0);
   background: url(../images/postfix-arrows.png) no-repeat 12px 72px, #ede7dc url(../images/noise.png) repeat;
@@ -15270,12 +15270,12 @@ nav #nav-primary.collapse.in .navbar--more a::after {
   -webkit-box-shadow: #2c2a29 6px 0px 9px -8px;
   box-shadow: #2c2a29 6px 0px 9px -8px;
 }
-.sidescroll-nextprev .sidescroll-nextprev-links a.sidescroll-next {
+.m-homeScroller .sidescroll-nextprev .sidescroll-nextprev-links a.sidescroll-next {
   background: url(../images/postfix-arrows.png) no-repeat 2000px 2000px, url(../images/noise.png) repeat, #ede7dc -webkit-gradient(linear, right top, left top, from(rgba(249, 247, 244, 0.1)), color-stop(rgba(232, 224, 210, 0.3)), to(rgba(220, 208, 186, 0)));
   background: url(../images/postfix-arrows.png) no-repeat 2000px 2000px, url(../images/noise.png) repeat, #ede7dc -webkit-linear-gradient(right, rgba(249, 247, 244, 0.1), rgba(232, 224, 210, 0.3), rgba(220, 208, 186, 0));
   background: url(../images/postfix-arrows.png) no-repeat 2000px 2000px, url(../images/noise.png) repeat, #ede7dc linear-gradient(to left, rgba(249, 247, 244, 0.1), rgba(232, 224, 210, 0.3), rgba(220, 208, 186, 0));
   right: -23px;
-  background-position: -371px -775px;
+  background-position: -371px -716px;
   border-radius: 70% 0 0 70%;
   border-left: #f0ebe3 1px solid;
   -webkit-box-shadow: #2C2A29 -10px 0px 7px -7px;
@@ -15283,10 +15283,10 @@ nav #nav-primary.collapse.in .navbar--more a::after {
   box-shadow: #2C2A29 -10px 0px 7px -7px;
   box-shadow: rgba(44, 42, 41, 0.5) -10px 0px 7px -7px;
 }
-.sidescroll-nextprev .sidescroll-nextprev-links a.sidescroll-next:hover {
-  background-position: -371px -352px;
+.m-homeScroller .sidescroll-nextprev .sidescroll-nextprev-links a.sidescroll-next:hover {
+  background-position: -371px -295px;
 }
-.sidescroll-nextprev .sidescroll-nextprev-links a.sidescroll-next.disabled {
+.m-homeScroller .sidescroll-nextprev .sidescroll-nextprev-links a.sidescroll-next.disabled {
   opacity: 1;
   filter: alpha(opacity=100);
   background: url(../images/postfix-arrows.png) no-repeat 12px 72px, #ede7dc url(../images/noise.png) repeat;

@@ -62,12 +62,13 @@
 }
 
 
+.m-homeScroller{
 .sidescroll-nextprev{
   .sidescroll-nextprev-links{
   	top:-10px;
 
     a{
-	  height:ms(10);
+	  height:ms(12);
 	  width:$ms-5+em;
 	  opacity:1;
 	  color:$white;
@@ -81,7 +82,7 @@
 	  &.sidescroll-prev{
 	  	background:url(../images/postfix-arrows.png) no-repeat 2000px 2000px, url(../images/noise.png) repeat, $secondary linear-gradient(to right, set-alpha(lighten($secondary,7), 0.1), set-alpha(darken($secondary,3), 0.3), set-alpha(darken($secondary,10),0.0));
 	  	left:-(ms(3));
-	  	background-position:12px -775px;
+	  	background-position:12px -716px;
 	  	border-radius: 0 70% 70%  0;
 	  	border-right: tint($secondary, 20) 1px solid;
 	  	box-shadow: set-alpha($black,0.5) 10px 0px 7px -7px;
@@ -99,11 +100,11 @@
 	  &.sidescroll-next{
 	  	background:url(../images/postfix-arrows.png) no-repeat 2000px 2000px, url(../images/noise.png) repeat, $secondary linear-gradient(to left, set-alpha(lighten($secondary,7), 0.1), set-alpha(darken($secondary,3), 0.3), set-alpha(darken($secondary,10),0.0));
 	  	right:-23px;
-	  	background-position:-371px -775px;
+	  	background-position:-371px -716px;
 	  	border-radius: 70% 0 0 70%;
 	  	border-left:tint($secondary, 20) 1px solid;
 	  	box-shadow: set-alpha($black,0.5) -10px 0px 7px -7px;
-	  	&:hover{ background-position:-371px -352px;}
+	  	&:hover{ background-position:-371px -295px;}
 	  	&.disabled{
 	  	opacity:1;
 	  	background:url(../images/postfix-arrows.png) no-repeat 12px 72px, $secondary url(../images/noise.png) repeat;
@@ -116,3 +117,4 @@
 	}//a
   }//end .sidescroll-nextprev-links
 }//end .sidescroll-nextprev
+}
