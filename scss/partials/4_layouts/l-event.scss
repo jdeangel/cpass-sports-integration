@@ -46,6 +46,21 @@ body.template-event{
 				@include adjust-font-size-to($font-size-large);
 				@include rhythm(0, 0, 0, $ms-2, $font-size-large);
 			}
+
+			.b-CTA{
+				float:left; width:100%;
+				@include grid-desktop2;
+				.b-CTA__textWrapper{
+					@include grid-span(13,1);
+				}
+				.b-CTA__rsvp{
+					@include grid-span(3,14);
+					min-width:159px;
+					@include btn($tertiary, $coolblack, $white);
+					text-align:center;
+				}
+			}
+
 		}//end #s-header__site--event
 
 		@include breakpoint($bp-mobile1-1 $bp-mobile2-1+1rem){

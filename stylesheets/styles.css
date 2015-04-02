@@ -18634,6 +18634,116 @@ body.template-event #header #s-header__site--event .kicker {
   margin-bottom: 32px;
   margin-bottom: 2.0247673rem;
 }
+body.template-event #header #s-header__site--event .b-CTA {
+  float: left;
+  width: 100%;
+}
+body.template-event #header #s-header__site--event .b-CTA .b-CTA__textWrapper {
+  width: 80.95238095%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0;
+  clear: none;
+}
+body.template-event #header #s-header__site--event .b-CTA .b-CTA__rsvp {
+  width: 17.46031746%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+  min-width: 159px;
+  font-family: "Neue Helvetica W01", Arial, verdana, sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  position: relative;
+  text-transform: uppercase;
+  line-height: 1.618em;
+  font-size: 1em;
+  padding: 0.5em 1.5em;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 0.182em;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF005EB8', endColorstr='#FF002A52');
+  background-color: #005eb8;
+  border: 0;
+  color: #fffefb;
+  text-shadow: #001d39 0 -1px 0;
+  background-image: url(../images/noise.png);
+  padding: 0.47745751em 1em;
+  border: 0.07em solid #006bd2;
+  border-bottom: 0.07em solid #004485;
+  -webkit-box-shadow: #14191f 0 0.146em 0.07em 0;
+  box-shadow: #14191f 0 0.146em 0.07em 0;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+  -webkit-transition-property: -webkit-box-shadow;
+  transition-property: box-shadow;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+  text-align: center;
+}
+@media (min-width: 60rem) {
+  body.template-event #header #s-header__site--event .b-CTA .b-CTA__rsvp {
+    font-family: "Neue Helvetica W02", Arial, verdana, sans-serif;
+    font-weight: 900;
+  }
+}
+body.template-event #header #s-header__site--event .b-CTA .b-CTA__rsvp:hover {
+  text-decoration: none;
+}
+body.template-event #header #s-header__site--event .b-CTA .b-CTA__rsvp:hover {
+  background-color: #00519f;
+}
+body.template-event #header #s-header__site--event .b-CTA .b-CTA__rsvp:active {
+  background-color: #00498f;
+}
+body.template-event #header #s-header__site--event .b-CTA .b-CTA__rsvp.disabled, body.template-event #header #s-header__site--event .b-CTA .b-CTA__rsvp[disabled] {
+  opacity: 0.6;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter: alpha(opacity=60);
+  background: false;
+  cursor: default;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+body.template-event #header #s-header__site--event .b-CTA .b-CTA__rsvp::-moz-focus-inner {
+  padding: 0 !important;
+  margin: -1px !important;
+}
+body.template-event #header #s-header__site--event .b-CTA .b-CTA__rsvp:hover, body.template-event #header #s-header__site--event .b-CTA .b-CTA__rsvp:focus {
+  -webkit-box-shadow: #2b2f35 0 0.07em 0.146em;
+  box-shadow: #2b2f35 0 0.07em 0.146em;
+  color: #e5e4e1;
+}
+body.template-event #header #s-header__site--event .b-CTA .b-CTA__rsvp:active {
+  background: #1f91ff;
+}
+body.template-event #header #s-header__site--event .b-CTA .b-CTA__rsvp:visited {
+  color: #ffcf70;
+  text-shadow: 0 0.07em 0 #FFFEFB;
+  text-shadow: 0 0.07em 0 rgba(255, 254, 251, 0.68541);
+  text-decoration: none;
+}
+body.template-event #header #s-header__site--event .b-CTA .b-CTA__rsvp.disabled {
+  background: #fff1c8;
+  color: #948f8d;
+}
+body.template-event #header #s-header__site--event .b-CTA .b-CTA__rsvp.disabled:hover, body.template-event #header #s-header__site--event .b-CTA .b-CTA__rsvp.disabled:focus, body.template-event #header #s-header__site--event .b-CTA .b-CTA__rsvp.disabled:active {
+  background: #fff1c8;
+}
+body.template-event #header #s-header__site--event .b-CTA .b-CTA__rsvp.disabled:before {
+  background: #ffebaf;
+}
+body.template-event #header #s-header__site--event .b-CTA .b-CTA__rsvp.disabled:before:hover:before, body.template-event #header #s-header__site--event .b-CTA .b-CTA__rsvp.disabled:before:focus:before, body.template-event #header #s-header__site--event .b-CTA .b-CTA__rsvp.disabled:before:active:before {
+  background: #ffebaf;
+}
 @media (min-width: 0) and (max-width: 31rem) {
   body.template-event #header #s-header__site--event .b-eventLogo {
     margin-top: 40px;

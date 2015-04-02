@@ -16,6 +16,11 @@ $(document).ready(function(){
 		speed: 'auto',
 		autoCoefficient: 6
 	});
+  $('a.b-CTA__rsvp').smoothScroll({
+		easing: 'swing',
+		speed: 'auto',
+		autoCoefficient: 6
+	});
 
   $('a.b-footer__return').on('click', function(){
 
