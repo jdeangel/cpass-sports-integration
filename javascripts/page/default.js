@@ -112,7 +112,7 @@ $(document).ready(function(){
 	resizeSegmentTitles("#s-prefix--comingSoon h1.page-name");
 
 
-
+    svgeezy.init(false, 'png');
 
 
 
