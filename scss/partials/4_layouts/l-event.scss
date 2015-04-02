@@ -59,6 +59,43 @@ body.template-event{
 					@include btn($tertiary, $coolblack, $white);
 					text-align:center;
 				}
+
+				@include breakpoint($bp-mobile1-1 $bp-mobile2-1+1rem){
+				   @include grid-mobile1;
+				   .b-CTA__textWrapper{@include grid-span(4,1); clear:both;}
+				   .b-CTA__rsvp{@include grid-span(4,1); clear:both; margin-bottom:ms(0);}
+				   
+				 }
+				 @include breakpoint(($bp-mobile2-1+1rem) $bp-tablet-1){
+				   @include grid-mobile2;
+				   .b-CTA__textWrapper{@include grid-span(4,1);}
+				   .b-CTA__rsvp{@include grid-span(2,5); margin-left:ms(-1);}
+				   
+				 }
+				 @include breakpoint($bp-tablet-1 $bp-desktop1-1){
+				   @include grid-tablet;
+				   .b-CTA__textWrapper{@include grid-span(6,1);}
+				   .b-CTA__rsvp{@include grid-span(2,7);}
+				   
+
+				 }
+				 @include breakpoint($bp-desktop1-1 $bp-desktop2-1){
+				   @include grid-desktop1;
+				   .b-CTA__textWrapper{@include grid-span(9,1);}
+				   .b-CTA__rsvp{@include grid-span(3,10);}
+				   
+				 }
+				 @include breakpoint($bp-desktop2-1 ($bp-desktop2-6)-0.009rem){
+				   @include grid-desktop2;
+				   .b-CTA__textWrapper{@include grid-span(11,1);}
+				   .b-CTA__rsvp{@include grid-span(5,12);}
+				 }
+				 @include breakpoint($bp-desktop2-6){
+				   @include grid-desktop2;
+				   .b-CTA__textWrapper{@include grid-span(12,1);}
+				   .b-CTA__rsvp{@include grid-span(4,13);}
+				  
+				 }
 			}
 
 		}//end #s-header__site--event
