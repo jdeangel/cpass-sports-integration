@@ -17047,6 +17047,28 @@ nav #nav-primary.collapse.in .navbar--more a::after {
   margin: 0;
   padding: 0;
 }
+#s-footer__site p {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 20px;
+  line-height: 1.251375rem;
+}
+#s-footer__site p a.title {
+  margin-left: 0;
+  padding-left: 0;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 30px;
+  line-height: 1.8770625rem;
+}
+#s-footer__site p a {
+  margin-left: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 20px;
+  line-height: 1.251375rem;
+}
 #s-footer__site .b-featuredLink {
   background: #002349;
 }
@@ -17279,7 +17301,9 @@ nav #nav-primary.collapse.in .navbar--more a::after {
     line-height: 20px;
     line-height: 1.251375rem;
   }
-  #s-footer__site .b-contact__info p a.title {
+  #s-footer__site .b-contact__info p a.title, #s-footer__site .b-contact__info p a {
+    margin-left: 0;
+    padding-left: 0;
     font-size: 20px;
     font-size: 1.25rem;
     line-height: 30px;

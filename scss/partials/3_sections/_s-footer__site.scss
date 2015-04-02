@@ -6,7 +6,19 @@
       margin:0; padding:0;
     }
 
-   
+    p{
+      @include adjust-font-size-to($font-size-med);
+      a.title{
+        margin-left:0;padding-left:0;
+        @include adjust-font-size-to($font-size-med-2);
+      }
+      a{
+        margin-left:0;padding-left:0;
+        @include adjust-font-size-to($font-size-med);
+      }
+    }
+
+
       .b-featuredLink{
         h3{ 
           @include flag($WVUGold, $coolblack);
@@ -84,7 +96,8 @@
         @include rhythm(0, $ms-4n, $ms-4n, 0, $font-size-med);
         p{
           @include adjust-font-size-to($font-size-med);
-          a.title{
+          a.title, a{
+            margin-left:0;padding-left:0;
             @include adjust-font-size-to($font-size-med-2);
           }
         }
