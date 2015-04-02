@@ -1,0 +1,26 @@
+#s-prefix--comingSoon{
+	.page-name{
+	   margin:0 auto;
+	   @include background-clip(text);
+   		//color: set-alpha(darken($WVUBlue,5), 0.75);
+   		//text-shadow: set-alpha(lighten($WVUBlue,10), 0.5) 0px 3px 3px, ;
+
+   		text-shadow: 
+   			   0 1px 1pc set-alpha(darken($secondary, 10),0.3), //glow
+   		       0 1px 1px darken($secondary, 20), //bevel
+               0 2px 1px darken($secondary, 25), //bevel
+               0 3px 1px darken($secondary, 35), //bevel
+               0 4px 0 darken($secondary, 40), //bevel
+               0 5px 0 darken($secondary, 50), //bevel
+               0 6px 1px set-alpha($coolblack,.1), //shadow
+               0 0 5px set-alpha($coolblack,.1), //shadow
+               0 1px 3px set-alpha($coolblack,.3), //shadow
+               0 3px 5px set-alpha($coolblack,.2), //shadow
+               0 5px 10px set-alpha($coolblack,.25), //shadow
+               0 10px 10px set-alpha($coolblack,.2), //shadow 
+               0 20px 20px set-alpha($coolblack,.15); //shadow
+        color:$secondary;
+	   text-transform:uppercase;
+	   text-align:center;
+	}
+}

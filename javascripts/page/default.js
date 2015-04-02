@@ -109,7 +109,7 @@ $(document).ready(function(){
 
 
 
-	//resizeSegmentTitles("h1.title");
+	resizeSegmentTitles("#s-prefix--comingSoon h1.page-name");
 
 
 

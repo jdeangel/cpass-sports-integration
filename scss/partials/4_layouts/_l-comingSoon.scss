@@ -1,0 +1,146 @@
+////////////////////////
+// Layouts Partials
+//
+// Your SMACSS Layouts go here
+// Build sub folders and partials in this folder, with everything being imported, in cascading order, into this file.
+////////////////////////
+
+.l-comingSoon__cta{
+	margin:0 auto;
+	@include rhythm(0, 0, 0, $ms-4, $font-size-small-2);
+	.b-featuredLink{
+
+		width:100%;
+		padding:ms(-5);
+		box-shadow:0 ms(-6) ms(-10) 0 set-alpha($coolblack, 0.5);
+
+		@include standard-transition(box-shadow);
+
+		img{width:100%; height:auto;}
+
+		h3 {
+			@include flag($white, $WVUBlue, $coolblack, $font-size-large);
+			position:absolute;
+			top:-(ms(-3));
+			left: -(ms(-5));
+		}
+
+		&:hover, &:focus{
+		  box-shadow:0 ms(-8) ms(-10) 0 set-alpha($coolblack, 0.3);
+		  img{opacity:0.9;}
+		}
+	}
+	ul{margin:0; padding:0;}
+	li{
+		float:left;
+		margin:0; padding:0;
+		width:46%;
+		&:first-child{margin-right:2%;}
+		&:last-child{margin-left:2%;}
+	}
+	
+
+}
+
+body.template-comingSoon{
+
+   #page-wrap{
+   	    //@include bgImage;
+   	    
+
+    }
+
+
+	#header{
+		#s-header__cpass{}
+		#s-header__site{}
+	}//end #header
+	#s-prefix--comingSoon{
+		width:100%;
+		float:left;
+	}
+	#core{
+
+
+		background:transparent;
+		p.kicker{
+			color:$MidGrey;
+			text-align:left;
+			width:auto;
+			margin:0 auto 2em auto;
+			padding-left:0;
+			max-width:100%;
+		}
+
+		.main{
+			width:100%;
+			article{ margin:0; padding:0;}
+		}
+
+		@include breakpoint($bp-mobile1-1 $bp-mobile2-1+1rem){
+		   @include grid-mobile1;
+		   .b-siteLogo{ float:left; width:100%; }
+		   .l-comingSoon__cta{@include grid-span(4,1);
+		   	  li{ 
+		   	  	width:100%; 
+		   	  	&:first-child{margin:0;}
+		   	  	&:last-child{margin:0; margin-top:ms(1);}
+		   	  	h3{@include adjust-font-size-to($font-size-med);}
+		   	  	
+		   	  }//end li
+		   }//end .l-comingSoon__cta
+		 }
+		 @include breakpoint(($bp-mobile2-1+1rem) $bp-tablet-1){
+		   @include grid-mobile2;
+		   .b-siteLogo{ float:left; width:100%; }
+		   .l-comingSoon__cta{@include grid-span(6,1);
+		   	li{ 
+		   		width:80%; 
+		   		margin:0 10% 0 10%; 
+		   		&:first-child{margin:0;} 
+		   		&:last-child{margin:0; margin-top:ms(1);} 
+		   		h3{@include adjust-font-size-to($font-size-med);}
+
+		   	}//end li
+		   }//end l-comingSoon__cta
+		 }
+		 @include breakpoint($bp-tablet-1 $bp-desktop1-1){
+		   @include grid-tablet;
+		   .b-siteLogo{ float:left; width:100%; }
+
+		   .l-comingSoon__cta{
+		   	@include grid-span(8,1);
+		    h3{@include adjust-font-size-to($font-size-med);}
+		   }
+
+		 }
+		 @include breakpoint($bp-desktop1-1 $bp-desktop2-1){
+		   @include grid-desktop1;
+		   .b-siteLogo{ @include grid-span(10,2); clear:both; }
+		    p.kicker{ @include grid-span(10,2); clear:both; text-align:left; @include adjust-font-size-to($font-size-med-2);}
+		   .l-comingSoon__cta{@include grid-span(10,2);clear:both;
+		   	h3{@include adjust-font-size-to($font-size-med);}
+		   }
+		 }
+		 @include breakpoint($bp-desktop2-1 ($bp-desktop2-6)-0.009rem){
+		   @include grid-desktop2;
+		   .l-comingSoon__cta{ @include grid-span(12,3); clear:both;}
+		   .b-siteLogo{ @include grid-span(12,3); clear:both; }
+		    p.kicker{ @include grid-span(12,3); clear:both; margin-top:0; text-align:left; @include adjust-font-size-to($font-size-med-2);}
+		 }
+		 @include breakpoint($bp-desktop2-6){
+		   @include grid-desktop2;
+		   .l-comingSoon__cta{@include grid-span(10,4); clear:both;}
+		   .b-siteLogo{ @include grid-span(14,2); clear:both; }
+		    p.kicker{ @include grid-span(14,2); clear:both; margin-top:0; text-align:left; @include adjust-font-size-to($font-size-large);}
+		 }
+	}// end #core
+	#postfix{
+	}
+	#footer{
+		#s-footer__site{}
+		#s-footer__cpass--wrapper{}
+		#s-footer__wvu--wrapper{}
+	}//end #footer
+
+}//end body

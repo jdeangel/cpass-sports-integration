@@ -7,12 +7,13 @@
 
  @import "s-header";
  @import "s-footer";
+ @import "l-comingSoon"; 
+ @import "l-bio";
  @import "l-backpage";
  @import "l-backpage--sidebarx2";
- @import "l-frontpage";
- @import "l-bio";
- @import "l-sportcards";
+ @import "l-frontpage"; 
  @import "l-index";
+ @import "l-sportcards";
  @import "l-sport";
 
 
@@ -21,7 +22,11 @@ body{
   background:$WVUBlue;
 
 	#page-wrap{
-		background: radial-gradient(farthest-corner at 50% -98%, rgba(255, 254, 251, 0.015) 4%, rgba(0, 40, 85, 0.025) 67%, rgba(9, 11, 14, 0.065));
+		background: radial-gradient( farthest-corner at 50% -155%, 
+			set-alpha(lighten($WVUBlue, 50), 0.3) 0%, 
+			set-alpha($WVUBlue,0.25) 53%, 
+			set-alpha(darken($WVUBlue, 10), 0.65)) 100%, 
+		    url(../images/noise--blue.jpg) repeat;
 		float:left;
 		width:100%;
 	}

@@ -6,6 +6,22 @@
       margin:0; padding:0;
     }
 
+   
+      .b-featuredLink{
+        h3{ 
+          @include flag($WVUGold, $coolblack);
+          top:-(ms(-5));
+          left:-(ms(-6));
+          position:absolute;
+        }
+        background:#001C3C;
+        .inner{
+          background:#001C3C;
+          &:before{color:$WVUGold;}
+        }
+      }
+    
+
 
     //begin mobile styling
     @include breakpoint($bp-mobile1-1 $bp-mobile2-1){
