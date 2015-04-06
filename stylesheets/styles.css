@@ -7735,7 +7735,7 @@ body html {
   font-weight: 900;
 }
 
-.font-BdCn, .b-cta__about[data-eq-state="small"] .nav-list li a, .b-cta__about[data-eq-state="medium"] .nav-list li a, .b-links__academics .b-academics__programs__c2 a, .b-links__academics .b-academics__programs__c3 a, .b-links__academics .b-academics__programs__c4 a, .m-cta .title {
+.font-BdCn, .b-card .b-card__name, .b-cta__about[data-eq-state="small"] .nav-list li a, .b-cta__about[data-eq-state="medium"] .nav-list li a, .b-links__academics .b-academics__programs__c2 a, .b-links__academics .b-academics__programs__c3 a, .b-links__academics .b-academics__programs__c4 a, .m-cta .title, .b-player_list .records .year {
   font-family: "Neue Helvetica W01", Arial, verdana, sans-serif;
   font-weight: 800;
 }
@@ -7745,7 +7745,7 @@ body html {
   font-weight: 500;
 }
 
-.font-Roman, .wvu-masthead__logo, .b-cta__about .nav-list li.dropdown .dropdown-menu .dropdown-header, .b-links__alumni .nav-list li a, .b-logo .wvu-masthead__title, .b-search .form-search__search-type label, .m-links .nav-list li a, .s-footer__wvu--wrapper #s-footer__wvu .container .wvu-icons, .s-footer__wvu--wrapper #s-footer__wvu .container .wvu-credits {
+.font-Roman, .wvu-masthead__logo, .b-card a, .b-cta__about .nav-list li.dropdown .dropdown-menu .dropdown-header, .b-links__alumni .nav-list li a, .b-logo .wvu-masthead__title, .b-search .form-search__search-type label, .m-links .nav-list li a, .s-footer__wvu--wrapper #s-footer__wvu .container .wvu-icons, .s-footer__wvu--wrapper #s-footer__wvu .container .wvu-credits {
   font-family: "Neue Helvetica W02", Arial, verdana, sans-serif;
   font-weight: 400;
 }
@@ -11229,6 +11229,31 @@ nav .b-social a:hover {
 }
 .b-social--wrapper .b-social a:hover, .b-social--wrapper .b-social a:focus {
   border-color: #ffc656;
+}
+
+.b-card {
+  background-color: #ede7dc;
+  position: relative;
+  width: 359px;
+  height: 465px;
+}
+.b-card a {
+  color: #333f48;
+}
+.b-card span {
+  display: block;
+}
+.b-card .b-card__details {
+  position: absolute;
+  bottom: 0;
+  background: #ede7dc;
+  padding-left: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.b-card .b-card__name {
+  font-size: 20px;
+  color: #005eb8;
 }
 
 .b-contact__info {
@@ -15176,11 +15201,11 @@ nav #nav-primary.collapse.in .navbar--more a::after {
   left: 0;
 }
 
-.m-homeScroller__thumbs {
+.overthrow-enabled .m-homeScroller__thumbs {
   width: 100%;
   position: absolute;
   overflow: hidden !important;
-  height: 359px !important;
+  height: 465px !important;
   margin-top: 5px;
   margin-top: 0.2953245rem;
   padding-top: 0px;
@@ -15190,25 +15215,27 @@ nav #nav-primary.collapse.in .navbar--more a::after {
   margin-bottom: 0px;
   margin-bottom: 0rem;
 }
-.m-homeScroller__thumbs li {
+.overthrow-enabled .m-homeScroller__thumbs li {
   list-style: none;
+  width: 379px;
+  height: 465px;
+  float: left;
   float: left !important;
   display: inline !important;
   padding: 0 10px 0 10px !important;
-  width: 287px;
 }
-.m-homeScroller__thumbs li img {
+.overthrow-enabled .m-homeScroller__thumbs li img {
   width: 100%;
   height: auto;
 }
-.m-homeScroller__thumbs .ps-scrollbar-x-rail {
+.overthrow-enabled .m-homeScroller__thumbs .ps-scrollbar-x-rail {
   background: url(../images/noise.png) repeat #e1d7c4;
   -webkit-box-shadow: #b9a277 0 1px 2px 0 inset, #f6f3ed 0 1px 2px 0;
   box-shadow: #b9a277 0 1px 2px 0 inset, #f6f3ed 0 1px 2px 0;
   height: 5px;
   bottom: 12px;
 }
-.m-homeScroller__thumbs .ps-scrollbar-x-rail > .ps-scrollbar-x {
+.overthrow-enabled .m-homeScroller__thumbs .ps-scrollbar-x-rail > .ps-scrollbar-x {
   background: url(../images/noise.png) repeat #312f2e;
   height: 8px;
   bottom: -1px;
@@ -15220,7 +15247,7 @@ nav #nav-primary.collapse.in .navbar--more a::after {
   top: -10px;
 }
 .m-homeScroller .sidescroll-nextprev .sidescroll-nextprev-links a {
-  height: 287px;
+  height: 465px;
   width: 3.27254253em;
   opacity: 1;
   filter: alpha(opacity=100);
@@ -15284,7 +15311,7 @@ nav #nav-primary.collapse.in .navbar--more a::after {
   box-shadow: rgba(44, 42, 41, 0.5) -10px 0px 7px -7px;
 }
 .m-homeScroller .sidescroll-nextprev .sidescroll-nextprev-links a.sidescroll-next:hover {
-  background-position: -371px -295px;
+  background-position: -371px -290px;
 }
 .m-homeScroller .sidescroll-nextprev .sidescroll-nextprev-links a.sidescroll-next.disabled {
   opacity: 1;
@@ -17556,6 +17583,10 @@ nav #nav-primary.collapse.in .navbar--more a::after {
     margin-right: 0;
     clear: none;
   }
+}
+
+.facts {
+  width: 500px;
 }
 
 @media (min-width: 48rem) and (max-width: 110rem) {

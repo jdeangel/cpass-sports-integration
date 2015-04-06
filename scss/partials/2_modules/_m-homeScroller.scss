@@ -1,3 +1,4 @@
+//.overthrow-enabled{
 .m-homeScroller--wrapper{
 	width:100%;
 	float:left;
@@ -20,12 +21,12 @@
   left:0;
 }
 
-.m-homeScroller__thumbs{
+.overthrow-enabled .m-homeScroller__thumbs{
 	width:100%;
 	position:absolute;
 
 	overflow:hidden !important;
-	height:ms(13) !important; //358px
+	height:ms(14) !important; //464px
 
 	@include rhythm($ms-6n, 0, $ms-1n, 0, $font-size-med);
 
@@ -33,11 +34,12 @@
 	}
 	li{
 		list-style:none;
+		width:ms(13)+20px; //356px;
+		height:ms(14);//464px
+		float:left;
 		float:left !important;
 		display:inline !important;
-		padding:0 ms(-2) 0 ms(-2) !important;
-		width: ms(12); //287px
-
+		padding:0 ms(-2) 0 ms(-2) !important;		
 		&:last-child{ }
 		img{
 			width:100%;
@@ -62,13 +64,16 @@
 }
 
 
+
+
+
 .m-homeScroller{
 .sidescroll-nextprev{
   .sidescroll-nextprev-links{
   	top:-10px;
 
     a{
-	  height:ms(12);
+	  height:ms(14);
 	  width:$ms-5+em;
 	  opacity:1;
 	  color:$white;
@@ -104,7 +109,7 @@
 	  	border-radius: 70% 0 0 70%;
 	  	border-left:tint($secondary, 20) 1px solid;
 	  	box-shadow: set-alpha($black,0.5) -10px 0px 7px -7px;
-	  	&:hover{ background-position:-371px -295px;}
+	  	&:hover{ background-position:-371px -290px;}
 	  	&.disabled{
 	  	opacity:1;
 	  	background:url(../images/postfix-arrows.png) no-repeat 12px 72px, $secondary url(../images/noise.png) repeat;
@@ -118,3 +123,4 @@
   }//end .sidescroll-nextprev-links
 }//end .sidescroll-nextprev
 }
+//}//end .overthrow-enabled

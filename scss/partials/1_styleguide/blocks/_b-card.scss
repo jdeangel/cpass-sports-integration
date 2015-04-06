@@ -1,11 +1,47 @@
 .b-card{
- .b-card__name{}
- .b-card__sport{}
+	background-color: $secondary;
+	a{
+		@extend .font-Roman;
+		color: $DarkGrey;
+	}
+	position: relative;
+	width:ms(13); //356px;
+	height:ms(14);//464px
+
+	span{
+		display:block;
+	}
+
+	.b-card__details{
+		position:absolute;
+		bottom: 0;
+		background: $secondary;
+		padding-left: ms(0n);
+		padding-top: ms(0n);
+		padding-bottom: ms(0n);
+	}
+	
+ .b-card__name{
+ 	@extend .font-BdCn;
+ 	font-size: 20px;
+ 	color: $tertiary;
+ 	
+ }
+ 
+ .b-card__sport{
+ 	
+ }
+
  .b-card__position{}
+
  .b-card__duration{}
+
  .b-card__hometown{}
- .b-card__description{}
+
+ .b-card__description{
+
+ }
 
  &:hover, &:focus{}
  &:active{}
-}
+}//end .b-card

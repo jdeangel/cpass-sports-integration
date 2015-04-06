@@ -128,7 +128,13 @@ $(document).ready(function(){
 	});
 
 	overthrow.sidescroller(
-   document.querySelectorAll( ".overthrow-enabled .sidescroll-nextprev" ), {
+   document.querySelectorAll( ".overthrow-enabled .m-scroller__thumbs--wrapper" ), {
+		disableNav: true,
+		fixedItemWidth: true
+		});
+
+	overthrow.sidescroller(
+   document.querySelectorAll( ".overthrow-enabled .m-homeScroller__thumbs--wrapper" ), {
 		disableNav: true,
 		fixedItemWidth: true
 		});
