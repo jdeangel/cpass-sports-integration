@@ -7,13 +7,13 @@
 	  margin-top:0;
 	  a{
 	  	@include adjust-font-size-to($font-size-small-2);
-		color:$quadrary;
+		color:$WVUGold;
 		border-bottom:0;
 		&:hover, &:focus{
 			border-bottom:0;
 			border-top:0;
 			background:transparent;
-			color:lighten($quadrary, 10);
+			color:lighten($WVUGold, 10);
 		}
 
 		&.title{

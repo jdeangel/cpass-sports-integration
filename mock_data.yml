@@ -25,6 +25,7 @@ shared_themes:
   "CPASS: CPASS Toolkit":
     "patterns/wvu-masthead__logo" : "cpass-toolkit"
     "components/s-header__cpass" : "cpass-toolkit"
+    "components/s-header__cpass--min" : "cpass-toolkit"
     "components/s-footer__cpass" : "cpass-toolkit"
     "components/s-footer__wvu" : "cpass-toolkit"
     "components/m-cta" : "cpass-toolkit"
@@ -40,6 +41,7 @@ shared_themes:
     "components/b-links__alumni" : "cpass-toolkit"
     "components/b-links__community" : "cpass-toolkit"
     "components/b-logo" : "cpass-toolkit"
+    "components/b-logo--min": "cpass-toolkit"
     "components/b-mastLinks" : "cpass-toolkit"
 
 

@@ -7,6 +7,20 @@ var watch         = require('gulp-watch');
 var changed       = require('gulp-changed');
 var rename        = require('gulp-rename');
 
+//////////////////////////////
+// Path Variables
+//////////////////////////////
+var paths       = require('compass-options').paths();
+
+var rootCSS     = paths.css,
+    rootSCSS    = paths.sass,
+    rootFonts   = paths.fonts,
+    rootImages  = paths.images,
+    rootJS      = paths.js,
+    rootHTML    = './views/**/*.html';
+
+var tempCSS     = paths.css + '/temp';
+
 
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -31,19 +45,7 @@ gulp.task('browserSync', function () {
 });
 
 
-//////////////////////////////
-// CSS Processing
-//////////////////////////////
-var paths       = require('compass-options').paths();
 
-var rootCSS     = paths.css,
-    rootSCSS    = paths.sass,
-    rootFonts   = paths.fonts,
-    rootImages  = paths.images,
-    rootJS      = paths.js,
-    rootHTML    = './views/**/*.html';
-
-var tempCSS     = paths.css + '/temp';
 
 
 
@@ -94,7 +96,8 @@ gulp.task('styles', ['compass', 'postCSS']);
 //////////////////////////////
 gulp.task('server', ['browserSync'], function(){
   gulp.watch(rootSCSS + '/**/*.scss', [ 'postCSS']);
-  gulp.watch(paths.img + '*').on("change", bsReload);
+  gulp.watch(paths.img + '**/*').on("change", bsReload);
+  gulp.watch(paths.js + '**/*.js').on("change", bsReload);
   gulp.watch("./views/**/*.html").on("change", bsReload);
 
 });

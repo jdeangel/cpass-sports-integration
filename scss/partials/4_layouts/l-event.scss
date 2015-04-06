@@ -1,0 +1,422 @@
+////////////////////////
+// Layouts Partials
+//
+// Your SMACSS Layouts go here
+// Build sub folders and partials in this folder, with everything being imported, in cascading order, into this file.
+////////////////////////
+
+
+
+body.template-event{
+
+   #page-wrap{   	    
+   	  background:
+   	  		radial-gradient( farthest-corner at 50% -155%, 
+   	  		set-alpha(lighten($WVUBlue, 50), 0.3) 0%, 
+   	  		set-alpha($WVUBlue,0.3) 53%, 
+   	  		set-alpha(darken($WVUBlue, 10), 0.3)) 100%, 
+   	  		url(../images/noise--blue.jpg) repeat;
+    }
+
+
+	#header{
+		background:url('../images/event/bgImage--header--event.png') center  center no-repeat;
+		background-size:cover;
+		#s-header__cpass{}
+		#s-header__site--event{
+			width:100%;
+			float:left;
+			article{}
+			.b-eventLogo{
+				width:100%;
+				height:auto;
+				float:left;
+				@include rhythm($ms-8, 0, 0, $ms-2, $font-size-xxxlarge);
+
+
+				img{
+					float:left;
+					width:100%;
+					height:auto;
+				}				
+			}//end .b-eventLogo
+			.kicker{
+				color:set-alpha($white, 0.65);
+				padding-left:0;
+				@include adjust-font-size-to($font-size-large);
+				@include rhythm(0, 0, 0, $ms-2, $font-size-large);
+			}
+
+			.b-CTA{
+				float:left; width:100%;
+				@include grid-desktop2;
+				.b-CTA__textWrapper{
+					@include grid-span(13,1);
+				}
+				.b-CTA__rsvp{
+					@include grid-span(3,14);
+					min-width:159px;
+					@include btn($tertiary, $coolblack, $white);
+					text-align:center;
+				}
+
+				@include breakpoint($bp-mobile1-1 $bp-mobile2-1+1rem){
+				   @include grid-mobile1;
+				   .b-CTA__textWrapper{@include grid-span(4,1); clear:both;}
+				   .b-CTA__rsvp{@include grid-span(4,1); clear:both; margin-bottom:ms(0);}
+				   
+				 }
+				 @include breakpoint(($bp-mobile2-1+1rem) $bp-tablet-1){
+				   @include grid-mobile2;
+				   .b-CTA__textWrapper{@include grid-span(4,1);}
+				   .b-CTA__rsvp{@include grid-span(2,5); margin-left:ms(-1);}
+				   
+				 }
+				 @include breakpoint($bp-tablet-1 $bp-desktop1-1){
+				   @include grid-tablet;
+				   .b-CTA__textWrapper{@include grid-span(6,1);}
+				   .b-CTA__rsvp{@include grid-span(2,7);}
+				   
+
+				 }
+				 @include breakpoint($bp-desktop1-1 $bp-desktop2-1){
+				   @include grid-desktop1;
+				   .b-CTA__textWrapper{@include grid-span(9,1);}
+				   .b-CTA__rsvp{@include grid-span(3,10);}
+				   
+				 }
+				 @include breakpoint($bp-desktop2-1 ($bp-desktop2-6)-0.009rem){
+				   @include grid-desktop2;
+				   .b-CTA__textWrapper{@include grid-span(11,1);}
+				   .b-CTA__rsvp{@include grid-span(5,12);}
+				 }
+				 @include breakpoint($bp-desktop2-6){
+				   @include grid-desktop2;
+				   .b-CTA__textWrapper{@include grid-span(12,1);}
+				   .b-CTA__rsvp{@include grid-span(4,13);}
+				  
+				 }
+			}
+
+		}//end #s-header__site--event
+
+		@include breakpoint($bp-mobile1-1 $bp-mobile2-1+1rem){
+		   @include grid-mobile1;
+		   #s-header__site--event{
+		    .b-eventLogo{
+		    	@include rhythm($ms-3, 0, 0, $ms-1, $font-size-xxxlarge);
+		    }
+		    .kicker{
+		    	@include adjust-font-size-to($font-size-med);
+				@include rhythm(0, 0, 0, $ms-2, $font-size-med);
+		    }
+		   }//end header__site--event
+		 }//end bp-mobile1-1
+		 @include breakpoint(($bp-mobile2-1+1rem) $bp-tablet-1){
+		   @include grid-mobile2;
+		   #s-header__site--event{
+		    .b-eventLogo{
+		    	@include rhythm($ms-4, 0, 0, $ms-1, $font-size-xxxlarge);
+		    }
+		    .kicker{
+		    	@include adjust-font-size-to($font-size-med);
+				@include rhythm(0, 0, 0, $ms-2, $font-size-med-2);
+		    }
+		   }//end header__site--event		   
+		 }//end bp-mobile2-1
+		 @include breakpoint($bp-tablet-1 $bp-desktop1-1){
+		   @include grid-tablet;
+		   background-position: 0% 72%;
+		   #s-header__site--event{
+		    .b-eventLogo{
+		    	@include rhythm($ms-5, 0, 0, $ms-1, $font-size-xxxlarge);
+		    }
+		    .kicker{
+		    	@include adjust-font-size-to($font-size-med);
+				@include rhythm(0, 0, 0, $ms-2, $font-size-med-2);
+		    }
+		   }//end header__site--event		   
+		 }//end bp-tablet-1
+		 @include breakpoint($bp-desktop1-1 $bp-desktop2-1){
+		   @include grid-desktop1;
+		   #s-header__site--event{
+		    .b-eventLogo{
+		    	@include rhythm($ms-6, 0, 0, $ms-1, $font-size-xxxlarge);
+		    }
+		    .kicker{
+		    	@include adjust-font-size-to($font-size-med);
+				@include rhythm(0, 0, 0, $ms-2, $font-size-med-2);
+		    }
+		   }//end header__site--event		   
+		 }//end bp-desktop1-1
+		 @include breakpoint($bp-desktop2-1 ($bp-desktop2-6)-0.009rem){
+		   @include grid-desktop2;
+		   
+		 }
+		 @include breakpoint($bp-desktop2-6){
+		   @include grid-desktop2;
+		  
+		 }
+	}//end #header
+	#s-prefix--event{
+		width:100%;
+		float:left;
+		background: url(../images/noise.png) $white repeat;
+		box-shadow: 0 ms(-5) ms(-6)  $coolblack inset;
+		border-bottom:lighten($WVUBlue, 5) solid ms(-8);
+		article{padding-bottom:0;}
+		p{ color: $black; @include adjust-font-size-to($font-size-med);}
+		.callout{
+			@include adjust-font-size-to($font-size-large-2);
+			@extend .font-Bd;
+			line-height:1.02em;
+			color: $WVUBlue;
+			background:shade($white,5);
+			padding:0.1618em;
+			margin-right:0.1618em;
+			text-transform:uppercase;
+			float:left;
+		}
+		@include breakpoint($bp-mobile1-1 $bp-mobile2-1+1rem){
+		   @include grid-mobile1;
+		   article{width:100%; float:left;}
+		   .callout{width:100%;}
+
+		   
+		 }
+		 @include breakpoint(($bp-mobile2-1+1rem) $bp-tablet-1){
+		   @include grid-mobile2;
+		   article{width:100%; float:left;}
+		   .callout{line-height: 0.85em;}   
+		   
+		   
+		 }
+		 @include breakpoint($bp-tablet-1 $bp-desktop1-1){
+		   @include grid-tablet;
+		   article{width:100%; float:left;}
+		   .callout{line-height: 0.85em;}   
+		   
+
+		 }
+		 @include breakpoint($bp-desktop1-1 $bp-desktop2-1){
+		   @include grid-desktop1;
+		   article{@include grid-span(12, 1);}
+		   .callout{@include adjust-font-size-to($font-size-large-2);   line-height: 0.90em; padding-top: 0.14em;}
+
+		   
+		 }
+		 @include breakpoint($bp-desktop2-1 ($bp-desktop2-6)-0.009rem){
+		   @include grid-desktop2;
+		   article{@include grid-span(12, 3 );}
+		   .callout{@include adjust-font-size-to($font-size-xlarge); line-height: 1.0em; padding-top: 0.14em;}
+		   p{@include adjust-font-size-to($font-size-med-2);}
+		   
+		 }
+		 @include breakpoint($bp-desktop2-6){
+		   @include grid-desktop2;
+		   article{@include grid-span(10, 4);}
+		   .callout{@include adjust-font-size-to($font-size-xlarge); line-height: 1.0em; padding-top: 0.14em;}
+		   p{@include adjust-font-size-to($font-size-med-2);}
+		  
+		 }
+
+		
+	}
+	#core{
+
+		color:$white;
+		h1{color:$white;}
+		background:transparent;
+		p.kicker{
+			color:$MidGrey;
+			text-align:left;
+			width:auto;
+			margin:0 auto 2em auto;
+			padding-left:0;
+			max-width:100%;
+		}
+
+		.main{
+			width:100%;
+			article{ margin:0; padding:0;}
+		}
+
+		@include breakpoint($bp-mobile1-1 $bp-mobile2-1+1rem){
+		   @include grid-mobile1;
+		   
+		 }
+		 @include breakpoint(($bp-mobile2-1+1rem) $bp-tablet-1){
+		   @include grid-mobile2;
+		   
+		 }
+		 @include breakpoint($bp-tablet-1 $bp-desktop1-1){
+		   @include grid-tablet;
+		   
+
+		 }
+		 @include breakpoint($bp-desktop1-1 $bp-desktop2-1){
+		   @include grid-desktop1;
+		   
+		 }
+		 @include breakpoint($bp-desktop2-1 ($bp-desktop2-6)-0.009rem){
+		   @include grid-desktop2;
+		   
+		 }
+		 @include breakpoint($bp-desktop2-6){
+		   @include grid-desktop2;
+		  
+		 }
+	}// end #core
+	#s-rsvp{
+		float:left;
+		width:100%;
+		background: url(../images/noise.png) $white repeat;
+		box-shadow: 0 ms(-5) ms(-6)  $coolblack inset;
+		article{
+			@include rhythm($ms-3, 0, 0, $ms-1, $font-size-xxxlarge);
+
+			.info h2{
+				@extend .font-BlkCn;
+				@include adjust-font-size-to($font-size-xlarge);
+			}
+		}
+
+		.sidebar{
+			text-align:center;
+			h2{
+				@extend .font-BdCn;
+				text-transform:uppercase;
+				@include adjust-font-size-to($font-size-large);
+				@include adjust-leading-to($ms-3);
+				@include rhythm($ms-5, 0, 0, $ms-1, $font-size-xxxlarge);
+			}
+			ul{margin:0; padding:0;}
+			li{
+				list-style:none;
+				margin:0;
+				padding:0;
+				@include rhythm($ms-6n, $ms-8n, $ms-8n, $ms-6n, $font-size-med);
+				@include trailing-border(ms(-8), $ms-6n, $font-size-med, solid);
+				border-color:shade($white, 5);
+				box-shadow: 0 ms(-9) ms(-10) 0 tint($white, 20);
+				&:last-child{
+					border-bottom:0;
+					box-shadow: none;
+				}
+
+
+			}
+			.m-event__lodging__hotel{
+				display:block;
+				@extend .font-BdCn;
+				@include adjust-font-size-to($font-size-med);
+			}
+			.m-event__lodging__phone{
+				display:block;
+			}
+			.m-event__lodging__loc{
+				display:block;
+			}
+
+		}
+
+		@include breakpoint($bp-mobile1-1 $bp-mobile2-1+1rem){
+		   @include grid-mobile1;
+		   article{width:100%; float:left;}
+		   .sidebar{width:100%; float:left;}
+		   
+		 }
+		 @include breakpoint(($bp-mobile2-1+1rem) $bp-tablet-1){
+		   @include grid-mobile2;
+		   article{width:100%; float:left;}
+		   .sidebar{width:100%; float:left;}
+		   
+		 }
+		 @include breakpoint($bp-tablet-1 $bp-desktop1-1){
+		   @include grid-tablet;
+		   article{@include grid-span(5,1);}
+		   .sidebar{@include grid-span(3,6);}
+
+		 }
+		 @include breakpoint($bp-desktop1-1 $bp-desktop2-1){
+		   @include grid-desktop1;
+		   article{@include grid-span(9,1);}
+		   .sidebar{@include grid-span(3,10);}
+		   
+		 }
+		 @include breakpoint($bp-desktop2-1 ($bp-desktop2-6)-0.009rem){
+		   @include grid-desktop2;
+		   article{@include grid-span(12,1);}
+		   .sidebar{@include grid-span(4,13);}
+		   
+		 }
+		 @include breakpoint($bp-desktop2-6){
+		   @include grid-desktop2;
+		   article{@include grid-span(12,1);}
+		   .sidebar{@include grid-span(4,13);}
+		  
+		 }
+
+	}
+	.s-postfix__default{
+		float:left;
+		width:100%;
+
+		.m-event__credits{
+			@include rhythm(0, 0, 0, $ms-1n, $font-size-med);
+			float:left; width:100%;
+			li{list-style:none; }
+			.m-event__credits__planning{}
+			.m-event__credits__tech{}
+			h2{background:shade($secondary, 10); max-width: 100%; margin-top:ms(-6);}
+			@include breakpoint($bp-mobile1-1 $bp-tablet-1){
+				.m-event__credits__planning, .m-event__credits__tech{
+					width:100%; float:left;
+					text-align:center;
+				}
+				h2{float:left; width:100%; padding-left:0; padding-right:0;}
+			}
+			@include breakpoint($bp-tablet-1){
+				li{
+					float:left; width:50%;
+					@include rhythm($ms-6n, 0, 0, $ms-6n, $font-size-med);
+					text-align:center;
+					@include adjust-font-size-to($font-size-small);
+				}
+				.m-event__credits__planning{
+
+					width:66.5%; padding-right:ms(0);float:left;
+					border-right: ms(-10) dotted shade($secondary, 10);
+					ul{padding-left:ms(3);}
+					li{width:20%; text-align:left;}
+					//span{display:inline-block; padding-left:12px; float:right; @include rhythm($ms-1, 0, 0, $ms-6n, $font-size-med);}
+					
+					li:last-child{ width:40%;}
+
+
+				}
+				.m-event__credits__tech{
+					width:33.5%; padding-left:ms(0); float:right;
+					text-align:right;
+					h2{padding-right:12px;}
+					ul{padding-right:ms(3);}
+					li{text-align:right;}
+				}
+			}//end $bp-tablet-1
+			@include breakpoint($bp-desktop1-1){
+				li{@include adjust-font-size-to($font-size-small-2);}
+			}
+			@include breakpoint($bp-desktop2-1){
+				li{@include adjust-font-size-to($font-size-med);}
+			}
+
+
+		}
+	}
+	#footer{
+		#s-footer__site{}
+		#s-footer__cpass--wrapper{}
+		#s-footer__wvu--wrapper{}
+	}//end #footer
+
+}//end body

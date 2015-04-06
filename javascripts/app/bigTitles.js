@@ -1,11 +1,11 @@
 function resizeSegmentTitles(title){
   var baseWidth = 320;
-  var baseFontSize = 67;
+  var baseFontSize = 92;
 
   var baseHeight = 480;  
-  var baseLineHeight = 67;
+  var baseLineHeight = 75;
 
-  var baseVertMargin = 42;
+  var baseVertMargin = 16;
 
   var gRatio = 1.618;
 

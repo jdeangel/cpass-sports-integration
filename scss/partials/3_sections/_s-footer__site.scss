@@ -6,6 +6,34 @@
       margin:0; padding:0;
     }
 
+    p{
+      @include adjust-font-size-to($font-size-med);
+      a.title{
+        margin-left:0;padding-left:0;
+        @include adjust-font-size-to($font-size-med-2);
+      }
+      a{
+        margin-left:0;padding-left:0;
+        @include adjust-font-size-to($font-size-med);
+      }
+    }
+
+
+      .b-featuredLink{
+        h3{ 
+          @include flag($WVUGold, $coolblack);
+          top:-(ms(-5));
+          left:-(ms(-6));
+          position:absolute;
+        }
+        background:#002349;
+        .inner{
+          background:#002349;
+          &:before{color:$WVUGold;}
+        }
+      }
+    
+
 
     //begin mobile styling
     @include breakpoint($bp-mobile1-1 $bp-mobile2-1){
@@ -22,7 +50,7 @@
       .b-contact{}
       .b-contact__info{ @include grid-span(3,1);}
       .b-contact__links{ @include grid-span(3,4);}
-      #b-footer__site_feature{}
+      #b-footer__site_feature{width:100%; float:left;}
     }//end $bp-mobile-2
 
     @include breakpoint($bp-tablet-1 $bp-desktop1-1){
@@ -54,9 +82,9 @@
     @include breakpoint($bp-desktop2-1 $bp-desktop2-6){
       @include grid-desktop2;
       .b-contact{}
-      .b-contact__info{@include grid-span(7,1);}
-      .b-contact__links{@include grid-span(4,8);}
-      #b-footer__site_feature{@include grid-span(5,12);}
+      .b-contact__info{@include grid-span(8,1);}
+      .b-contact__links{@include grid-span(4,9);}
+      #b-footer__site_feature{@include grid-span(4,13);}
       }//end $bp-desktop-2
 
     @include breakpoint($bp-desktop2-6){
@@ -68,7 +96,8 @@
         @include rhythm(0, $ms-4n, $ms-4n, 0, $font-size-med);
         p{
           @include adjust-font-size-to($font-size-med);
-          a.title{
+          a.title, a{
+            margin-left:0;padding-left:0;
             @include adjust-font-size-to($font-size-med-2);
           }
         }

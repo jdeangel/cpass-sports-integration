@@ -1,11 +1,11 @@
 #postfix{
 	background:$secondary url(../images/noise.png) repeat;
-	box-shadow: darken($black,20) 0 ms(-6) ms(-3) 0, darken($secondary, 1) 0 ms(1) ms(-1) 0 inset;
+	box-shadow: $coolblack 0 ms(-6) ms(-3) 0, darken($secondary, 1) 0 ms(1) ms(-1) 0 inset;
 	float:left;
 	width:100%;
 	min-height:200px;
 	border-top:ms(-9) solid lighten($secondary, 3);
-	border-bottom:ms(-6) solid $vb-LightBlue;
+	border-bottom:ms(-10) solid darken($secondary,10);
 
 
 	.b-featuredLink{
@@ -15,8 +15,15 @@
 		}
 	}
 
-	
-
+	h2{
+		color:shade($secondary, 60);
+		border:0;
+		@extend .font-Lt;
+		@include adjust-font-size-to($font-size-med-2);
+		@include rhythm($ms-0, 0, 0, $ms-7n, $font-size-med-2);
+		text-transform:uppercase;
+		padding-left:ms(-1);
+	}
 
 }//end #postfix
 
@@ -24,11 +31,35 @@
 
 
 #postfix--thumbs{
+  height: ms(11) !important;
 
-	
-	
-	
+  li{
+	width: ms(12) !important;
+	padding: 0 ms(0) !important;
+  }
+  .b-featuredLink{
+   	width:100%;
+	h3{max-width:ms(11);}
+	opacity:1;
+	 @include transition(opacity .6s linear);
+	&:hover, &:focus{ 
+		img, h3{opacity:0.95;}
+	}
+  }//end .b-featuredLink
+}//end #postfix--thumbs
+
+
+.m-scroller--wrapper{
+	min-height:ms(11);
+	@include rhythm(0, 0, 0, $ms-2n, $font-size-med-2);
+	.sidescroll-nextprev-links{
+		  top: 4%;
+		  width:101%;
+
+		  @include breakpoint(1740px){
+		  	display:none;			  	
+		  }
+	}
 }
-
 
 

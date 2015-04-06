@@ -30,7 +30,7 @@
 }
 
 @mixin scrollbar-rail-hover {
-  background-color: $primary;
+  //background-color: $primary;
   //@include opacity(0.9);
 }
 
@@ -42,7 +42,7 @@
 }
 
 @mixin scrollbar-hover {
-  background-color: tint($primary, 50);
+  //background-color: tint($primary, 50);
 }
 
 @mixin in-scrolling {

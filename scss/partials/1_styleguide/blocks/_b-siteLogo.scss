@@ -1,12 +1,23 @@
-nav a{
-  &.b-siteLogo{
+
+  .b-siteLogo{
 	background:transparent;
 	color:$white;
 	@extend .font-BlkCn;
-	@include adjust-font-size-to($font-size-large-2);
-    @include rhythm(0, $ms-4n, $ms-6n, $ms-2n, $font-size-large-2);
-    @include trailing-border(ms(-7), $ms-2n, $font-size-large-2, solid);
-    border-bottom-color:$WVUGold;
+	@include adjust-font-size-to($font-size-xxxlarge);
+    @include rhythm($ms-0, $ms-4n, $ms-6n, $ms-2n, $font-size-xxxlarge);
+    @include adjust-leading-to($ms-6);
+    //@include trailing-border(ms(-6), $ms-2n, $font-size-xxxlarge, solid);
+    //border-color:$white;
+    display:block;
+    span{
+    	@extend .font-Bd;
+    	@include adjust-font-size-to($font-size-large);
+    	@include rhythm(0, $ms-6n, $ms-6n, 0, $font-size-large);
+    	color:$WVUGold;    	
+    	display:block;
+    	&.pre{}
+    	&.post{}
+    }
 
     &:hover, &:focus{
     	background:transparent;
@@ -14,22 +25,74 @@ nav a{
     &:active{
     	background:transparent;
     }
-
-
+     &[data-eq-state="xx-small"]{
+		@include adjust-font-size-to($font-size-large);
+	    //@include rhythm(0, $ms-4n, $ms-6n, $ms-2n, $font-size-large);
+	    @include adjust-leading-to(($ms-1)-($ms-9n));
+	    span{
+	    	@include adjust-font-size-to($font-size-small-2);
+	    	@extend .font-Roman;
+	    	@include rhythm(0, $ms-10n, $ms-10n, 0, $font-size-small-2);
+	    }
+	}
+     &[data-eq-state="x-small"]{
+		@include adjust-font-size-to($font-size-large-2);
+	    //@include rhythm(0, $ms-4n, $ms-6n, $ms-2n, $font-size-large-2);
+	    @include adjust-leading-to(($ms-2)-($ms-5n));
+	    span{
+	    	@include adjust-font-size-to($font-size-small-2);
+	    	@extend .font-Roman;
+	    	@include rhythm(0, $ms-8n, $ms-8n, 0, $font-size-small-2);
+	    }
+	}
     &[data-eq-state="small"]{
-		@include adjust-font-size-to($font-size-med);
-	    @include rhythm(0, $ms-4n, $ms-6n, $ms-2n, $font-size-med);
-	    @include trailing-border(ms(-7), $ms-2n, $font-size-med, solid);
+		@include adjust-font-size-to($font-size-xlarge);
+	    //@include rhythm(0, $ms-4n, $ms-6n, $ms-2n, $font-size-xlarge);
+	     @include adjust-leading-to(($ms-2)-($ms-8n));
+	    span{
+	    	@include adjust-font-size-to($font-size-small-2);
+	    	@extend .font-Roman;
+	    }
 	}
 	&[data-eq-state="medium"]{
-		@include adjust-font-size-to($font-size-med-2);
-	    @include rhythm(0, $ms-4n, $ms-6n, $ms-2n, $font-size-med-2);
-	    @include trailing-border(ms(-7), $ms-2n, $font-size-med-2, solid);
+		@include adjust-font-size-to($font-size-xlarge-2);
+	    //@include rhythm(0, $ms-4n, $ms-6n, $ms-2n, $font-size-xlarge-2);
+	    @include adjust-leading-to($ms-3);
+	    span{
+	    	@include adjust-font-size-to($font-size-med);
+	    	@extend .font-Roman;
+	    }
 	}
 	&[data-eq-state="large"]{
-		@include adjust-font-size-to($font-size-large);
-	    @include rhythm(0, $ms-4n, $ms-6n, $ms-2n, $font-size-large);
-	    @include trailing-border(ms(-7), $ms-2n, $font-size-large, solid);	
+		@include adjust-font-size-to($font-size-xxlarge);
+		//@include rhythm(0, $ms-4n, $ms-6n, $ms-2n, $font-size-xxlarge);
+	    @include adjust-leading-to($ms-4);
+	    span{
+	    	@include adjust-font-size-to($font-size-med-2);
+    	}
 	}
+	&[data-eq-state="x-large"]{
+		@include adjust-font-size-to($font-size-xxlarge-2);
+		//@include rhythm(0, $ms-4n, $ms-6n, $ms-2n, $font-size-xxlarge-2);
+	    @include adjust-leading-to($ms-5);
+	    span{
+	    	@include adjust-font-size-to($font-size-med-2);
+    	}
+	}
+	&[data-eq-state="xx-large"]{
+		@include adjust-font-size-to($font-size-xxxlarge);
+		//@include rhythm(0, $ms-4n, $ms-6n, $ms-2n, $font-size-xxxlarge);
+	    @include adjust-leading-to($ms-6);
+	    span{
+	    	@include adjust-font-size-to($font-size-large);
+    	}
+	}
+	&[data-eq-state="huge"]{
+		@include adjust-font-size-to($font-size-xxxlarge-2);
+		//@include rhythm(0, $ms-4n, $ms-6n, $ms-2n, $font-size-xxxlarge-2);
+	    @include adjust-leading-to($ms-7);
+	    span{
+	    	@include adjust-font-size-to($font-size-large-2);
+    	}
+	}     
   }//end b-siteLogo
-}//end nav a

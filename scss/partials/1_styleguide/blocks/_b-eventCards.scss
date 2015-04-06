@@ -1,0 +1,102 @@
+.template-event #core .main .b-eventCards li{
+  color:$white;
+  list-style:none;
+  padding:0 ms(-2); margin:0;
+  width:33%;
+  float:left;
+  &:first-child{padding-left:0;}
+  &:last-child{padding-right:0;}
+
+  .b-eventCard__day{
+  	color:$WVUGold;
+  	@extend .font-BdCn;  	
+  	@include adjust-font-size-to($font-size-large);
+  	@include rhythm(0, 0, 0, $ms-8n, $font-size-large);
+  	border-bottom:0;
+  	text-transform:uppercase;
+  }
+  .b-eventCard__location{
+  	@extend .font-Lt;
+  	@include rhythm(0, $ms-5n, $ms-5n, $ms-2n, $font-size-med-2);
+  	color:$white;
+  	background:darken($WVUBlue, 5);
+  	width:100%;
+  	float:left;
+  	padding-left:ms(-5);
+
+  }
+  .b-eventCard__functions{ border:0; padding:0;}
+  .b-eventCard__functions li{
+  	width:100%; float:left; padding:0; margin:0;
+  	@include rhythm(0, 0, 0, $ms-1n, $font-size-med);
+  	.b-eventCard__f_time{
+  		float:left;
+  		width:33%;
+  		color:$WVUGold;
+  		@extend .font-LtCn;
+  		text-shadow:0 1px 1px set-alpha(darken($WVUBlue, 10), 0.5);
+  	}
+  	.b-eventCard__f_description{
+  		float:right; width:66%;
+  	  .b-eventCard__f_title{
+  	  	color:$WVUGold;
+  	  	@include adjust-font-size-to($font-size-med);
+  	  	@include rhythm(0, 0, $ms-9n, $ms-5n, $font-size-med);
+  	  }
+  	  .b-eventCard__f_moderator{
+  	  	text-transform:uppercase;
+  	  	@include adjust-font-size-to($font-size-small-2);
+  	  	color:set-alpha($white, 0.6);
+  	  }
+  	  .b-eventCard__f_contributors li{
+  	  	margin:0; padding:0;
+  	  	@include adjust-font-size-to($font-size-med);
+  	  	@include rhythm($ms-8n, 0, 0, $ms-8n, $font-size-med);
+  	  }
+  	}//end .b-eventCard__f_description
+  }//end .b-eventCard__functions
+
+  @include breakpoint($bp-mobile1-1 $bp-mobile2-1+1rem){
+     @include grid-mobile1;
+     width:100%;
+     
+   }
+   @include breakpoint(($bp-mobile2-1+1rem) $bp-tablet-1){
+     @include grid-mobile2; 
+     width:100%;
+     
+   }
+   @include breakpoint($bp-tablet-1 $bp-desktop1-1){
+     @include grid-tablet;
+     .b-eventCard__day{
+     	@include adjust-font-size-to($font-size-med-2);
+     }
+     .b-eventCard__f_time{
+     	@include adjust-font-size-to($font-size-small-2);
+     	width:35%
+     }
+     .b-eventCard__f_description{
+     	width:65%;
+     }
+     .b-eventCard__f_title{
+     	@include adjust-font-size-to($font-size-med);
+     }
+     
+
+   }
+   @include breakpoint($bp-desktop1-1 $bp-desktop2-1){
+     @include grid-desktop1;
+     
+   }
+   @include breakpoint($bp-desktop2-1 ($bp-desktop2-6)-0.009rem){
+     @include grid-desktop2;
+   }
+   @include breakpoint($bp-desktop2-6){
+     @include grid-desktop2;
+    
+   }
+}//end .b-eventCards
+
+.b-eventCards{
+	padding:0;margin:0;
+}

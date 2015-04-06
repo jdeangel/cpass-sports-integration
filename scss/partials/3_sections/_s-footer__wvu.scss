@@ -1,18 +1,17 @@
 .s-footer__wvu--wrapper{
 	width:100%;
 	float:left;
-	background:set-alpha(darken($black, 5), 0.55);
+	//background:set-alpha(darken($black, 5), 0.55);
 	margin-top:-3px;
 	
 
   #s-footer__wvu{
-  	background: $WVUBlue;
-  	border-color:darken($primary,10);
-  	border-top-color:lighten($primary,6);
-  	box-shadow: 0 ms(-7) ms(-11) darken($primary, 10), 0 ms(-3) ms(-2) darken($black,10), 0 ms(-7) ms(-3) set-alpha(lighten($primary, 6), 0.5) inset;
-  	border-style: solid;
-  	border-width: ms(-11) 0 ms(-11) 0;
+  	box-shadow: 
+  	   0 ms(-7) ms(-11) darken($primary, 10), 
+  	   0 ms(-3) ms(-2) darken($black,10);
+  	border:0;
   	padding: 1rem 1.25% 0 1.25%;
+  	width:100%;
 
 	.container{
 	  margin: 0 auto;

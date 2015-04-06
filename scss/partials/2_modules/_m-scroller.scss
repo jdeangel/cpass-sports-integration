@@ -45,8 +45,8 @@
 		}
 	}
 
-
-	.ps-scrollbar-x-rail{
+	
+	  .ps-scrollbar-x-rail{
 		background:url(../images/noise.png) repeat darken($secondary, 7);
 		box-shadow: darken($secondary, 30) 0 ms(-10) ms(-9) 0 inset, tint($secondary, 50) 0 ms(-10) ms(-9) 0;
 		height:ms(-5);
@@ -56,10 +56,18 @@
 			height:ms(-3);
 			bottom:-(ms(-10));
 			box-shadow: lighten($black, 20) 0 ms(-8) ms(-9) 0 inset, darken($secondary, 60) 0 1px ms(-6) 0;
-
 		}
-	}	    
-}
+	  }//end .ps-scrollbar-x-rail
+
+	  &:hover{
+	  	.ps-scrollbar-x-rail{
+	  		background:url(../images/noise.png) repeat darken($secondary, 10);
+	  	}
+	  	>.ps-scrollbar-x{
+	  		background:url(../images/noise.png) repeat lighten($black, 4);
+	    }
+	  }//end &:hover	    
+}//end .m-scroller-thumbs
 
 
 .sidescroll-nextprev{

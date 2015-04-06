@@ -1,0 +1,45 @@
+#s-header__site--min{
+	float:left;
+	width:100%;
+	margin-bottom:-(ms(6));
+
+	.m-primaryNav__header{ 
+		width:100%; float:left;
+		&.b-siteLogo{}
+	}
+	#nav-primary{ }
+
+	 @include breakpoint($bp-mobile1-1 $bp-mobile2-1+1rem){
+	   @include grid-mobile1;//4 columns
+	   .m-primaryNav__header{
+	   	  @include rhythm($ms-0, $ms-4n, 0, 0, $font-size-large);
+	   }
+	 }
+	 @include breakpoint(($bp-mobile2-1+1rem) $bp-tablet-1){
+	   @include grid-mobile2;//6 columns
+	   .m-primaryNav__header{
+	   	  @include rhythm($ms-1, $ms-4n, 0, 0, $font-size-large-2);
+	   }
+	 }
+	 @include breakpoint($bp-tablet-1 $bp-desktop1-1){
+	   @include grid-tablet;//8 columns
+	   .m-primaryNav__header{
+	   	  width:60%; float:left;
+	   	  @include rhythm($ms-2, $ms-4n, 0, 0, $font-size-xlarge);
+	   }
+	 }
+	 @include breakpoint($bp-desktop1-1 $bp-desktop2-1){
+	   @include grid-desktop1;//12 columns
+	   .m-primaryNav__header{
+	   	width:60%; float:left;
+	   	@include rhythm($ms-3, $ms-4n, 0, 0, $font-size-xlarge-2);
+	   }
+	 }
+	 @include breakpoint($bp-desktop2-1){
+	   @include grid-desktop2; //16 columns
+	   .m-primaryNav__header{
+	   	width:50%; float:left;
+	   	@include rhythm($ms-4, $ms-4n, 0, 0, $font-size-xxlarge);
+	   }
+	 }
+}
