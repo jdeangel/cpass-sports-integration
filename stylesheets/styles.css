@@ -11211,6 +11211,7 @@ nav .b-social a:hover {
 
 .b-card {
   background-color: #ede7dc;
+  overflow-y: hidden;
   position: relative;
   width: 359px;
   height: 465px;
@@ -15474,7 +15475,7 @@ nav #nav-primary.collapse.in .navbar--more a::after {
 .m-homeScroller--wrapper {
   width: 100%;
   float: left;
-  height: 465px;
+  height: 581px;
   position: relative;
   margin-top: 25px;
   margin-top: 1.56421875rem;
@@ -15499,7 +15500,7 @@ nav #nav-primary.collapse.in .navbar--more a::after {
   margin-bottom: 0px;
   margin-bottom: 0rem;
   width: 100%;
-  height: 465px;
+  height: 581px;
   position: absolute;
   left: 0;
 }
@@ -15508,7 +15509,7 @@ nav #nav-primary.collapse.in .navbar--more a::after {
   width: 100%;
   position: absolute;
   overflow: hidden !important;
-  height: 465px !important;
+  height: 581px !important;
   margin-top: 5px;
   margin-top: 0.2953245rem;
   padding-top: 0px;
@@ -15569,13 +15570,11 @@ nav #nav-primary.collapse.in .navbar--more a::after {
   transition-timing-function: ease-in;
 }
 .m-homeScroller .sidescroll-nextprev .sidescroll-nextprev-links a.sidescroll-prev {
-  background: url(../images/postfix-arrows.png) no-repeat 2000px 2000px, url(../images/noise.png) repeat, #ede7dc -webkit-gradient(linear, left top, right top, from(rgba(249, 247, 244, 0.1)), color-stop(rgba(232, 224, 210, 0.3)), to(rgba(220, 208, 186, 0)));
-  background: url(../images/postfix-arrows.png) no-repeat 2000px 2000px, url(../images/noise.png) repeat, #ede7dc -webkit-linear-gradient(left, rgba(249, 247, 244, 0.1), rgba(232, 224, 210, 0.3), rgba(220, 208, 186, 0));
-  background: url(../images/postfix-arrows.png) no-repeat 2000px 2000px, url(../images/noise.png) repeat, #ede7dc linear-gradient(to right, rgba(249, 247, 244, 0.1), rgba(232, 224, 210, 0.3), rgba(220, 208, 186, 0));
+  background: url(../images/postfix-arrows.png) no-repeat 2000px 2000px, url(../images/noise-blue.png) repeat, #001E3E;
   left: -32px;
-  background-position: 12px -716px;
+  background-position: 12px -617px;
   border-radius: 0 70% 70%  0;
-  border-right: #f0ebe3 1px solid;
+  border-right: #334b64 1px solid;
   -webkit-box-shadow: #2C2A29 10px 0px 7px -7px;
   -webkit-box-shadow: rgba(44, 42, 41, 0.5) 10px 0px 7px -7px;
   box-shadow: #2C2A29 10px 0px 7px -7px;
@@ -15590,7 +15589,7 @@ nav #nav-primary.collapse.in .navbar--more a::after {
   transition-timing-function: ease-in;
 }
 .m-homeScroller .sidescroll-nextprev .sidescroll-nextprev-links a.sidescroll-prev:hover {
-  background-position: 12px -352px;
+  background-position: 12px -194px;
 }
 .m-homeScroller .sidescroll-nextprev .sidescroll-nextprev-links a.sidescroll-prev.disabled {
   opacity: 0;
@@ -15601,20 +15600,18 @@ nav #nav-primary.collapse.in .navbar--more a::after {
   box-shadow: #2c2a29 6px 0px 9px -8px;
 }
 .m-homeScroller .sidescroll-nextprev .sidescroll-nextprev-links a.sidescroll-next {
-  background: url(../images/postfix-arrows.png) no-repeat 2000px 2000px, url(../images/noise.png) repeat, #ede7dc -webkit-gradient(linear, right top, left top, from(rgba(249, 247, 244, 0.1)), color-stop(rgba(232, 224, 210, 0.3)), to(rgba(220, 208, 186, 0)));
-  background: url(../images/postfix-arrows.png) no-repeat 2000px 2000px, url(../images/noise.png) repeat, #ede7dc -webkit-linear-gradient(right, rgba(249, 247, 244, 0.1), rgba(232, 224, 210, 0.3), rgba(220, 208, 186, 0));
-  background: url(../images/postfix-arrows.png) no-repeat 2000px 2000px, url(../images/noise.png) repeat, #ede7dc linear-gradient(to left, rgba(249, 247, 244, 0.1), rgba(232, 224, 210, 0.3), rgba(220, 208, 186, 0));
+  background: url(../images/postfix-arrows.png) no-repeat 2000px 2000px, url(../images/noise-blue.png) repeat, #001E3E;
   right: -23px;
-  background-position: -371px -716px;
+  background-position: -371px -617px;
   border-radius: 70% 0 0 70%;
-  border-left: #f0ebe3 1px solid;
+  border-left: #334b64 1px solid;
   -webkit-box-shadow: #2C2A29 -10px 0px 7px -7px;
   -webkit-box-shadow: rgba(44, 42, 41, 0.5) -10px 0px 7px -7px;
   box-shadow: #2C2A29 -10px 0px 7px -7px;
   box-shadow: rgba(44, 42, 41, 0.5) -10px 0px 7px -7px;
 }
 .m-homeScroller .sidescroll-nextprev .sidescroll-nextprev-links a.sidescroll-next:hover {
-  background-position: -371px -290px;
+  background-position: -371px -194px;
 }
 .m-homeScroller .sidescroll-nextprev .sidescroll-nextprev-links a.sidescroll-next.disabled {
   opacity: 1;

@@ -1,5 +1,6 @@
 .b-card{
 	background-color: $secondary;
+	  overflow-y: hidden;
 	a{
 		@extend .font-Roman;
 		color: $DarkGrey;
