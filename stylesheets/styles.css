@@ -16203,14 +16203,15 @@ nav #nav-primary.collapse.in .navbar--more a::after {
 }
 @media (min-width: 48rem) and (max-width: 60rem) {
   #s-header__site .m-primaryNav__header {
-    width: 48.71794872%;
-    float: left;
-    margin-right: -100%;
+    width: 100%;
+    float: right;
     margin-left: 0;
+    margin-right: 0;
     clear: none;
+    clear: both;
   }
   #s-header__site #nav-primary {
-    width: 48.71794872%;
+    width: 100%;
     float: right;
     margin-left: 0;
     margin-right: 0;
@@ -16219,14 +16220,14 @@ nav #nav-primary.collapse.in .navbar--more a::after {
 }
 @media (min-width: 60rem) and (max-width: 78rem) {
   #s-header__site .m-primaryNav__header {
-    width: 66.10169492%;
+    width: 32.20338983%;
     float: left;
     margin-right: -100%;
     margin-left: 0;
     clear: none;
   }
   #s-header__site #nav-primary {
-    width: 32.20338983%;
+    width: 66.10169492%;
     float: right;
     margin-left: 0;
     margin-right: 0;
@@ -16243,9 +16244,9 @@ nav #nav-primary.collapse.in .navbar--more a::after {
   }
   #s-header__site #nav-primary {
     width: 36.50793651%;
-    float: left;
-    margin-right: -100%;
-    margin-left: 38.0952381%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
     clear: none;
   }
 }
