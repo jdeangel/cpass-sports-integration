@@ -17054,11 +17054,6 @@ nav #nav-primary.collapse.in .navbar--more a::after {
   top: 4%;
   width: 101%;
 }
-@media (min-width: 1740px) {
-  .m-scroller--wrapper .sidescroll-nextprev-links {
-    display: none;
-  }
-}
 
 #s-footer__site {
   font-size: 16px;
@@ -19328,6 +19323,9 @@ body.template-event .s-postfix__default .m-event__credits h2, body.template-even
     padding-left: 0;
     padding-right: 0;
   }
+  body.template-event .s-postfix__default .m-event__credits ul {
+    padding: 0;
+  }
 }
 @media (min-width: 48rem) {
   body.template-event .s-postfix__default .m-event__credits li {
@@ -19355,6 +19353,7 @@ body.template-event .s-postfix__default .m-event__credits h2, body.template-even
   }
   body.template-event .s-postfix__default .m-event__credits .m-event__credits__planning ul {
     padding-left: 32px;
+    padding-right: 0;
   }
   body.template-event .s-postfix__default .m-event__credits .m-event__credits__planning li {
     width: 20%;
@@ -19374,6 +19373,7 @@ body.template-event .s-postfix__default .m-event__credits h2, body.template-even
   }
   body.template-event .s-postfix__default .m-event__credits .m-event__credits__tech ul {
     padding-right: 32px;
+    padding-left: 0;
   }
   body.template-event .s-postfix__default .m-event__credits .m-event__credits__tech li {
     text-align: right;
