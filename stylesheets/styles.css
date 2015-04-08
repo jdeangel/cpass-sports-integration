@@ -18293,46 +18293,169 @@ body.template-comingSoon #core .main article {
   }
 }
 
-@media (min-width: 48rem) and (max-width: 110rem) {
-  .template-bio #core .main {
-    width: 61.29032258%;
-    float: left;
-    margin-right: -100%;
-    margin-left: 12.90322581%;
-    clear: none;
-  }
-  .template-bio #core .sidebar {
-    width: 35.48387097%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
-    clear: none;
-  }
-}
 @media (min-width: 110rem) {
-  .template-bio #core .main {
-    width: 74.6031746%;
-    float: left;
-    margin-right: -100%;
-    margin-left: 0;
-    clear: none;
-  }
-  .template-bio #core .sidebar {
-    width: 23.80952381%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
-    clear: none;
-  }
-  .template-bio #core .sidebar ul li a {
+  .template-bio #core .l-bio__playerList ul li a {
     font-size: 20px;
     font-size: 1.25rem;
     line-height: 30px;
     line-height: 1.8770625rem;
   }
 }
+@media (min-width: 0) and (max-width: 31rem) {
+  .template-bio #core .container {
+    display: table;
+  }
+  .template-bio #core .l-bio__details {
+    display: table-footer-group;
+    width: 100%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+    clear: both;
+    float: none;
+  }
+  .template-bio #core .l-bio__main {
+    width: 100%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+    clear: both;
+  }
+  .template-bio #core .l-bio__playerList {
+    width: 100%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+@media (min-width: 31rem) and (max-width: 48rem) {
+  .template-bio #core .container {
+    display: table;
+  }
+  .template-bio #core .l-bio__details {
+    display: table-footer-group;
+    width: 100%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+    clear: both;
+    float: none;
+  }
+  .template-bio #core .l-bio__main {
+    width: 100%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+    clear: both;
+  }
+  .template-bio #core .l-bio__playerList {
+    width: 100%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+@media (min-width: 48rem) and (max-width: 60rem) {
+  .template-bio #core .l-bio__details {
+    width: 23.07692308%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+  .template-bio #core .l-bio__main {
+    width: 74.35897436%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+    clear: left;
+  }
+  .template-bio #core .l-bio__playerList {
+    width: 23.07692308%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+    clear: right;
+  }
+}
+@media (min-width: 60rem) and (max-width: 78rem) {
+  .template-bio #core .l-bio__details {
+    width: 23.72881356%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+  }
+  .template-bio #core .l-bio__main {
+    width: 49.15254237%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 25.42372881%;
+    clear: none;
+  }
+  .template-bio #core .l-bio__playerList {
+    width: 23.72881356%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+@media (min-width: 78rem) {
+  .template-bio #core .l-bio__details {
+    width: 17.46031746%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+  }
+  .template-bio #core .l-bio__main {
+    width: 55.55555556%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 19.04761905%;
+    clear: none;
+  }
+  .template-bio #core .l-bio__playerList {
+    width: 23.80952381%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
 .template-bio ul {
   list-style: none;
+}
+
+.l-bio__main__credits {
+  font-size: 0.618em;
+}
+
+.l-bio__details ul {
+  padding: 0;
+  margin: 0;
+}
+.l-bio__details li {
+  padding: 0;
+  margin: 0;
+}
+
+.l-bio__playerList ul {
+  padding: 0;
+  margin: 0;
+}
+.l-bio__playerList li {
+  padding: 0;
+  margin: 0;
 }
 
 @media (min-width: 0) and (max-width: 31rem) {
