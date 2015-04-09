@@ -11,37 +11,58 @@
 		}//end $bp-desktop2-6
 
 
-		@include breakpoint($bp-mobile1-1 $bp-mobile2-1+1rem){
+		@include breakpoint($bp-mobile1-1 $bp-mobile2-2-608){
 		   @include grid-mobile1;
 		   .container{ display:table; }
-		   .l-bio__details{display: table-footer-group;  @include grid-span(4,1); clear:both; float:none; } 
-		   .l-bio__main{@include grid-span(4,1); clear:both;}
+		   .l-bio__details{ @include grid-span(4,1);  } 
+		   .page-name{
+		   	    display: table-header-group; 
+		   	    @include grid-span(4,1); 
+		   	    clear:both; float:none;
+		   	    @include adjust-font-size-to($font-size-xlarge-2);
+		   	    @include adjust-leading-to($ms-8);
+		   	}
+		   .l-bio__main{ @include grid-span(4,1); clear:both; }
 		   .l-bio__playerList{ @include grid-span(4,1); }
 		 }
-		 @include breakpoint(($bp-mobile2-1+1rem) $bp-tablet-1){
+		 @include breakpoint(($bp-mobile2-2-608) $bp-tablet-1){
 		   @include grid-mobile2;
-		   .container{ display:table; }
-		   .l-bio__details{ display: table-footer-group; @include grid-span(6,1); clear:both;  float:none;}
-		   .l-bio__main{@include grid-span(6,1); clear:both;}
-		   .l-bio__playerList{@include grid-span(6,1); }
+		   .container{  }
+		   .l-bio__details{@include grid-span(2,1); }
+		   .page-name{@include grid-span(4,3);}
+		   .l-bio__main{@include grid-span(6,1);clear:both;}
+		   .l-bio__playerList{@include grid-span(6,1);clear:both;}
 		 }
 		 @include breakpoint($bp-tablet-1 $bp-desktop1-1){
 		   @include grid-tablet;
 		   .l-bio__details{ @include grid-span(2,7);}
+		   .page-name{}
 		   .l-bio__main{@include grid-span(6,1); clear:left;}
-		   .l-bio__playerList{@include grid-span(2,7); clear:right;}
+		   .l-bio__playerList{@include grid-span(8,1); clear:both;}
 		 }
 		 @include breakpoint($bp-desktop1-1 $bp-desktop2-1){
 		   @include grid-desktop1;
 		   .l-bio__details{@include grid-span(3,1); }
-		   .l-bio__main{@include grid-span(6,4); }
-		   .l-bio__playerList{@include grid-span(3,10); }
+		   .page-name{@include grid-span(6,4); float:none;}
+		   .l-bio__main{@include grid-span(6,4);}
+		   .l-bio__playerList{
+		   	@include grid-span(3,10); 
+
+		  	  border-left:ms(-10) solid shade($white, 8);
+		  	  padding-left:ms(0);
+		  	  margin-top:-7%;
+		   }
 		 }
 		 @include breakpoint($bp-desktop2-1){
 		   @include grid-desktop2;
 		   .l-bio__details{@include grid-span(3,1); }
+		   .page-name{@include grid-span(9,4); float:none;}
 		   .l-bio__main{@include grid-span(9,4); }
-		   .l-bio__playerList{@include grid-span(4,13); }
+		   .l-bio__playerList{@include grid-span(4,13); 
+		   	border-left:ms(-10) solid shade($white, 8);
+		   	padding-left:ms(0);
+		   	margin-top:-7%;
+		   }
 		 }
 	}
  

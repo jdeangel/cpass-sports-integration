@@ -18,11 +18,13 @@
 			border-left: ms(-8) solid $white;
 			border-right: ms(-10) solid shade($white, 10);
 			border-top: ms(-8) solid lighten($white, 20);
-			background:linear-gradient($white 90%, shade($white, 10)), shade($white, 10) url(../images/noise.png) repeat;
+			background:linear-gradient($white 80%, shade($white, 10)), shade($white, 10) url(../images/noise.png) repeat;
 			margin-bottom:0;
 			margin-left:ms(-2);
 			padding-bottom:ms(-4);
-			.open, .active{
+			border-top-left-radius:ms(-6);
+			border-top-right-radius:ms(-6);
+			&.open, &.active{
 				background:$white url(../images/noise.png) repeat;
 			}
 			&:hover, &:focus{
@@ -32,10 +34,92 @@
 		a{
 			color:$tertiary;
 			padding:ms(-3);
+			background:transparent;
 			@include adjust-font-size-to($font-size-med);
 			@include rhythm($ms-8n, $ms-6n, $ms-6n, 0, $font-size-med);
 			@extend .font-BdCn;
+			&:hover, &:focus{
+				background:transparent;
+				color:lighten($tertiary, 10);
+			}
 		}
 
 	}//end .tabs
+
+	@include breakpoint($bp-mobile1-1 $bp-tablet-1){
+		   @include grid-mobile1;
+		   .page-title{
+		   	 text-align:center;
+		   	 @include adjust-font-size-to($font-size-large-2);
+		   	 @include grid-span(4,1); clear:both;
+		   }
+		   .breadcrumbs{display:none;}
+		   .tabs{
+		   	@include grid-span(4,1); clear:both;
+		   	ul{}
+		   	li{ display:block; 
+		   		background:transparent; 
+		   		border:0; 
+		   		border-bottom:ms(-9) solid desaturate($WVUBlue, 10);
+		   		box-shadow: 0 ms(-9) ms(-9) 0 darken($WVUBlue, 4);
+		   		color:$white;
+		   		@include grid-span(4,1); clear:both;
+		   		&:hover, &:focus{
+		   			background:transparent;
+		   			color:$SecLightGold;
+		   		}
+		   		&:last-child{
+		   			border-bottom:0;
+		   		}
+		   	}
+		   	a{
+		   		color:$white;
+		   		@include grid-span(4,1);
+		   		&:hover, &:focus{
+		   			background:transparent;
+		   			color:$SecLightGold;
+		   		}
+		   		&.open, &.active{
+		   			background:transparent;
+		   			color:$SecLightGold;
+		   		}
+		   	}	
+		   }//end .tabs
+		 }
+		 @include breakpoint(($bp-mobile2-1+1rem) $bp-tablet-1){
+		   @include grid-mobile2;
+		   .page-title{	}
+		   .breadcrumbs{}
+		   .tabs{  }
+		 }
+		 @include breakpoint($bp-tablet-1 $bp-desktop1-1){
+		   @include grid-tablet;
+		   .page-title{	}
+		   .breadcrumbs{}
+		   .tabs{
+		   	 float:left;
+		   	 li{
+		   	 	margin-left:0;
+		   	 	margin-right:ms(-2)
+
+		   	 }
+		   }
+		 }
+		 @include breakpoint($bp-desktop1-1){
+		   @include grid-desktop1;
+		   position:relative;
+		   .page-title{	}
+		   .breadcrumbs{ float:left;}
+		   .tabs{
+		   	position:absolute;
+		   	bottom:0;
+		   	right:0;
+		   }
+		   .tabs li a{ 
+		   	 @include adjust-font-size-to($font-size-small-2);
+		   }
+		 }
+		 @include breakpoint($bp-desktop2-1){
+		   //@include grid-desktop2;
+		 }
 }
