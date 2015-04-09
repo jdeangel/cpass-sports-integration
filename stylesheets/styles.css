@@ -7740,7 +7740,7 @@ body html {
   font-weight: 800;
 }
 
-.font-Bd, strong, b, p strong, p b, p p strong, h4, h5, h6, h3, .b-contact__info p a.title, .b-mastLinks a, .b-siteLogo span, body.template-event #s-prefix--event .callout {
+.font-Bd, strong, b, p strong, p b, p p strong, h4, h5, h6, h3, .b-contact__info p a.title, .b-mastLinks a, .b-siteLogo span, #prefix.s-prefix--bio .tabs a, body.template-event #s-prefix--event .callout {
   font-family: "Neue Helvetica W02", Arial, verdana, sans-serif;
   font-weight: 500;
 }
@@ -16365,6 +16365,57 @@ nav #nav-primary.collapse.in .navbar--more a::after {
   color: #ede7dc;
   text-transform: uppercase;
   text-align: center;
+}
+
+#prefix.s-prefix--bio {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+#prefix.s-prefix--bio .page-title {
+  color: #fffefb;
+}
+#prefix.s-prefix--bio .breadcrumbs {
+  margin-top: 3px;
+  margin-top: 0.18270075rem;
+  padding-top: 0px;
+  padding-top: 0rem;
+  padding-bottom: 0px;
+  padding-bottom: 0rem;
+  margin-bottom: 12px;
+  margin-bottom: 0.77339228rem;
+}
+#prefix.s-prefix--bio .tabs {
+  float: right;
+}
+#prefix.s-prefix--bio .tabs ul {
+  margin: 0;
+  padding: 0;
+}
+#prefix.s-prefix--bio .tabs li {
+  display: inline;
+  border-left: 1px solid #fffefb;
+  border-right: 1px solid #f9f8f5;
+  border-top: 1px solid #fffefb;
+  background: #fffefb url(../images/noise.png);
+  margin-bottom: 0;
+  margin-left: 16px;
+}
+#prefix.s-prefix--bio .tabs a {
+  background: #fffefb url(../images/noise.png);
+  color: #005eb8;
+  padding: 4px;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 20px;
+  line-height: 1.251375rem;
+  margin-top: 3px;
+  margin-top: 0.18270075rem;
+  padding-top: 5px;
+  padding-top: 0.2953245rem;
+  padding-bottom: 5px;
+  padding-bottom: 0.2953245rem;
+  margin-bottom: 0px;
+  margin-bottom: 0rem;
 }
 
 #core {

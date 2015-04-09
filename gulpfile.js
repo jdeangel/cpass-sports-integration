@@ -75,7 +75,7 @@ gulp.task('postCSS', ['compass'], function () {
   var hex           = require('postcss-color-hex');
 
   var processors    = [
-      autoprefixer({ browsers: ['last 3 versions', '> 1%', 'ie 7', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 3',  'android 4', 'safari 5'],  cascade: false }),
+      autoprefixer({ browsers: ['last 6 versions', '> 1%', 'ie 7', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 3',  'android 4', 'safari 5'],  cascade: false }),
       require('postcss-opacity'),
       hex({rgba: true})
   ];

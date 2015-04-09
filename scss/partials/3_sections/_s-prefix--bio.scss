@@ -1,0 +1,34 @@
+#prefix.s-prefix--bio{
+	margin-bottom:0;
+	padding-bottom:0;
+	.page-title{
+		color:$white;
+	}
+	.breadcrumbs{
+		@include rhythm($ms-8n, 0, 0, $ms-2n, $font-size-small-2);
+	}
+	.tabs {
+		float:right;
+		ul{
+		  margin:0;
+		  padding:0;
+		}
+		li{
+			display:inline;
+			border-left: ms(-10) solid $white;
+			border-right: ms(-10) solid shade($white, 2);
+			border-top: ms(-10) solid tint($white, 10);
+			background:$white url(../images/noise.png);
+			margin-bottom:0;
+			margin-left:ms(0);
+		}
+		a{
+			background:$white url(../images/noise.png);
+			color:$tertiary;
+			padding:ms(-6);
+			@include adjust-font-size-to($font-size-med);
+			@include rhythm($ms-8n, $ms-6n, $ms-6n, 0, $font-size-med);
+			@extend .font-Bd;
+		}
+	}//end .tabs
+}
