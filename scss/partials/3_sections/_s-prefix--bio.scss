@@ -15,20 +15,27 @@
 		}
 		li{
 			display:inline;
-			border-left: ms(-10) solid $white;
-			border-right: ms(-10) solid shade($white, 2);
-			border-top: ms(-10) solid tint($white, 10);
-			background:$white url(../images/noise.png);
+			border-left: ms(-8) solid $white;
+			border-right: ms(-10) solid shade($white, 10);
+			border-top: ms(-8) solid lighten($white, 20);
+			background:linear-gradient($white 90%, shade($white, 10)), shade($white, 10) url(../images/noise.png) repeat;
 			margin-bottom:0;
-			margin-left:ms(0);
-		}
+			margin-left:ms(-2);
+			padding-bottom:ms(-4);
+			.open, .active{
+				background:$white url(../images/noise.png) repeat;
+			}
+			&:hover, &:focus{
+				background:$white url(../images/noise.png) repeat;
+			}
+		}//end li
 		a{
-			background:$white url(../images/noise.png);
 			color:$tertiary;
-			padding:ms(-6);
+			padding:ms(-3);
 			@include adjust-font-size-to($font-size-med);
 			@include rhythm($ms-8n, $ms-6n, $ms-6n, 0, $font-size-med);
-			@extend .font-Bd;
+			@extend .font-BdCn;
 		}
+
 	}//end .tabs
 }

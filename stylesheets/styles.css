@@ -7735,12 +7735,12 @@ body html {
   font-weight: 900;
 }
 
-.font-BdCn, .b-card .b-card__name, .b-cta__about[data-eq-state="small"] .nav-list li a, .b-cta__about[data-eq-state="medium"] .nav-list li a, .template-event #core .main .b-eventCards li .b-eventCard__day, .b-links__academics .b-academics__programs__c2 a, .b-links__academics .b-academics__programs__c3 a, .b-links__academics .b-academics__programs__c4 a, .m-cta .title, body.template-event #s-rsvp .sidebar h2, body.template-event #s-rsvp .sidebar .b-sportcard .b-sportcard__title, .b-sportcard body.template-event #s-rsvp .sidebar .b-sportcard__title, body.template-event #s-rsvp .sidebar .m-event__lodging__hotel, .b-player_list .records .year {
+.font-BdCn, .b-card .b-card__name, .b-cta__about[data-eq-state="small"] .nav-list li a, .b-cta__about[data-eq-state="medium"] .nav-list li a, .template-event #core .main .b-eventCards li .b-eventCard__day, .b-links__academics .b-academics__programs__c2 a, .b-links__academics .b-academics__programs__c3 a, .b-links__academics .b-academics__programs__c4 a, .m-cta .title, #prefix.s-prefix--bio .tabs a, body.template-event #s-rsvp .sidebar h2, body.template-event #s-rsvp .sidebar .b-sportcard .b-sportcard__title, .b-sportcard body.template-event #s-rsvp .sidebar .b-sportcard__title, body.template-event #s-rsvp .sidebar .m-event__lodging__hotel, .b-player_list .records .year {
   font-family: "Neue Helvetica W01", Arial, verdana, sans-serif;
   font-weight: 800;
 }
 
-.font-Bd, strong, b, p strong, p b, p p strong, h4, h5, h6, h3, .b-contact__info p a.title, .b-mastLinks a, .b-siteLogo span, #prefix.s-prefix--bio .tabs a, body.template-event #s-prefix--event .callout {
+.font-Bd, strong, b, p strong, p b, p p strong, h4, h5, h6, h3, .b-contact__info p a.title, .b-mastLinks a, .b-siteLogo span, body.template-event #s-prefix--event .callout {
   font-family: "Neue Helvetica W02", Arial, verdana, sans-serif;
   font-weight: 500;
 }
@@ -16337,11 +16337,14 @@ nav #nav-primary.collapse.in .navbar--more a::after {
   margin-bottom: 12px;
   margin-bottom: 0.77339228rem;
 }
-#prefix.dark .breadcrumbs a {
+#prefix.dark .breadcrumbs li a {
   color: #ffd635;
 }
-#prefix.dark .breadcrumbs a:hover {
+#prefix.dark .breadcrumbs li a:hover {
   color: #ffe271;
+}
+#prefix.dark .breadcrumbs li .active a {
+  color: #fffefb;
 }
 #prefix.dark .btn {
   -webkit-box-shadow: #272524 0 0.146em 0.07em 0;
@@ -16354,6 +16357,10 @@ nav #nav-primary.collapse.in .navbar--more a::after {
 #prefix.dark .page-name {
   color: #fffefb;
   text-shadow: #2c2a29, 0, 5px, 2px, 0;
+}
+#prefix.dark .page-title {
+  color: #fffefb;
+  text-shadow: 0 5px 2px #2c2a29;
 }
 
 #s-prefix--comingSoon .page-name {
@@ -16393,17 +16400,25 @@ nav #nav-primary.collapse.in .navbar--more a::after {
 }
 #prefix.s-prefix--bio .tabs li {
   display: inline;
-  border-left: 1px solid #fffefb;
-  border-right: 1px solid #f9f8f5;
-  border-top: 1px solid #fffefb;
-  background: #fffefb url(../images/noise.png);
+  border-left: 2px solid #fffefb;
+  border-right: 1px solid #e5e4e1;
+  border-top: 2px solid white;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(90%, #fffefb), to(#e5e4e1)), #e5e4e1 url(../images/noise.png) repeat;
+  background: -webkit-linear-gradient(#fffefb 90%, #e5e4e1), #e5e4e1 url(../images/noise.png) repeat;
+  background: linear-gradient(#fffefb 90%, #e5e4e1), #e5e4e1 url(../images/noise.png) repeat;
   margin-bottom: 0;
-  margin-left: 16px;
+  margin-left: 10px;
+  padding-bottom: 6px;
+}
+#prefix.s-prefix--bio .tabs li .open, #prefix.s-prefix--bio .tabs li .active {
+  background: #fffefb url(../images/noise.png) repeat;
+}
+#prefix.s-prefix--bio .tabs li:hover, #prefix.s-prefix--bio .tabs li:focus {
+  background: #fffefb url(../images/noise.png) repeat;
 }
 #prefix.s-prefix--bio .tabs a {
-  background: #fffefb url(../images/noise.png);
   color: #005eb8;
-  padding: 4px;
+  padding: 8px;
   font-size: 16px;
   font-size: 1rem;
   line-height: 20px;
