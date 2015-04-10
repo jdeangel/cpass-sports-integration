@@ -10,15 +10,16 @@ layout: default
     <r:editable_region name="bio__photo" />
     <figcaption>
       <ul>
-        <li>Position: <r:editable_region name="bio__position" type="simple" /></li>
-        <li>Hometown: <r:editable_region name="bio__hometown" type="simple" /></li>
-        <li>Years active: <r:editable_region name="bio__yearsActive" type="simple" /></li>
+        <li class="l-bio__details__page-name"><r:page:name /></li>
+        <li class="l-bio__details__position"><r:editable_region name="bio__position" type="simple" /></li>
+        <li class="l-bio__details__hometown"><strong>Hometown: </strong><r:editable_region name="bio__hometown" type="simple" /></li>
+        <li class="l-bio__details__yearsActive"><strong>Years active: </strong><r:editable_region name="bio__yearsActive" type="simple" /></li>
       </ul>
     </figcaption>
   </figure>
   <h1 class="page-name"><r:page:name /></h1>
   <main class="main l-bio__main" role="main">
-    <article>     
+    <article>
      <r:editable_region name="bio__main" />
      <p class="l-bio__main__credits"><cite><r:editable_region name="bio__main_credits" type="simple"/></cite></p>
     </article>

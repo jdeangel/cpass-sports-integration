@@ -1,0 +1,80 @@
+#core .b-playerList{
+	.b-playerList__title{
+		@extend .font-BdCn;
+		color:tint($primary, 30);
+	}//b-playerList__title
+	.b-playerList__players{
+		padding:0 ms(-3); margin:0;
+		li{padding:0; margin:0;
+			a{
+				text-decoration:underline;
+				&:after{}
+			}
+		}//end li
+		
+	}//end .b-playerList__players
+
+	&[data-eq-state="small"]{
+		
+	.b-playerList__title{
+			@include adjust-font-size-to($font-size-med);
+			@include rhythm($ms-1, 0, $ms-8n, $ms-1n, $font-size-med);
+		}
+		.b-playerList__players li{
+			@extend .font-Bd;
+			@include adjust-font-size-to($font-size-small-2);
+			@include rhythm($ms-5n, 0, $ms-11n, $ms-1n, $font-size-small-2);
+		}
+	}
+	&[data-eq-state="medium"]{
+		.b-playerList__title{
+			@include adjust-font-size-to($font-size-med-2);
+			@include rhythm($ms-1, 0, $ms-8n, $ms-1n, $font-size-med-2);
+		}
+		.b-playerList__players li{
+			@include adjust-font-size-to($font-size-med);
+			@include rhythm($ms-5n, 0, $ms-11n, $ms-2n, $font-size-med);
+		}
+	}
+	&[data-eq-state="large"]{
+		.b-playerList__title{
+			@include adjust-font-size-to($font-size-large);
+			@include rhythm($ms-1, 0, $ms-8n, $ms-1n, $font-size-large);
+		}
+		.b-playerList__players li a{
+			float: left;
+			padding:0 ms(-5);
+			@extend .font-Bd;
+			width:50%;
+			@include adjust-font-size-to($font-size-small-2);
+			@include rhythm($ms-5n, 0, $ms-11n, $ms-8n, $font-size-small-2);
+		}
+	}
+	&[data-eq-state="xlarge"]{
+		.b-playerList__title{
+			@include adjust-font-size-to($font-size-med-2);
+			@include rhythm($ms-1, 0, $ms-8n, $ms-1n, $font-size-med-2);
+		}
+		.b-playerList__players li a{
+			float: left;
+			padding:0 ms(-5);
+			width:33.3%;
+			@include adjust-font-size-to($font-size-med);
+			@include rhythm($ms-5n, 0, $ms-11n, $ms-8n, $font-size-med);
+		}
+	}
+	&[data-eq-state="xxlarge"]{
+		.b-playerList__title{
+			@include adjust-font-size-to($font-size-large);
+			@include rhythm($ms-1, 0, $ms-8n, $ms-1n, $font-size-large);
+		}
+		.b-playerList__players li a{
+			float: left;
+			padding:0 ms(-5);
+			width:25%;
+			@include adjust-font-size-to($font-size-med);
+			@include rhythm($ms-5n, 0, $ms-11n, $ms-8n, $font-size-med);
+		}
+	}
+
+}//end .b-playerList

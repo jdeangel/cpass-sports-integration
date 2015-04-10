@@ -7,15 +7,20 @@ layout: default
 <section id="core">
  <div class="container">
   <main class="main" role="main">
+    <figure>
+    <r:editable_region name="sport__teamPhoto"/>
+    <figcaption>
+      <r:editable_region name="sport__teamPhoto_caption"/>
+    </figcaption>
+    </figure>
     <article>
     <r:editable_region name="sport__main" />
 
     </article>
   </main><!-- /.main -->
 
- <aside class="sidebar .b-player-list" role="complementary">
-   <r:editable_region name="sport__sidebar" />
-
+  <aside class="sidebar l-sport_playerList" role="complementary">
+    <r:partial name="components/b-playerList"/>
   </aside> <!-- /.sidebar -->
 
  </div>

@@ -147,3 +147,30 @@ input[type="submit"] {
 	}
 	&[data-eq-state="large"]{}
 }//end .b-search
+
+
+.m-primaryNav__search .b-search{
+  .form-search__field{
+    color:$black;
+    border-bottom-color:shade($white, ms(0));
+  }
+   .form-search__search-type{
+      color:$black;
+      label{ color:tint($black, 30);}
+      input[type="radio"]{
+        background-color:tint($coolblack,40);
+        &:after{
+          background-color:tint($black, 60);
+        }//end :after
+        &:checked:after{
+          background-color:$SecLightGold;
+        }
+      }//end input[type="radio"]
+   }//end .form-search__search-type
+   input[type="submit"] {
+    &.form-search__submit {
+      color:$black;
+      background-color:$tertiary;
+    }
+  } 
+}

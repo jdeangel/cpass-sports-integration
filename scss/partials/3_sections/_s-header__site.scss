@@ -41,15 +41,22 @@
 	   }
 	   #nav-primary{
 	   	@include grid-span(8, 5);
+	   	margin-top:33px;
 	   }
 	 }
 	 @include breakpoint($bp-desktop2-1){
 	   @include grid-desktop2; //16 columns
 	   .m-primaryNav__header{
-	   	@include grid-span(10, 1);
+	   	@include grid-span(7, 1);
 	   }
 	   #nav-primary{
-	   	@include grid-span(6, 11);
+	   	@include grid-span(9, 8);
+	   	margin-top:50px;
+	   }
+	 }
+	 @include breakpoint(1722px){
+	 	#nav-primary{
+	   	margin-top:70px;
 	   }
 	 }
 }

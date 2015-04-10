@@ -2,7 +2,10 @@
   @include rhythm($ms-2n, 0, 0, $ms-2n, $font-size-med);
   .m-primaryNav__header{}
   .m-primaryNav__navbar-nav{ 
-
+  	float:right;
+  	ul{
+  		float:right;
+  	}
   }//end .m-primaryNav__navbar-nav  
   .m-primaryNav__search{
   	@include breakpoint($bp-tablet-1){
@@ -10,20 +13,27 @@
     }
   }//end .m-primaryNav__search
   
+  .container{
+  	min-width:0;
+  }
 
   @include breakpoint($bp-tablet-1){
-  	.container{width:100%; max-width:100%; padding:0; margin:0;}
+  	.container{width:100%; max-width:100%; padding:0; margin:0; min-width:0;}
   	.m-primaryNav__more{ display:none;}
+  	.m-primaryNav__navbar-nav li{
+
+  		box-shadow: 0 ms(-8) 0px 0px $coolblack;
+		border-bottom: ms(-9) solid $white;
+  	}
   	.m-primaryNav__navbar-nav a{
-        $bgColor: $tertiary;
+        $bgColor: $primary;
         $shadowColor: $coolblack;
         $textColor: $white;
 
   		color:$textColor;
-  		background:$bgColor url(../images/noise.png) repeat;
+  		background:transparent;
   		padding:ms(-2);
   		text-shadow: 0 ms(-9) ms(-10) darken($bgColor, 10);
-  		box-shadow: 0 ms(-8) 0px 0px $shadowColor;
 	  	@include adjust-font-size-to($font-size-med);
 		@include rhythm(0, $ms-2n, $ms-2n, 0, $font-size-med);
 		border-right:ms(-10) solid darken($bgColor, 5);
@@ -53,6 +63,12 @@
 		    background: url(../images/noise.png) repeat shade($bgColor, 20);
 		  }
 		}//end active       
+		&:first-child{
+			border-left:0;
+		}
+		&:last-child{
+			border-right: 0;
+		}
   	}
 
   	.m-primaryNav__navbar-nav li.apply a{

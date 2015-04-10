@@ -14,9 +14,17 @@
 		@include breakpoint($bp-mobile1-1 $bp-mobile2-2-608){
 		   @include grid-mobile1;
 		   .container{ display:table; }
-		   .l-bio__details{ @include grid-span(4,1);  } 
+		   .l-bio__details{ @include grid-span(4,1);  
+		   	  .l-bio__details__page-name{
+		   	  	display:block;
+		   	  	@include adjust-font-size-to($font-size-xlarge-2);
+		   	  	color:$primary;
+		   	  	font-family:$BlkCn;
+		   	  	font-weight:900;
+		   	  }
+		   } 
 		   .page-name{
-		   	    display: table-header-group; 
+		   	    display: none; 
 		   	    @include grid-span(4,1); 
 		   	    clear:both; float:none;
 		   	    @include adjust-font-size-to($font-size-xlarge-2);
@@ -28,8 +36,22 @@
 		 @include breakpoint(($bp-mobile2-2-608) $bp-tablet-1){
 		   @include grid-mobile2;
 		   .container{  }
-		   .l-bio__details{@include grid-span(2,1); }
-		   .page-name{@include grid-span(4,3);}
+		   .l-bio__details{@include grid-span(6,1);
+		   		img{
+		   		  @include grid-span(2,1);	
+		   		}
+		   		ul{
+		   			@include grid-span(4, 3);
+		   		}
+		   		.l-bio__details__page-name{
+		   			display:block;
+		   			@include adjust-font-size-to($font-size-xlarge-2);
+		   			color:$primary;
+		   			font-family:$BlkCn;
+		   			font-weight:900;
+		   		}
+		    }
+		   .page-name{display:none;}
 		   .l-bio__main{@include grid-span(6,1);clear:both;}
 		   .l-bio__playerList{@include grid-span(6,1);clear:both;}
 		 }
@@ -43,6 +65,7 @@
 		 @include breakpoint($bp-desktop1-1 $bp-desktop2-1){
 		   @include grid-desktop1;
 		   .l-bio__details{@include grid-span(3,1); }
+		   .l-bio__details__page-name{display:block;}
 		   .page-name{@include grid-span(6,4); float:none;}
 		   .l-bio__main{@include grid-span(6,4);}
 		   .l-bio__playerList{
@@ -50,18 +73,19 @@
 
 		  	  border-left:ms(-10) solid shade($white, 8);
 		  	  padding-left:ms(0);
-		  	  margin-top:-7%;
+		  	  margin-top:-12%;
 		   }
 		 }
 		 @include breakpoint($bp-desktop2-1){
 		   @include grid-desktop2;
 		   .l-bio__details{@include grid-span(3,1); }
+		   .l-bio__details__page-name{display:block;}
 		   .page-name{@include grid-span(9,4); float:none;}
 		   .l-bio__main{@include grid-span(9,4); }
 		   .l-bio__playerList{@include grid-span(4,13); 
 		   	border-left:ms(-10) solid shade($white, 8);
 		   	padding-left:ms(0);
-		   	margin-top:-7%;
+		   	margin-top:-9%;
 		   }
 		 }
 	}
@@ -77,9 +101,41 @@
 }
 .l-bio__details{
 	ul{ padding:0; margin:0;}
-	li{ padding:0; margin:0;}
-}
+	li{ 
+		padding:0; 
+		margin:0;
+		color:$black;
+		@extend .font-Lt;
+		@include adjust-font-size-to($font-size-med);
+		@include rhythm($ms-5n, 0, 0, $ms-7n, $font-size-med);
+		strong{
+			color:tint($black, 30);
+			@extend .font-BdCn;
+		}
+
+	}//end li
+
+
+	.l-bio__details__page-name{
+		float:none;
+		@extend .font-Lt;
+		text-transform:uppercase;
+		display:none;
+		@include adjust-font-size-to($font-size-med-2);
+		@include rhythm($ms-2n, 0, 0, $ms-9n, $font-size-med-2);
+		color:tint($black, 20);
+
+	}
+	.l-bio__details__position{
+		color:tint($black, 20);
+		@extend .font-BdCn;
+	}
+	.l-bio__details__hometown{}
+	.l-bio__details__yearsActive{}
+}//end .l-bio__details
 .l-bio__playerList{
 	ul{ padding:0; margin:0;}
 	li{ padding:0; margin:0;}
-}
+
+}//end l-bio__playerList
+
