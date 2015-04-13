@@ -18,7 +18,7 @@
   }
 
   @include breakpoint($bp-tablet-1){
-  	
+
    #nav-primary.collapse, #nav-primary.collapse.in{
   	.container{width:100%; max-width:100%; padding:0; margin:0; min-width:0;}
   	.m-primaryNav__more{ display:none;}
@@ -44,7 +44,7 @@
   			&:last-child{
   				border-right: 0;
   			}
-  			&.active{
+  			&.active, &.open{
   				box-shadow: 0 ms(-8) 0 0 $WVUGold;
   			}
 

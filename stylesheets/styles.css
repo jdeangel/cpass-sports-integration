@@ -15239,7 +15239,7 @@ nav .b-social a:hover {
   .m-primaryNav #nav-primary.collapse .m-primaryNav__navbar-nav li:last-child, .m-primaryNav #nav-primary.collapse.in .m-primaryNav__navbar-nav li:last-child {
     border-right: 0;
   }
-  .m-primaryNav #nav-primary.collapse .m-primaryNav__navbar-nav li.active, .m-primaryNav #nav-primary.collapse.in .m-primaryNav__navbar-nav li.active {
+  .m-primaryNav #nav-primary.collapse .m-primaryNav__navbar-nav li.active, .m-primaryNav #nav-primary.collapse .m-primaryNav__navbar-nav li.open, .m-primaryNav #nav-primary.collapse.in .m-primaryNav__navbar-nav li.active, .m-primaryNav #nav-primary.collapse.in .m-primaryNav__navbar-nav li.open {
     -webkit-box-shadow: 0 2px 0 0 #eaaa00;
     box-shadow: 0 2px 0 0 #eaaa00;
   }
