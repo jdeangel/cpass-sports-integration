@@ -7,112 +7,84 @@
 			 	padding: 0;
  				margin: 0;
 			}
-			
 
+
+			
+      .b-sportcard{
+        @include breakpoint($bp-mobile1-1 $bp-mobile2-1+1rem){
+             @include grid-mobile1;//4 columns
+             width: 100%;
+             margin: 20px 0;
+             background-color:lighten($primary,5);
+              h2 {
+                font-size: 2.023em;
+                line-height: 1em;
+              }
+            .b-sportcard__title{
+              width:100%;
+            }
+           }
+           @include breakpoint(($bp-mobile2-1+1rem) $bp-tablet-1){
+             @include grid-mobile2;//6 columns
+              width: 45%;
+              margin: 20px 2.5%;
+              background-color:lighten($primary,5);
+               h2 {
+                font-size: 1.25em;
+                line-height: 1.25em;
+              }
+              .b-sportcard__title{
+              width:100%;
+            }
+           }
+           @include breakpoint($bp-tablet-1 $bp-desktop1-1){
+             @include grid-tablet;//8 columns
+              width: 45%;
+              margin: 20px 2.5%;
+              background-color:lighten($primary,5);
+              h2 {
+                font-size: 1.6em;
+                line-height: 1.25em;
+              }
+              .b-sportcard__title{
+                width:75%;
+              }
+ 
+           }
+           @include breakpoint($bp-desktop1-1 $bp-desktop2-1){
+             @include grid-desktop1;//12 columns
+             width: 45%;
+             margin: 20px 2.5%;
+             h2 {
+                font-size: 2.023em;
+                line-height: 1.25em;
+              }
+                .b-sportcard__title{
+                width:75%;
+              }
+             
+           }
+           @include breakpoint($bp-desktop2-1){
+             @include grid-desktop2; //16 columns
+             width: 30%;
+              margin: 20px 0.5%;
+              h2 {
+                font-size: 1.6em;
+                line-height: 1.25em;
+              }
+             
+           }
+      }
+
+     // h2{
+     //   font-size: 2.023em;
+      //  line-height: 1em;
+    //  }
 
 		}//end .main
 		
 	}
 }
 
-
-.b-sportcard{
-  background: tint($WVUBlue, 20);
-  float:right;
-  margin: 20px 2.5% 20px 2.5%;
-  padding: 20px 20px 20px 20px;
-  width: 45%;
-  height: 200px;
-
-  .b-sportcard__title{
-  	@extend h2;
-  	color:white;
-  	margin-top: 0px;
-  	float: left;
-  	width: 50%;
-  }
-
-  	 .b-sportcard__description{
-  	color:white;
-  	float: left;
-  	width:100%;
-
-
- 
-  }
-
-  &.football{
-  	background: $tertiary url(../images/sport-cards/png/football.png) no-repeat center right;
-  	//background: tint($WVUBlue, 20) url(../images/sport-cards/svg/football.svg) no-repeat center right;
-  	background-size:contain;
-  }
-
-  &.wrestling{
-  	background: $tertiary url(../images/sport-cards/png/wrestling.png) no-repeat center right;
-  	//background: tint($WVUBlue, 20) url(../images/sport-cards/svg/football.svg) no-repeat center right;
-  	background-size:contain;
-  }
-
-   &.baseball{
-  	background: $tertiary url(../images/sport-cards/png/baseball.png) no-repeat center right;
-  	//background: tint($WVUBlue, 20) url(../images/sport-cards/svg/football.svg) no-repeat center right;
-  	background-size:contain;
-  }
-
-  &.basketball-m{
-  	background: $tertiary url(../images/sport-cards/png/basketball-m.png) no-repeat center right;
-  	//background: tint($WVUBlue, 20) url(../images/sport-cards/svg/football.svg) no-repeat center right;
-  	background-size:contain;
-  }
-
-  &.tennis-m{
-  	background: $tertiary url(../images/sport-cards/png/tennis-m.png) no-repeat center right;
-  	//background: tint($WVUBlue, 20) url(../images/sport-cards/svg/football.svg) no-repeat center right;
-  	background-size:contain;
-  }
-
-  &.soccer{
-  	background: $tertiary url(../images/sport-cards/png/soccer.png) no-repeat center right;
-  	//background: tint($WVUBlue, 20) url(../images/sport-cards/svg/football.svg) no-repeat center right;
-  	background-size:contain;
-  }
-
-    &.track-m{
-  	background: $tertiary url(../images/sport-cards/png/track-m.png) no-repeat center right;
-  	//background: tint($WVUBlue, 20) url(../images/sport-cards/svg/football.svg) no-repeat center right;
-  	background-size:contain;
-  }
-
-  &.swim-w{
-  	background: $tertiary url(../images/sport-cards/png/swim-w.png) no-repeat center right;
-  	//background: tint($WVUBlue, 20) url(../images/sport-cards/svg/football.svg) no-repeat center right;
-  	background-size:contain;
-  }
-
- &.basketball-w{
-  	background: $tertiary url(../images/sport-cards/png/basketball-w.png) no-repeat center right;
-  	//background: tint($WVUBlue, 20) url(../images/sport-cards/svg/football.svg) no-repeat center right;
-  	background-size:contain;
-  }
-
-  &.gymnastics{
-  	background: $tertiary url(../images/sport-cards/png/gymnastics.png) no-repeat center right;
-  	//background: tint($WVUBlue, 20) url(../images/sport-cards/svg/football.svg) no-repeat center right;
-  	background-size:contain;
-  }
-
-  &.tennis-w{
-  	background: $tertiary url(../images/sport-cards/png/tennis-w.png) no-repeat center right;
-  	//background: tint($WVUBlue, 20) url(../images/sport-cards/svg/football.svg) no-repeat center right;
-  	background-size:contain;
-  }
-
-   &.track-w{
-  	background: $tertiary url(../images/sport-cards/png/track-w.png) no-repeat center right;
-  	//background: tint($WVUBlue, 20) url(../images/sport-cards/svg/football.svg) no-repeat center right;
-  	background-size:contain;
-  }
-  
-}
 
 

@@ -1,0 +1,104 @@
+.b-sportcard{
+  background: tint($WVUBlue, 20);
+  float:left;
+  margin: ms(1) ms(0);
+  padding: 20px 20px 20px 20px;
+  width: ms(12);
+  height: 200px;
+ 
+  a{
+    background: transparent;
+    &:hover, &:focus, &:active{
+      background: transparent;
+    }
+  }
+
+  .b-sportcard__title{
+  	@extend h2;
+  	color:white;
+  	margin-top: 0px;
+  	float: left;
+  	width: 50%;
+    }
+
+  	 .b-sportcard__description{
+  	color:white;
+  	float: left;
+  	width:100%;
+    }
+
+
+  &.football{
+  	background: $tertiary url(../images/sport-cards/png/football.png) no-repeat center right;
+  	//background: tint($WVUBlue, 20) url(../images/sport-cards/svg/football.svg) no-repeat center right;
+  	background-size:contain;
+  }
+
+  &.wrestling{
+  	background: $tertiary url(../images/sport-cards/png/wrestling.png) no-repeat center right;
+  	//background: tint($WVUBlue, 20) url(../images/sport-cards/svg/football.svg) no-repeat center right;
+  	background-size:contain;
+  }
+
+   &.baseball{
+  	background: $tertiary url(../images/sport-cards/png/baseball.png) no-repeat center right;
+  	//background: tint($WVUBlue, 20) url(../images/sport-cards/svg/football.svg) no-repeat center right;
+  	background-size:contain;
+  }
+
+  &.basketball-m{
+  	background: $tertiary url(../images/sport-cards/png/basketball-m.png) no-repeat center right;
+  	//background: tint($WVUBlue, 20) url(../images/sport-cards/svg/football.svg) no-repeat center right;
+  	background-size:contain;
+  }
+
+  &.tennis-m{
+  	background: $tertiary url(../images/sport-cards/png/tennis-m.png) no-repeat center right;
+  	//background: tint($WVUBlue, 20) url(../images/sport-cards/svg/football.svg) no-repeat center right;
+  	background-size:contain;
+  }
+
+  &.soccer{
+  	background: $tertiary url(../images/sport-cards/png/soccer.png) no-repeat center right;
+  	//background: tint($WVUBlue, 20) url(../images/sport-cards/svg/football.svg) no-repeat center right;
+  	background-size:contain;
+  }
+
+    &.track-m{
+  	background: $tertiary url(../images/sport-cards/png/track-m.png) no-repeat center right;
+  	//background: tint($WVUBlue, 20) url(../images/sport-cards/svg/football.svg) no-repeat center right;
+  	background-size:contain;
+  }
+
+  &.swim-w{
+  	background: $tertiary url(../images/sport-cards/png/swim-w.png) no-repeat center right;
+  	//background: tint($WVUBlue, 20) url(../images/sport-cards/svg/football.svg) no-repeat center right;
+  	background-size:contain;
+  }
+
+ &.basketball-w{
+  	background: $tertiary url(../images/sport-cards/png/basketball-w.png) no-repeat center right;
+  	//background: tint($WVUBlue, 20) url(../images/sport-cards/svg/football.svg) no-repeat center right;
+  	background-size:contain;
+  }
+
+  &.gymnastics{
+  	background: $tertiary url(../images/sport-cards/png/gymnastics.png) no-repeat center right;
+  	//background: tint($WVUBlue, 20) url(../images/sport-cards/svg/football.svg) no-repeat center right;
+  	background-size:contain;
+  }
+
+  &.tennis-w{
+  	background: $tertiary url(../images/sport-cards/png/tennis-w.png) no-repeat center right;
+  	//background: tint($WVUBlue, 20) url(../images/sport-cards/svg/football.svg) no-repeat center right;
+  	background-size:contain;
+  }
+
+   &.track-w{
+  	background: $tertiary url(../images/sport-cards/png/track-w.png) no-repeat center right;
+  	//background: tint($WVUBlue, 20) url(../images/sport-cards/svg/football.svg) no-repeat center right;
+  	background-size:contain;
+  }
+  
+
+} //end class b sportcard
