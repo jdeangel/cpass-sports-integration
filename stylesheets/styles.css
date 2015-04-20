@@ -15598,33 +15598,6 @@ nav #nav-primary.collapse {
   }
 }
 
-@media (min-width: 48rem) {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-  > li {
-    display: block;
-    float: left;
-  }
-  > li:last-child {
-    margin-right: 0px;
-  }
-
-  li {
-    width: auto;
-    color: #fffefb;
-    border: 0;
-    padding: 0;
-    margin: 0;
-  }
-  li a {
-    color: #fffefb;
-    border: 0;
-    padding: 0;
-    margin: 0;
-  }
-}
 /**************************************
 //////////////////////////////////////
 ////NON-BOOTSTRAP MOBILE NAV OPTION///

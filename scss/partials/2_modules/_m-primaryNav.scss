@@ -301,22 +301,6 @@ nav{
 }
 
 
-		  @include breakpoint($bp-tablet-1){
-			@include navigation-list;
-			li{
-				width: auto;
-				color:$white;
-				border:0;
-				padding:0;
-				margin:0;
-				a{
-					color:$white;
-					border:0;
-					padding:0;
-					margin:0;
-				}
-			}
-		  }
 
 
 /**************************************
