@@ -129,16 +129,20 @@ editable_region:
          <li><a href="">Gary Bane </a></li>
          <li><a href="">Harry Blake</a></li>
          <li><a href="">Richard Booker</a></li>
+         <li><a href="">Harry "The Snake" Blake</a></li>
+         <li><a href="">Roger Alford</a></li>
+         <li><a href="">Mike Austin </a></li>
+         <li><a href="">Harry "The Snake" Blake</a></li>
+         <li><a href="">Gary Bane </a></li>
+         <li><a href="">Harry Blake</a></li>
+         <li><a href="">Richard Booker</a></li>
+         <li><a href="">Harry "The Snake" Blake</a></li>
          <li><a href="">Roger Alford</a></li>
          <li><a href="">Mike Austin </a></li>
          <li><a href="">Gary Bane </a></li>
          <li><a href="">Harry Blake</a></li>
          <li><a href="">Richard Booker</a></li>
-         <li><a href="">Roger Alford</a></li>
-         <li><a href="">Mike Austin </a></li>
-         <li><a href="">Gary Bane </a></li>
-         <li><a href="">Harry Blake</a></li>
-         <li><a href="">Richard Booker</a></li>
+         <li><a href="">Harry "The Snake" Blake</a></li>
          </ul>         
   sport__teamPhoto: <img src="../images/firstfootball.jpg" alt="football team"  />       
   sport__teamPhoto_caption: Members of West Virginia University's first football team (1891)
@@ -240,6 +244,7 @@ sub_menu: |
     <li><a href="">Gary Bane </a></li>
     <li><a href="">Harry Blake</a></li>
     <li><a href="">Richard Booker</a></li>
+    <li><a href="">Harry "The Snake" Blake</a></li>
     <li><a href="">Roger Alford</a></li>
     <li><a href="">Mike Austin </a></li>
     <li><a href="">Gary Bane </a></li>
@@ -247,6 +252,7 @@ sub_menu: |
     <li><a href="">Richard Booker</a></li>
     <li><a href="">Roger Alford</a></li>
     <li><a href="">Mike Austin </a></li>
+    <li><a href="">Harry "The Snake" Blake</a></li>
     <li><a href="">Gary Bane </a></li>
     <li><a href="">Harry Blake</a></li>
     <li><a href="">Richard Booker</a></li>

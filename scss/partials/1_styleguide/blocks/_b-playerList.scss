@@ -57,9 +57,10 @@
 		}
 		.b-playerList__players li a{
 			float: left;
-			padding:0 ms(-5);
+			padding:ms(-2) ms(-5);
 			width:33.3%;
-			@include adjust-font-size-to($font-size-med);
+			@extend .font-Bd;
+			@include adjust-font-size-to($font-size-small-2);
 			@include rhythm($ms-5n, 0, $ms-11n, $ms-8n, $font-size-med);
 		}
 	}
@@ -70,10 +71,11 @@
 		}
 		.b-playerList__players li a{
 			float: left;
-			padding:0 ms(-5);
+			padding:ms(-2) ms(-5);
 			width:25%;
-			@include adjust-font-size-to($font-size-med);
-			@include rhythm($ms-5n, 0, $ms-11n, $ms-8n, $font-size-med);
+			@extend .font-Bd;
+			@include adjust-font-size-to($font-size-small-2);
+			@include rhythm($ms-5n, 0, $ms-11n, $ms-8n, $font-size-small-2);
 		}
 	}
 
