@@ -1,7 +1,14 @@
 .template-sport{
 	#core{
 		.main{
-
+			figure{
+				img{
+					width:100%;
+				}
+				figcaption{
+					color:$WarmGrey1;
+				}
+			}
 		}//end .main
 		.sidebar{
 			ul{
@@ -16,7 +23,7 @@
 		  @include grid-tablet;
 
 		  .main{
-		  	@include grid-span(5,2);
+		  	@include grid-span(5,1);
 		  }//end .main
 		  .sidebar{
 		  	@include grid-span(3,6);
@@ -31,9 +38,6 @@
 		  }//end .main
 		  .sidebar{
 		  	@include grid-span(4,13);
-		  	ul li a{
-		  		@include adjust-font-size-to($font-size-med-2);
-		  	}
 		  }//end .sidebar
 		}//end $bp-desktop2-6
 	}

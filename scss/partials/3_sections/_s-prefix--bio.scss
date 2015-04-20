@@ -1,0 +1,72 @@
+#prefix.s-prefix--bio{
+	margin-bottom:0;
+	padding-bottom:0;
+	.page-title{
+		color:$white;
+	}
+	.breadcrumbs{
+		@include rhythm($ms-8n, 0, 0, $ms-2n, $font-size-small-2);
+	}
+	.tabs {
+		
+		ul{
+		}
+		li{
+			
+		}//end li
+		a{
+			
+		}
+
+	}//end .tabs
+
+	@include breakpoint($bp-mobile1-1 $bp-tablet-1){
+		   @include grid-mobile1;
+		   .page-title{
+		   	 text-align:center;
+		   	 @include adjust-font-size-to($font-size-large-2);
+		   	 @include grid-span(4,1); clear:both;
+		   }
+		   .breadcrumbs{display:none;}
+		  
+		 }
+		 @include breakpoint(($bp-mobile2-1+1rem) $bp-tablet-1){
+		   @include grid-mobile2;
+		   .page-title{	}
+		   .breadcrumbs{}
+		   .tabs{  }
+		 }
+		 @include breakpoint($bp-tablet-1 $bp-desktop1-1){
+		   @include grid-tablet;
+		   .page-title{	}
+		   .breadcrumbs{}
+		   .tabs{
+		   	 float:left;
+		   	 li{
+		   	 	margin-left:0;
+		   	 	margin-right:ms(-2);
+
+		   	 }
+		   }
+		 }
+		 @include breakpoint($bp-desktop1-1){
+		   @include grid-desktop1;
+		   position:relative;
+		   .page-title{	}
+		   .breadcrumbs{ float:left;}
+		   .tabs{
+		   	position:absolute;
+		   	bottom:0;
+		   	right:0;
+		   }
+		   .tabs li a{ 
+		   	 @include adjust-font-size-to($font-size-small-2);
+		   }
+		 }
+		 @include breakpoint($bp-desktop2-1){
+		   //@include grid-desktop2;
+		   .tabs li a{ 
+		   	 @include adjust-font-size-to($font-size-med);
+		   }
+		 }
+}

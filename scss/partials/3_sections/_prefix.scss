@@ -3,12 +3,17 @@
 
  &.home{}//end #pefix.home
  &.dark{
- 	.breadcrumbs a{	
+ 	.breadcrumbs li{
+ 	  a{	
  		color:$vb-Gold;	
  		&:hover{
  			color:tint($vb-Gold,30);
  		}
- 	}
+ 	  }//end a
+ 	  .active a{
+ 		  color:$white;
+ 		}
+ 	}//end breadcrumbs li
  	//.util span{ color:shade($secondary,20); }
  	.btn{
  		@include standard-box-shadow(shade($black,10));
@@ -17,6 +22,10 @@
  	.page-name{
  		color:$white;
  		text-shadow: $black, 0, ms(-5), ms(-8), 0;
+ 	}
+ 	.page-title{
+ 		color:$white;
+ 		text-shadow:  0 ms(-7) ms(-8) $black;
  	}
 
  }//end #prefix.dark

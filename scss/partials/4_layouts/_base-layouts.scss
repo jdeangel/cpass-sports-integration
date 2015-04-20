@@ -36,7 +36,17 @@ body{
 		width:100%;
 		float:left;
 		#s-header__cpass{}
-		#s-header__site{}
+		#s-header__site{
+			#nav-primary{
+				@include breakpoint($bp-mobile1-1 $bp-tablet-1){
+			       padding-bottom:ms(1);
+				}
+				
+			}
+			.m-primaryNav__more{
+				display:none;
+			}
+		}
 	}//end #header
 	#prefix{
 		width:100%;

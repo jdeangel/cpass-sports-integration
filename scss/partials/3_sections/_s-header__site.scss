@@ -28,28 +28,35 @@
 	 @include breakpoint($bp-tablet-1 $bp-desktop1-1){
 	   @include grid-tablet;//8 columns
 	   .m-primaryNav__header{
-	   	@include grid-span(4, 1);
+	   	@include grid-span(8, 1); clear:both;
 	   }
 	   #nav-primary{
-	   	@include grid-span(4, 5);
+	   	@include grid-span(8, 1);
 	   }
 	 }
 	 @include breakpoint($bp-desktop1-1 $bp-desktop2-1){
 	   @include grid-desktop1;//12 columns
 	   .m-primaryNav__header{
-	   	@include grid-span(8, 1);
+	   	@include grid-span(4, 1);
 	   }
 	   #nav-primary{
-	   	@include grid-span(4, 9);
+	   	@include grid-span(8, 5);
+	   	margin-top:33px;
 	   }
 	 }
 	 @include breakpoint($bp-desktop2-1){
 	   @include grid-desktop2; //16 columns
 	   .m-primaryNav__header{
-	   	@include grid-span(10, 1);
+	   	@include grid-span(7, 1);
 	   }
 	   #nav-primary{
-	   	@include grid-span(6, 7);
+	   	@include grid-span(9, 8);
+	   	margin-top:50px;
+	   }
+	 }
+	 @include breakpoint(1712px){
+	 	#nav-primary{
+	   	margin-top:70px;
 	   }
 	 }
 }

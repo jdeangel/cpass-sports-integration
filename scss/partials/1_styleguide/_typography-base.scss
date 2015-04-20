@@ -28,6 +28,16 @@ html{
     color:$black;
     background:transparent;
     font-size: $root-font-size+px;
+    a{
+    	outline:0;
+    }
+    input::-moz-focus-inner { 
+      border: 0; 
+    }
+    object, embed { 
+      outline: 0;
+    }
+
 }
 body{
     @include establish-baseline;
