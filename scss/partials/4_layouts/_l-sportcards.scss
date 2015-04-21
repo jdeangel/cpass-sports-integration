@@ -1,90 +1,80 @@
 .template-sports-cards{
 	#core{
 		.main{
-			//@include grid-span(9);
 			ul{
 				list-style: none; 
 			 	padding: 0;
  				margin: 0;
 			}
-
-
 			
-      .b-sportcard{
+      li{
+
+        margin: ms(1) ms(0);
+
         @include breakpoint($bp-mobile1-1 $bp-mobile2-1+1rem){
-             @include grid-mobile1;//4 columns
-             width: 100%;
-             margin: 20px 0;
-             background-color:lighten($primary,5);
-              h2 {
-                font-size: 2.023em;
-                line-height: 1em;
-              }
-            .b-sportcard__title{
-              width:100%;
-            }
-           }
-           @include breakpoint(($bp-mobile2-1+1rem) $bp-tablet-1){
-             @include grid-mobile2;//6 columns
-              width: 45%;
-              margin: 20px 2.5%;
+          @include grid-mobile1;//4 columns
+          width: 100%;
+          margin: 20px 0;
+          .b-sportcard{ background-color:lighten($primary,5); }
+          .b-sportcard__title{
+            width:100%;
+            @include adjust-font-size-to($font-size-large-2);
+          }
+         }//end breakpoint
+
+
+          @include breakpoint(($bp-mobile2-1+1rem) $bp-tablet-1){
+            @include grid-mobile2;//6 columns
+            width: 45%;
+            margin: 20px 2.5%;
+            .b-sportcard{
               background-color:lighten($primary,5);
-               h2 {
-                font-size: 1.25em;
-                line-height: 1.25em;
-              }
-              .b-sportcard__title{
-              width:100%;
+              
             }
-           }
+            .b-sportcard__title{  
+              width:100%;
+              @include adjust-font-size-to($font-size-large);
+            } 
+           }//end breakpoint
+
+
            @include breakpoint($bp-tablet-1 $bp-desktop1-1){
              @include grid-tablet;//8 columns
               width: 45%;
               margin: 20px 2.5%;
-              background-color:lighten($primary,5);
-              h2 {
-                font-size: 1.6em;
-                line-height: 1.25em;
-              }
+              .b-sportcard{background-color:lighten($primary,5);}
+                          
               .b-sportcard__title{
                 width:75%;
+                @include adjust-font-size-to($font-size-large);
               }
- 
-           }
+           }//end breakpoint
+
+
            @include breakpoint($bp-desktop1-1 $bp-desktop2-1){
              @include grid-desktop1;//12 columns
              width: 45%;
              margin: 20px 2.5%;
-             h2 {
-                font-size: 2.023em;
-                line-height: 1.25em;
-              }
-                .b-sportcard__title{
+            
+             .b-sportcard__title{
                 width:75%;
-              }
-             
-           }
+                @include adjust-font-size-to($font-size-large);
+              }   
+           }//end breakpoint
+
            @include breakpoint($bp-desktop2-1){
              @include grid-desktop2; //16 columns
-             width: 30%;
+              width: 30%;
               margin: 20px 0.5%;
-              h2 {
-                font-size: 1.6em;
-                line-height: 1.25em;
-              }
-             
-           }
-      }
-
-     // h2{
-     //   font-size: 2.023em;
-      //  line-height: 1em;
-    //  }
+              .b-sportcard__title{ @include adjust-font-size-to($font-size-large);}   
+           }//end breakpoint
+      }//end li
 
 		}//end .main
 		
-	}
-}
+	}//end #core
+}//end .template-sports-cards
+
 
 
 

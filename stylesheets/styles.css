@@ -14883,9 +14883,8 @@ nav .b-social a:hover {
 .b-sportcard {
   background: #335377;
   float: left;
-  margin: 20px 16px;
   padding: 20px 20px 20px 20px;
-  width: 287px;
+  width: 100%;
   height: 200px;
 }
 .b-sportcard a {
@@ -20396,69 +20395,80 @@ body.template-event .s-postfix__default .m-event__credits h2, body.template-even
   padding: 0;
   margin: 0;
 }
+.template-sports-cards #core .main li {
+  margin: 20px 16px;
+}
 @media (min-width: 0) and (max-width: 31rem) {
-  .template-sports-cards #core .main .b-sportcard {
+  .template-sports-cards #core .main li {
     width: 100%;
     margin: 20px 0;
+  }
+  .template-sports-cards #core .main li .b-sportcard {
     background-color: #00346e;
   }
-  .template-sports-cards #core .main .b-sportcard h2, .template-sports-cards #core .main .b-sportcard .b-sportcard__title {
-    font-size: 2.023em;
-    line-height: 1em;
-  }
-  .template-sports-cards #core .main .b-sportcard .b-sportcard__title {
+  .template-sports-cards #core .main li .b-sportcard__title {
     width: 100%;
+    font-size: 32px;
+    font-size: 2rem;
+    line-height: 40px;
+    line-height: 2.50275rem;
   }
 }
 @media (min-width: 31rem) and (max-width: 48rem) {
-  .template-sports-cards #core .main .b-sportcard {
+  .template-sports-cards #core .main li {
     width: 45%;
     margin: 20px 2.5%;
+  }
+  .template-sports-cards #core .main li .b-sportcard {
     background-color: #00346e;
   }
-  .template-sports-cards #core .main .b-sportcard h2, .template-sports-cards #core .main .b-sportcard .b-sportcard__title {
-    font-size: 1.25em;
-    line-height: 1.25em;
-  }
-  .template-sports-cards #core .main .b-sportcard .b-sportcard__title {
+  .template-sports-cards #core .main li .b-sportcard__title {
     width: 100%;
+    font-size: 26px;
+    font-size: 1.625rem;
+    line-height: 30px;
+    line-height: 1.8770625rem;
   }
 }
 @media (min-width: 48rem) and (max-width: 60rem) {
-  .template-sports-cards #core .main .b-sportcard {
+  .template-sports-cards #core .main li {
     width: 45%;
     margin: 20px 2.5%;
+  }
+  .template-sports-cards #core .main li .b-sportcard {
     background-color: #00346e;
   }
-  .template-sports-cards #core .main .b-sportcard h2, .template-sports-cards #core .main .b-sportcard .b-sportcard__title {
-    font-size: 1.6em;
-    line-height: 1.25em;
-  }
-  .template-sports-cards #core .main .b-sportcard .b-sportcard__title {
+  .template-sports-cards #core .main li .b-sportcard__title {
     width: 75%;
+    font-size: 26px;
+    font-size: 1.625rem;
+    line-height: 30px;
+    line-height: 1.8770625rem;
   }
 }
 @media (min-width: 60rem) and (max-width: 78rem) {
-  .template-sports-cards #core .main .b-sportcard {
+  .template-sports-cards #core .main li {
     width: 45%;
     margin: 20px 2.5%;
   }
-  .template-sports-cards #core .main .b-sportcard h2, .template-sports-cards #core .main .b-sportcard .b-sportcard__title {
-    font-size: 2.023em;
-    line-height: 1.25em;
-  }
-  .template-sports-cards #core .main .b-sportcard .b-sportcard__title {
+  .template-sports-cards #core .main li .b-sportcard__title {
     width: 75%;
+    font-size: 26px;
+    font-size: 1.625rem;
+    line-height: 30px;
+    line-height: 1.8770625rem;
   }
 }
 @media (min-width: 78rem) {
-  .template-sports-cards #core .main .b-sportcard {
+  .template-sports-cards #core .main li {
     width: 30%;
     margin: 20px 0.5%;
   }
-  .template-sports-cards #core .main .b-sportcard h2, .template-sports-cards #core .main .b-sportcard .b-sportcard__title {
-    font-size: 1.6em;
-    line-height: 1.25em;
+  .template-sports-cards #core .main li .b-sportcard__title {
+    font-size: 26px;
+    font-size: 1.625rem;
+    line-height: 30px;
+    line-height: 1.8770625rem;
   }
 }
 
