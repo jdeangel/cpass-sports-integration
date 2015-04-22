@@ -52,7 +52,7 @@
 			background:transparent;
 			color:lighten($tertiary, 10);
 		}
-		&.active {
+		&.active, &:visited {
 			background: transparent;
 			color: darken($tertiary, 10);
 		}

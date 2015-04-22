@@ -10254,7 +10254,7 @@ p a.action:hover {
   background: transparent;
   color: #0078eb;
 }
-.tabs a.active {
+.tabs a.active, .tabs a:visited {
   background: transparent;
   color: #004485;
 }
