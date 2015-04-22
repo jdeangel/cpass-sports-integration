@@ -19043,6 +19043,14 @@ body.template-comingSoon #core .main article {
     margin-right: 0;
     clear: none;
   }
+  .template-bio #core .page-name {
+    width: 74.35897436%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+    clear: left;
+  }
   .template-bio #core .l-bio__main {
     width: 74.35897436%;
     float: left;
@@ -19061,29 +19069,35 @@ body.template-comingSoon #core .main article {
   }
 }
 @media (min-width: 60rem) and (max-width: 78rem) {
-  .template-bio #core .l-bio__details {
-    width: 23.72881356%;
+  .template-bio #core .l-bio__primary {
+    width: 74.57627119%;
     float: left;
     margin-right: -100%;
     margin-left: 0;
     clear: none;
   }
-  .template-bio #core .l-bio__details__page-name {
+  .template-bio #core .l-bio__primary .l-bio__details {
+    width: 31.81818182%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+  }
+  .template-bio #core .l-bio__primary .l-bio__details__page-name {
     display: block;
   }
-  .template-bio #core .page-name {
-    width: 49.15254237%;
-    float: left;
-    margin-right: -100%;
-    margin-left: 25.42372881%;
+  .template-bio #core .l-bio__primary .page-name {
+    width: 65.90909091%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
     clear: none;
-    float: none;
   }
-  .template-bio #core .l-bio__main {
-    width: 49.15254237%;
-    float: left;
-    margin-right: -100%;
-    margin-left: 25.42372881%;
+  .template-bio #core .l-bio__primary .l-bio__main {
+    width: 65.90909091%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
     clear: none;
   }
   .template-bio #core .l-bio__playerList {
@@ -19094,33 +19108,38 @@ body.template-comingSoon #core .main article {
     clear: none;
     border-left: 1px solid #eae9e6;
     padding-left: 16px;
-    margin-top: -12%;
   }
 }
 @media (min-width: 78rem) {
-  .template-bio #core .l-bio__details {
-    width: 17.46031746%;
+  .template-bio #core .l-bio__primary {
+    width: 74.6031746%;
     float: left;
     margin-right: -100%;
     margin-left: 0;
     clear: none;
   }
-  .template-bio #core .l-bio__details__page-name {
+  .template-bio #core .l-bio__primary .l-bio__details {
+    width: 20%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+  }
+  .template-bio #core .l-bio__primary .l-bio__details__page-name {
     display: block;
   }
-  .template-bio #core .page-name {
-    width: 55.55555556%;
-    float: left;
-    margin-right: -100%;
-    margin-left: 19.04761905%;
+  .template-bio #core .l-bio__primary .page-name {
+    width: 77.14285714%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
     clear: none;
-    float: none;
   }
-  .template-bio #core .l-bio__main {
-    width: 55.55555556%;
-    float: left;
-    margin-right: -100%;
-    margin-left: 19.04761905%;
+  .template-bio #core .l-bio__primary .l-bio__main {
+    width: 77.14285714%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
     clear: none;
   }
   .template-bio #core .l-bio__playerList {
@@ -19131,7 +19150,6 @@ body.template-comingSoon #core .main article {
     clear: none;
     border-left: 1px solid #eae9e6;
     padding-left: 16px;
-    margin-top: -9%;
   }
 }
 .template-bio ul {

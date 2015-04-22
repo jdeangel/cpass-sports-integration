@@ -6,6 +6,7 @@ layout: default
 
 <section id="core">
  <div class="container">
+  <div class="l-bio__primary">
   <figure class="l-bio__details">
     <r:editable_region name="bio__photo" />
     <figcaption>
@@ -25,12 +26,12 @@ layout: default
 
     </article>
   </main><!-- /.main -->
+  </div><!--end .l-bio__primary-->
+  <aside class="sidebar l-bio__playerList" role="complementary">
+    <r:partial name="components/b-playerList"/>
+  </aside> <!-- /.sidebar -->
+ </div><!--end .container-->
 
- <aside class="sidebar l-bio__playerList" role="complementary">
-   <r:partial name="components/b-playerList"/>
- </aside> <!-- /.sidebar -->
-
- </div>
 </section><!--/#core-->
 
  <r:partial name="components/s-postfix__default"/>
