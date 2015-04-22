@@ -15914,7 +15914,7 @@ nav #nav-primary.collapse {
   width: 100%;
   position: absolute;
   overflow: hidden !important;
-  height: 581px !important;
+  height: 465px !important;
   margin-top: 5px;
   margin-top: 0.2953245rem;
   padding-top: 0px;
@@ -15927,7 +15927,7 @@ nav #nav-primary.collapse {
 .overthrow-enabled .m-homeScroller__thumbs li {
   list-style: none;
   width: 379px;
-  height: 465px;
+  height: 545px;
   float: left;
   float: left !important;
   display: inline !important;
@@ -15956,7 +15956,7 @@ nav #nav-primary.collapse {
   top: -10px;
 }
 .m-homeScroller .sidescroll-nextprev .sidescroll-nextprev-links a {
-  height: 465px;
+  height: 581px;
   width: 3.27254253em;
   opacity: 1;
   filter: alpha(opacity=100);
