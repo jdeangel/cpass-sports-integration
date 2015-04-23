@@ -3,23 +3,20 @@ layout: default
 ---
 <r:partial name="components/s-prefix__home"/>
 
-
+<div class="template-sports-cards">
 <section id="core" >
   <div class="container">
     <main class="main" role="main">
-      <article>
-        <r:editable_region name="frontpage__main" />
-           </article>
-         </main><!-- /.main -->
-
-        <aside class="sidebar .b-player_list" role="complementary">
-          <r:editable_region name="frontpage__aside" /> 
-
-         </aside> <!-- /.sidebar -->
+     <article>
+        <r:editable_region name="main__kickerText" />
       </article>
+      <nav>
+        <r:editable_region name="frontpage__main" />
+      </nav>
     </main><!-- /.main -->
+
   </div><!--end container-->
 </section><!--end #core-->
-
+</div>
 
 <r:partial name="components/s-postfix__default"/>

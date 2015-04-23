@@ -1,0 +1,14 @@
+old frontpage:
+
+<main class="main" role="main">
+  <article>
+    <r:editable_region name="frontpage__main" />
+       </article>
+     </main><!-- /.main -->
+
+    <aside class="sidebar .b-player_list" role="complementary">
+      <r:editable_region name="frontpage__aside" />
+
+     </aside> <!-- /.sidebar -->
+  </article>
+</main><!-- /.main -->
