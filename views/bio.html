@@ -6,6 +6,7 @@ layout: default
 
 <section id="core">
  <div class="container">
+  <div class="l-bio__primary">
   <figure class="l-bio__details">
     <r:editable_region name="bio__photo" />
     <figcaption>
@@ -17,20 +18,20 @@ layout: default
       </ul>
     </figcaption>
   </figure>
-  <h1 class="page-name"><r:page:name /></h1>
+  <h1 class="page-name"><span><r:page:name /></span><r:page:alternate_name /></h1>
   <main class="main l-bio__main" role="main">
     <article>
      <r:editable_region name="bio__main" />
      <p class="l-bio__main__credits"><cite><r:editable_region name="bio__main_credits" type="simple"/></cite></p>
-     
+
     </article>
   </main><!-- /.main -->
+  </div><!--end .l-bio__primary-->
+  <aside class="sidebar l-bio__playerList" role="complementary">
+    <r:partial name="components/b-playerList"/>
+  </aside> <!-- /.sidebar -->
+ </div><!--end .container-->
 
- <aside class="sidebar l-bio__playerList" role="complementary">
-   <r:partial name="components/b-playerList"/>
- </aside> <!-- /.sidebar -->
-
- </div>
 </section><!--/#core-->
 
  <r:partial name="components/s-postfix__default"/>
