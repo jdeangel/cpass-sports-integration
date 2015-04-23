@@ -241,12 +241,10 @@ editable_region:
     <ul>
     <li><div class="b-card"><a href="http://discover.cpass.wvu.edu" class="b-featureAthlete"><img alt="View this chart" src="../images/stocks/athletes/maleAthlete.jpg" />
     <div class="b-card__details">
-    <span class="b-card__name">Fulton Walker</span>
+    <div class="b-card__name">Fulton Walker</div>
     <span class="b-card__sport"><b>Sport:</b> Football</span>
-    <span class="b-card__position"><b>Position:</b> Outfield</span>
     <span class="b-card__duration"><b>Played:</b> 1979-81</span>
-    <span class="b-card__hometown"><b>From:</b> Martinsburg, WV</span>
-    <span class="b-card__hometown">First African American athlete to participate in sports at WVU</span>
+    <span class="b-card__description">First African American athlete to participate in sports at WVU</span>
     </div>
     </a>      
     </li>
@@ -254,10 +252,8 @@ editable_region:
     <div class="b-card__details">
     <span class="b-card__name">Fulton Walker</span>
     <span class="b-card__sport"><b>Sport:</b> Football</span>
-    <span class="b-card__position"><b>Position:</b> Outfield</span>
     <span class="b-card__duration"><b>Played:</b> 1979-81</span>
-    <span class="b-card__hometown"><b>From:</b> Martinsburg, WV</span>
-    <span class="b-card__hometown">First African American athlete to participate in sports at WVU</span>
+    <span class="b-card__description">First African American athlete to participate in sports at WVU</span>
     </div>
     </a>      
     </li>
@@ -265,10 +261,18 @@ editable_region:
     <div class="b-card__details">
     <span class="b-card__name">Fulton Walker</span>
     <span class="b-card__sport"><b>Sport:</b> Football</span>
-    <span class="b-card__position"><b>Position:</b> Outfield</span>
     <span class="b-card__duration"><b>Played:</b> 1979-81</span>
-    <span class="b-card__hometown"><b>From:</b> Martinsburg, WV</span>
-    <span class="b-card__hometown">First African American athlete to participate in sports at WVU</span>
+    <span class="b-card__description">First African American athlete to participate in sports at WVU</span>
+    </div>
+    </a>
+    </div><!--end .b-card-->
+    </li>
+    <li><div class="b-card"><a href="https://www.youtube.com/watch?v=O4XskfT6vNY" class="b-featureAthlete"><img alt="Ride a bike" src="../images/stocks/athletes/femaleAthlete.jpg" />
+    <div class="b-card__details">
+    <span class="b-card__name">Fulton Walker</span>
+    <span class="b-card__sport"><b>Sport:</b> Football</span>
+    <span class="b-card__duration"><b>Played:</b> 1979-81</span>
+    <span class="b-card__description">First African American athlete to participate in sports at WVU</span>
     </div>
     </a>
     </div><!--end .b-card-->
@@ -280,22 +284,76 @@ editable_region:
     <span class="b-card__position"><b>Position:</b> Outfield</span>
     <span class="b-card__duration"><b>Played:</b> 1979-81</span>
     <span class="b-card__hometown"><b>From:</b> Martinsburg, WV</span>
-    <span class="b-card__hometown">First African American athlete to participate in sports at WVU</span>
+    <span class="b-card__description">First African American athlete to participate in sports at WVU</span>
     </div>
     </a>
     </div><!--end .b-card-->
     </li>
-    <li><div class="b-card"><a href="https://www.youtube.com/watch?v=O4XskfT6vNY" class="b-featureAthlete"><img alt="Ride a bike" src="../images/stocks/athletes/femaleAthlete.jpg" />
-    <div class="b-card__details">
-    <span class="b-card__name">Fulton Walker</span>
-    <span class="b-card__sport"><b>Sport:</b> Football</span>
-    <span class="b-card__position"><b>Position:</b> Outfield</span>
-    <span class="b-card__duration"><b>Played:</b> 1979-81</span>
-    <span class="b-card__hometown"><b>From:</b> Martinsburg, WV</span>
-    <span class="b-card__hometown">First African American athlete to participate in sports at WVU</span>
+    </ul>
+  frontpage__main: |
+    <div class="facts">
+    <h2>Quick Facts</h2>
+    <ul>
+    <li>Phil Edwards was the first African-American athlete to participate in sports at WVU.</li>
+    <li>Garret Ford was the Associate Athletic Director at WVU for XX years.</li>
+    <li>Jim Braxton has a residence hall named in his honor.</li>
+    <li>Bruce Clinton was the first African-American to play baseball at WVU.</li>
+    <li>Cathy Parson was the first female WVU basketball player to score 2,00 career points.</li>
+    </ul>
     </div>
-    </a>
-    </div><!--end .b-card-->
+    <div class="facts">
+    <h2>Time Line</h2>
+    <ul>
+    <li>1954–May 17, U.S. Supreme Court delivers its decision in Brown v. Board of Education of Topeka, Kansas, eliminating the “separate but equal” policy in American public schools.</li>                    
+    <li>1961–Phillip Edwards was the first African-American athlete at WVU, participating in men's track and field.</li>
+    <li>1962–Dick Leftridge becomes the first first African-American to play football at WVU.</li>
+    <li>1962–Dick Leftridge and Roger Alford become the first African-American players to receive football scholarships at WVU.</li>
+    <li>1965–Jim Lewis, Ron Williams, Ed Harvard, and Norman Holmes make WVU sports history as the first four African-American players listed on the freshman basketball team.</li>
+    <li>1965–George Woods, Jr. became the first African American athlete to play men’s soccer at WVU.</li>
+    <li>1965–Norman Hill was the first African American athlete to wrestle at WVU.</li>
+    <li>1971–Jim Braxton was the blocking weapon for star running back O. J. Simpson. As Simpson remarks, most of his 11,236 career rushing yards were due to Braxton.</li>
+    <li>1972– June 23, Title IX of the U.S. Education Amendments is passed, prohibiting discrimination based on sex in educational institutions.</li>
+    <li>1976–Bruce Clinton was offered a scholarship to become WVU’s first African-American baseball player.</li>
+    <li>1977–Harry Moore was the first African-American athlete to participate in men’s tennis at WVU.</li>
+    <li>1981–Shirley Robinson became the first African-American female athlete at WVU, participating in women’s tennis.</li>
+    <li>1984–December 21, Georgeann Wells became the first woman to register a dunk in an official NCAA intercollegiate basketball game. She did it with a men’s regulation-size.</li>
+    <li>1987–Yvette Clark was the first African-American athlete to participate in women’s gymnastics at WVU.</li>
+    <li>1993–Vanessa and Valerie Patterson were the first African-American athletes to participate in women’s swimming at WVU.</li>
+    <li>2006–Marlon LeBlanc is hired as the head coach of men’s soccer at WVU, becoming the first African-American to be the head coach of a WVU sports team.</li>
+    </ul>
+    </div> 
+  frontpage__aside: |
+    <h4>Personal Records</h4>
+    <ul>
+    <li class="records">
+    <span class="year">'78</span>
+    <span class="name">Fulton Walker</h5></span>
+    <span class="sport">Football</span>
+    <span class="info">87 Rushing Yards Gained in a game</span>
+    </li>
+    <li class="records">
+    <span class="year">'71</span>
+    <span class="name">Harry Blake</span>
+    <span class="sport">Football</span>
+    <span class="info">94 Receiving Yards in a game</span>
+    </li>
+    <li class="records">
+    <span class="year">'73</span>
+    <span class="name">Larry Carr</span>
+    <span class="sport">Men's Basketball</span>
+    <span class="info">27 Points in a game</span>
+    </li>
+    <li class="records">
+    <span class="year">'84</span>
+    <span class="name">Georgian Wells</span>
+    <span class="sport">Womens Basketball</span>
+    <span class="info">35 Points in a game</span>
+    </li>
+    <li class="records">
+    <span class="year">'85</span>
+    <span class="name">Abidoue Nang</span>
+    <span class="sport">Mens Soccer</span>
+    <span class="info">2 Goals in a game</span>
     </li>
     </ul>
 

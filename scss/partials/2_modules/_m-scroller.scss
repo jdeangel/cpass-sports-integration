@@ -8,6 +8,8 @@
 	*:focus{
 		border:0;
 	}
+
+
 }
 
 .m-scroller__thumbs--wrapper{
@@ -89,17 +91,17 @@
 	  &.sidescroll-prev{ 
 	  	background:url(../images/postfix-arrows.png) no-repeat 2000px 2000px, url(../images/noise.png) repeat, $secondary linear-gradient(to right, set-alpha(lighten($secondary,7), 0.1), set-alpha(darken($secondary,3), 0.3), set-alpha(darken($secondary,10),0.0));
 	  	left:-(ms(3));	
-	  	background-position:12px -775px;	
+	  	background-position:12px -770px;	
 	  	border-radius: 0 70% 70%  0;
 	  	border-right: tint($secondary, 20) 1px solid;	  	
 	  	box-shadow: set-alpha($black,0.5) 10px 0px 7px -7px;
 	  	opacity:1;
 	  	@include standard-transition(opacity);
-	  	&:hover{ background-position:12px -352px;}
+	  	&:hover{ background-position:12px -347px;}
 	  	&.disabled{
 	  	opacity:0;
 	  	background:url(../images/postfix-arrows.png) no-repeat 12px 72px, $secondary url(../images/noise.png) repeat;
-	  	background-position:12px 72px;		  	
+	  	background-position:12px 77px;		  	
 	  	box-shadow: $black 6px 0px 9px -8px;
 	  	//margin-left:-20px;
 	    }
@@ -107,15 +109,15 @@
 	  &.sidescroll-next{ 
 	  	background:url(../images/postfix-arrows.png) no-repeat 2000px 2000px, url(../images/noise.png) repeat, $secondary linear-gradient(to left, set-alpha(lighten($secondary,7), 0.1), set-alpha(darken($secondary,3), 0.3), set-alpha(darken($secondary,10),0.0));
 	  	right:-10px; 
-	  	background-position:-371px -775px;
+	  	background-position:-371px -770px;
 	  	border-radius: 70% 0 0 70%;
 	  	border-left:tint($secondary, 20) 1px solid;		  	
 	  	box-shadow: set-alpha($black,0.5) -10px 0px 7px -7px;
-	  	&:hover{ background-position:-371px -352px;}
+	  	&:hover{ background-position:-371px -347px;}
 	  	&.disabled{
 	  	opacity:1;
 	  	background:url(../images/postfix-arrows.png) no-repeat 12px 72px, $secondary url(../images/noise.png) repeat;
-	  	background-position:-371px 72px;		  	
+	  	background-position:-371px 77px;		  	
 	  	box-shadow: $black -6px 0px 9px -8px;
 	  	//margin-left:-20px;
 	    }

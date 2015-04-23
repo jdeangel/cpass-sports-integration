@@ -6,8 +6,14 @@
 	position:relative;
 	@include rhythm($ms-1, 0, 0, 1, $font-size-med);
 
-	*:focus{
-		border:0;
+	*:focus{ border:0; outline:0;}
+
+	&:before{
+		content:'FEATURED PIONEERS:';
+		color:#4A6584;
+		@extend .font-Lt;
+		float:left;
+		text-indent:ms(-1);
 	}
 }
 
@@ -18,46 +24,58 @@
   width:100%;
 	height:ms(15); //464px
   position: absolute;
-  left:0;
+  left:0; 
 }
 
 .overthrow-enabled .m-homeScroller__thumbs{
 	width:100%;
 	position:absolute;
-
 	overflow:hidden !important;
-	height:ms(14.75) !important; //464px
+	height: 530px !important; //464px
 
-	@include rhythm($ms-6n, 0, $ms-1n, 0, $font-size-med);
+	background: rgba(0,20,41,1);
+	background: -moz-radial-gradient(center, ellipse cover, rgba(0,20,41,1) 0%, rgba(0,37,78,0) 84%, rgba(0,40,85,0) 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(0,20,41,1)), color-stop(84%, rgba(0,37,78,0)), color-stop(100%, rgba(0,40,85,0)));
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(0,20,41,1) 0%, rgba(0,37,78,0) 84%, rgba(0,40,85,0) 100%);
+	background: -o-radial-gradient(center, ellipse cover, rgba(0,20,41,1) 0%, rgba(0,37,78,0) 84%, rgba(0,40,85,0) 100%);
+	background: -ms-radial-gradient(center, ellipse cover, rgba(0,20,41,1) 0%, rgba(0,37,78,0) 84%, rgba(0,40,85,0) 100%);
+	background: radial-gradient(ellipse at center, rgba(0,20,41,1) 0%, rgba(0,37,78,0) 84%, rgba(0,40,85,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001429', endColorstr='#002855', GradientType=1 );
+
+	@include rhythm($ms-6n, $ms-0, $ms-0, $ms-6n, $font-size-med);
 
 	ul{
 	}
 	li{
 		list-style:none;
 		width:ms(13)+20px; //356px;
-		height:545px;//464px
-		float:left;
+		height:ms(14);//464px
 		float:left !important;
 		display:inline !important;
-		padding:0 ms(-2) 0 ms(-2) !important;		
+		padding:0 ms(-2) 0 ms(-2) !important;
+		&:first-child{ padding-left:0;}		
 		&:last-child{ }
 		img{
 			width:100%;
 			height:auto;
+			float:left;
+		}
+		a{
+			width:100%;
 		}
 	}
 
 
 	.ps-scrollbar-x-rail{
-		background:url(../images/noise.png) repeat darken($secondary, 7);
-		box-shadow: darken($secondary, 30) 0 ms(-10) ms(-9) 0 inset, tint($secondary, 50) 0 ms(-10) ms(-9) 0;
+		background:url(../images/noise.png) repeat darken($primary, 12);
+		box-shadow: darken($primary, 30) 0 ms(-10) ms(-9) 0 inset, lighten($primary, 3) 0 ms(-10) ms(-9) 0;
 		height:ms(-5);
 		bottom:ms(-1);
 		>.ps-scrollbar-x{
-			background:url(../images/noise.png) repeat lighten($black, 2);
-			height:ms(-3);
-			bottom:-(ms(-10));
-			box-shadow: lighten($black, 20) 0 ms(-8) ms(-9) 0 inset, darken($secondary, 60) 0 1px ms(-6) 0;
+			background:url(../images/noise.png) repeat lighten($WVUGold, 2);
+			height:ms(-2);
+			bottom:-(ms(-7));
+			box-shadow: lighten($WVUGold, 20) 0 ms(-8) ms(-9) 0 inset, darken($primary, 30) 0 1px ms(-6) 0;
 
 		}
 	}
@@ -73,20 +91,17 @@
   	top:-10px;
 
     a{
-	  height:ms(15);
+	  height:550px;
 	  width:$ms-5+em;
 	  opacity:1;
 	  color:$white;
-	  @include standard-transition(box-shadow);
-	  transition-property: box-shadow, background-image;
-	  transition-duration:0.5s;
-	  transition-timing-function:ease-in;
+
+	 
 
 
 
 	  &.sidescroll-prev{
 	  	background:url(../images/postfix-arrows.png) no-repeat 2000px 2000px, 
-	  	url(../images/noise-blue.png) repeat, 
 	  	#001E3E;
 	  	//background:url(../images/postfix-arrows.png) no-repeat 2000px 2000px, 
 	  	//url(../images/noise.png) repeat, 
@@ -99,33 +114,41 @@
 	  	background-position:12px -617px;
 	  	border-radius: 0 70% 70%  0;
 	  	border-right: tint(#001e3e, 20) 1px solid;
-	  	box-shadow: set-alpha($black,0.5) 10px 0px 7px -7px;
+	  	border-left: set-alpha(tint($primary, 20),0.22) 1px solid;
+	  	box-shadow: set-alpha($coolblack,0.5) 10px 0px 7px -7px;
 	  	opacity:1;
-	  	@include standard-transition(opacity);
+
+	  	transition: box-shadow 0.5s cubic-bezier(0.39, 0.58, 0.57, 1);
+
 	  	&:hover{ background-position:12px -194px;}
 	  	&.disabled{
-	  	opacity:0;
-	  	background:url(../images/postfix-arrows.png) no-repeat 12px 72px, $secondary url(../images/noise.png) repeat;
-	  	background-position:12px 72px;
-	  	box-shadow: $black 6px 0px 9px -8px;
+	  	opacity:1;
+
+	  	background-position: 1000000000px 1000000000px;
+
+	  	box-shadow: $coolblack 6px 0px 9px -8px;
 	  	//margin-left:-20px;
 	    }
 	  }
 	  &.sidescroll-next{
 	  	background:url(../images/postfix-arrows.png) no-repeat 2000px 2000px, 
-	  	url(../images/noise-blue.png) repeat, 
 	  	#001E3E; //
 	  	right:-23px;
 	  	background-position:-371px -617px;
 	  	border-radius: 70% 0 0 70%;
 	  	border-left:tint(#001e3e, 20) 1px solid;
-	  	box-shadow: set-alpha($black,0.5) -10px 0px 7px -7px;
+	  	border-right: set-alpha(tint($primary, 20),0.22) 1px solid;
+	  	box-shadow: set-alpha($coolblack,0.5) -10px 0px 7px -7px;
+
+	  	transition: box-shadow 0.5s cubic-bezier(0.39, 0.58, 0.57, 1);
+
 	  	&:hover{ background-position:-371px -194px;}
 	  	&.disabled{
 	  	opacity:1;
-	  	background:url(../images/postfix-arrows.png) no-repeat 12px 72px, $secondary url(../images/noise.png) repeat;
-	  	background-position:-371px 72px;
-	  	box-shadow: $black -6px 0px 9px -8px;
+
+	  	background-position: 1000000000px 1000000000px;
+
+	  	box-shadow: $coolblack -6px 0px 9px -8px;
 	  	//margin-left:-20px;
 	    }
 

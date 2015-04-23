@@ -53,8 +53,10 @@
 	min-height:ms(11);
 	@include rhythm(0, 0, 0, $ms-2n, $font-size-med-2);
 	.sidescroll-nextprev-links{
-		  top: 4%;
+		  top: -3%;
 		  width:101%;
+
+		  a{ height:200px; outline:0;}
 
 		
 	}

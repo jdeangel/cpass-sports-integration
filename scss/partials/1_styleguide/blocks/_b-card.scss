@@ -1,48 +1,97 @@
 .b-card{
-	background-color: $secondary;
-	  overflow-y: hidden;
-	a{
-		@extend .font-Roman;
-		color: $DarkGrey;
-	}
-	position: relative;
-	width:ms(13); //356px;
-	height:ms(14);//464px
+  background-color: $secondary;
+  overflow-y: hidden;
+  position: relative;
+  width:ms(13); //356px;
+  height:ms(14);//464px
+  box-shadow: 0 ms(-3) ms(-2) (ms(-7)*-1) $coolblack;
+  transition: box-shadow 0.5s cubic-bezier(0.39, 0.58, 0.57, 1);
 
-	span{
-		display:block;
-	}
+  span{
+    display:block;
+  }
 
-	.b-card__details{
-		position:absolute;
-		bottom: 0;
-		background: $secondary;
-		padding-left: ms(0n);
-		padding-top: ms(0n);
-		padding-bottom: ms(0n);
-	}
+  .b-featureAthlete{
+  	@extend .font-Roman;
+  	color: $DarkGrey;
+  	width:100%;
+  	float:left;
+  }
+
+  .b-card__details{
+    position:absolute;
+    bottom: 0;
+    background: $black url(../images/noise.png) repeat;
+    padding-bottom:ms(0);
+    transition: box-shadow 0.5s cubic-bezier(0.39, 0.58, 0.57, 1);
+
+    span{
+      padding:0 ms(0); 
+      @include adjust-font-size-to($font-size-small-2);
+      @include rhythm($ms-6n, 0, 0, $ms-10n, $font-size-small-2);	
+      color:$WarmGrey3; 
+
+    }
+  
 	
- .b-card__name{
- 	@extend .font-BdCn;
- 	font-size: 20px;
- 	color: $tertiary;
- 	
- }
+    .b-card__name{    	
+    	background: $tertiary url(../images/noise.png) repeat;
+    	color:$white;  
+    	text-shadow: 0 ms(-8) ms(-2) darken($tertiary, 20); 
+    	width:100%;
+    	float:left;	
+    	padding:ms(0);
+    	@extend .font-BdCn;
+    	@include adjust-font-size-to($font-size-large);
+    	@include rhythm(0, $ms-2n, $ms-6n, 0, $font-size-large);
+
+    	transition-property: background, text-shadow;
+    	transition-duration: 0.5s;
+    	transition-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1);
+    }
  
- .b-card__sport{
- 	
+    .b-card__sport{
+    	width:50%;
+    	float:left;
+    		
+    }
+
+    .b-card__position{
+    	width:50%;
+    	float:left;
+    	margin-top:0;
+    }
+
+    .b-card__duration{
+    	width:50%;
+    	float:right; 
+    }
+
+    .b-card__hometown{
+    	width:50%;
+    	float:right;
+    	margin-top:0;
+    }
+
+    .b-card__description{
+ 	   color:$white;
+ 	   width:100%;
+ 	   float:left;
+ 	   @include adjust-font-size-to($font-size-med);
+       @include rhythm($ms-8n, 0, 0, $ms-10n, $font-size-med);
+    }
+
+ }//end b-card__details
+
+ &:hover, &:focus{
+ 	box-shadow: 0 ms(-5) ms(-4) (ms(-9)*-1) lighten($coolblack, 3);
+ 	.b-card__details{
+ 		background:lighten($black, 3) url(../images/noise.png) repeat;
+ 	}
+ 	.b-card__name{
+ 		background:lighten($tertiary, 3) url(../images/noise.png) repeat;
+ 		text-shadow: 0 ms(-9) ms(-5) darken($tertiary, 10); 
+ 	}
  }
-
- .b-card__position{}
-
- .b-card__duration{}
-
- .b-card__hometown{}
-
- .b-card__description{
-
- }
-
- &:hover, &:focus{}
  &:active{}
 }//end .b-card

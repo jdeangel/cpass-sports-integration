@@ -7744,7 +7744,7 @@ body html {
   font-weight: 900;
 }
 
-.font-BdCn, .tabs a, .b-card .b-card__name, .b-cta__about[data-eq-state="small"] .nav-list li a, .b-cta__about[data-eq-state="medium"] .nav-list li a, .template-event #core .main .b-eventCards li .b-eventCard__day, .b-links__academics .b-academics__programs__c2 a, .b-links__academics .b-academics__programs__c3 a, .b-links__academics .b-academics__programs__c4 a, #core .b-playerList .b-playerList__title, .m-cta .title, .l-bio__details li strong, .l-bio__details .l-bio__details__position, body.template-event #s-rsvp .sidebar h2, body.template-event #s-rsvp .sidebar .b-sportcard .b-sportcard__title, .b-sportcard body.template-event #s-rsvp .sidebar .b-sportcard__title, body.template-event #s-rsvp .sidebar .m-event__lodging__hotel, .b-player_list .records .year {
+.font-BdCn, .tabs a, .b-card .b-card__details .b-card__name, .b-cta__about[data-eq-state="small"] .nav-list li a, .b-cta__about[data-eq-state="medium"] .nav-list li a, .template-event #core .main .b-eventCards li .b-eventCard__day, .b-links__academics .b-academics__programs__c2 a, .b-links__academics .b-academics__programs__c3 a, .b-links__academics .b-academics__programs__c4 a, #core .b-playerList .b-playerList__title, .m-cta .title, .l-bio__details li strong, .l-bio__details .l-bio__details__position, body.template-event #s-rsvp .sidebar h2, body.template-event #s-rsvp .sidebar .b-sportcard .b-sportcard__title, .b-sportcard body.template-event #s-rsvp .sidebar .b-sportcard__title, body.template-event #s-rsvp .sidebar .m-event__lodging__hotel, .b-player_list .records .year {
   font-family: "Neue Helvetica W01", Arial, verdana, sans-serif;
   font-weight: 800;
 }
@@ -7754,7 +7754,7 @@ body html {
   font-weight: 500;
 }
 
-.font-Roman, .wvu-masthead__logo, .b-card a, .b-cta__about .nav-list li.dropdown .dropdown-menu .dropdown-header, .b-links__alumni .nav-list li a, .b-logo .wvu-masthead__title, .b-logo--min .wvu-masthead__title, .b-siteLogo[data-eq-state="xx-small"] span, .b-siteLogo[data-eq-state="x-small"] span, .b-siteLogo[data-eq-state="small"] span, .b-siteLogo[data-eq-state="medium"] span, .b-search .form-search__search-type label, .m-links .nav-list li a, .s-footer__wvu--wrapper #s-footer__wvu .container .wvu-icons, .s-footer__wvu--wrapper #s-footer__wvu .container .wvu-credits {
+.font-Roman, .wvu-masthead__logo, .b-card .b-featureAthlete, .b-cta__about .nav-list li.dropdown .dropdown-menu .dropdown-header, .b-links__alumni .nav-list li a, .b-logo .wvu-masthead__title, .b-logo--min .wvu-masthead__title, .b-siteLogo[data-eq-state="xx-small"] span, .b-siteLogo[data-eq-state="x-small"] span, .b-siteLogo[data-eq-state="small"] span, .b-siteLogo[data-eq-state="medium"] span, .b-search .form-search__search-type label, .m-links .nav-list li a, .s-footer__wvu--wrapper #s-footer__wvu .container .wvu-icons, .s-footer__wvu--wrapper #s-footer__wvu .container .wvu-credits {
   font-family: "Neue Helvetica W02", Arial, verdana, sans-serif;
   font-weight: 400;
 }
@@ -7769,7 +7769,7 @@ body html {
   font-weight: 300;
 }
 
-.font-Lt, .template-event #core .main .b-eventCards li .b-eventCard__location, .b-logo--min[data-eq-state="large"] .wvu-masthead__title, .b-logo--min[data-eq-state="x-large"] .wvu-masthead__title, #postfix h2, #postfix .b-sportcard .b-sportcard__title, .b-sportcard #postfix .b-sportcard__title, .l-bio__details li, .l-bio__details .l-bio__details__page-name {
+.font-Lt, .template-event #core .main .b-eventCards li .b-eventCard__location, .b-logo--min[data-eq-state="large"] .wvu-masthead__title, .b-logo--min[data-eq-state="x-large"] .wvu-masthead__title, .m-homeScroller--wrapper:before, #postfix h2, #postfix .b-sportcard .b-sportcard__title, .b-sportcard #postfix .b-sportcard__title, .l-bio__details li, .l-bio__details .l-bio__details__page-name {
   font-family: "Neue Helvetica W02", Arial, verdana, sans-serif;
   font-weight: 200;
 }
@@ -11365,24 +11365,114 @@ nav .b-social a:hover {
   position: relative;
   width: 359px;
   height: 465px;
-}
-.b-card a {
-  color: #333f48;
+  -webkit-box-shadow: 0 8px 10px -3px #14191f;
+  box-shadow: 0 8px 10px -3px #14191f;
+  -webkit-transition: -webkit-box-shadow 0.5s cubic-bezier(0.39, 0.58, 0.57, 1);
+  transition: box-shadow 0.5s cubic-bezier(0.39, 0.58, 0.57, 1);
 }
 .b-card span {
   display: block;
 }
+.b-card .b-featureAthlete {
+  color: #333f48;
+  width: 100%;
+  float: left;
+}
 .b-card .b-card__details {
   position: absolute;
   bottom: 0;
-  background: #ede7dc;
-  padding-left: 16px;
-  padding-top: 16px;
+  background: #2c2a29 url(../images/noise.png) repeat;
   padding-bottom: 16px;
+  -webkit-transition: -webkit-box-shadow 0.5s cubic-bezier(0.39, 0.58, 0.57, 1);
+  transition: box-shadow 0.5s cubic-bezier(0.39, 0.58, 0.57, 1);
 }
-.b-card .b-card__name {
-  font-size: 20px;
-  color: #005eb8;
+.b-card .b-card__details span {
+  padding: 0 16px;
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 20px;
+  line-height: 1.251375rem;
+  margin-top: 5px;
+  margin-top: 0.2953245rem;
+  padding-top: 0px;
+  padding-top: 0rem;
+  padding-bottom: 0px;
+  padding-bottom: 0rem;
+  margin-bottom: 2px;
+  margin-bottom: 0.11262375rem;
+  color: #bfb8af;
+}
+.b-card .b-card__details .b-card__name {
+  background: #005eb8 url(../images/noise.png) repeat;
+  color: #fffefb;
+  text-shadow: 0 2px 10px #002a52;
+  width: 100%;
+  float: left;
+  padding: 16px;
+  font-size: 26px;
+  font-size: 1.625rem;
+  line-height: 30px;
+  line-height: 1.8770625rem;
+  margin-top: 0px;
+  margin-top: 0rem;
+  padding-top: 12px;
+  padding-top: 0.77339228rem;
+  padding-bottom: 5px;
+  padding-bottom: 0.2953245rem;
+  margin-bottom: 0px;
+  margin-bottom: 0rem;
+  -webkit-transition-property: background, text-shadow;
+  transition-property: background, text-shadow;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1);
+  transition-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1);
+}
+.b-card .b-card__details .b-card__sport {
+  width: 50%;
+  float: left;
+}
+.b-card .b-card__details .b-card__position {
+  width: 50%;
+  float: left;
+  margin-top: 0;
+}
+.b-card .b-card__details .b-card__duration {
+  width: 50%;
+  float: right;
+}
+.b-card .b-card__details .b-card__hometown {
+  width: 50%;
+  float: right;
+  margin-top: 0;
+}
+.b-card .b-card__details .b-card__description {
+  color: #fffefb;
+  width: 100%;
+  float: left;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 20px;
+  line-height: 1.251375rem;
+  margin-top: 3px;
+  margin-top: 0.18270075rem;
+  padding-top: 0px;
+  padding-top: 0rem;
+  padding-bottom: 0px;
+  padding-bottom: 0rem;
+  margin-bottom: 2px;
+  margin-bottom: 0.11262375rem;
+}
+.b-card:hover, .b-card:focus {
+  -webkit-box-shadow: 0 5px 6px -2px #1b2128;
+  box-shadow: 0 5px 6px -2px #1b2128;
+}
+.b-card:hover .b-card__details, .b-card:focus .b-card__details {
+  background: #343230 url(../images/noise.png) repeat;
+}
+.b-card:hover .b-card__name, .b-card:focus .b-card__name {
+  background: #0066c7 url(../images/noise.png) repeat;
+  text-shadow: 0 2px 5px #004485;
 }
 
 .b-contact__info {
@@ -15825,7 +15915,7 @@ nav #nav-primary.collapse {
   background: url(../images/postfix-arrows.png) no-repeat 2000px 2000px, url(../images/noise.png) repeat, #ede7dc -webkit-linear-gradient(left, rgba(249, 247, 244, 0.1), rgba(232, 224, 210, 0.3), rgba(220, 208, 186, 0));
   background: url(../images/postfix-arrows.png) no-repeat 2000px 2000px, url(../images/noise.png) repeat, #ede7dc linear-gradient(to right, rgba(249, 247, 244, 0.1), rgba(232, 224, 210, 0.3), rgba(220, 208, 186, 0));
   left: -32px;
-  background-position: 12px -775px;
+  background-position: 12px -770px;
   border-radius: 0 70% 70%  0;
   border-right: #f0ebe3 1px solid;
   -webkit-box-shadow: #2C2A29 10px 0px 7px -7px;
@@ -15842,13 +15932,13 @@ nav #nav-primary.collapse {
   transition-timing-function: ease-in;
 }
 .sidescroll-nextprev .sidescroll-nextprev-links a.sidescroll-prev:hover {
-  background-position: 12px -352px;
+  background-position: 12px -347px;
 }
 .sidescroll-nextprev .sidescroll-nextprev-links a.sidescroll-prev.disabled {
   opacity: 0;
   filter: alpha(opacity=0);
   background: url(../images/postfix-arrows.png) no-repeat 12px 72px, #ede7dc url(../images/noise.png) repeat;
-  background-position: 12px 72px;
+  background-position: 12px 77px;
   -webkit-box-shadow: #2c2a29 6px 0px 9px -8px;
   box-shadow: #2c2a29 6px 0px 9px -8px;
 }
@@ -15857,7 +15947,7 @@ nav #nav-primary.collapse {
   background: url(../images/postfix-arrows.png) no-repeat 2000px 2000px, url(../images/noise.png) repeat, #ede7dc -webkit-linear-gradient(right, rgba(249, 247, 244, 0.1), rgba(232, 224, 210, 0.3), rgba(220, 208, 186, 0));
   background: url(../images/postfix-arrows.png) no-repeat 2000px 2000px, url(../images/noise.png) repeat, #ede7dc linear-gradient(to left, rgba(249, 247, 244, 0.1), rgba(232, 224, 210, 0.3), rgba(220, 208, 186, 0));
   right: -10px;
-  background-position: -371px -775px;
+  background-position: -371px -770px;
   border-radius: 70% 0 0 70%;
   border-left: #f0ebe3 1px solid;
   -webkit-box-shadow: #2C2A29 -10px 0px 7px -7px;
@@ -15866,13 +15956,13 @@ nav #nav-primary.collapse {
   box-shadow: rgba(44, 42, 41, 0.5) -10px 0px 7px -7px;
 }
 .sidescroll-nextprev .sidescroll-nextprev-links a.sidescroll-next:hover {
-  background-position: -371px -352px;
+  background-position: -371px -347px;
 }
 .sidescroll-nextprev .sidescroll-nextprev-links a.sidescroll-next.disabled {
   opacity: 1;
   filter: alpha(opacity=100);
   background: url(../images/postfix-arrows.png) no-repeat 12px 72px, #ede7dc url(../images/noise.png) repeat;
-  background-position: -371px 72px;
+  background-position: -371px 77px;
   -webkit-box-shadow: #2c2a29 -6px 0px 9px -8px;
   box-shadow: #2c2a29 -6px 0px 9px -8px;
 }
@@ -15893,6 +15983,13 @@ nav #nav-primary.collapse {
 }
 .m-homeScroller--wrapper *:focus {
   border: 0;
+  outline: 0;
+}
+.m-homeScroller--wrapper:before {
+  content: 'FEATURED PIONEERS:';
+  color: #4A6584;
+  float: left;
+  text-indent: 12px;
 }
 
 .m-homeScroller__thumbs--wrapper {
@@ -15914,106 +16011,107 @@ nav #nav-primary.collapse {
   width: 100%;
   position: absolute;
   overflow: hidden !important;
-  height: 465px !important;
+  height: 530px !important;
+  background: #001429;
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #001429), color-stop(84%, rgba(0, 37, 78, 0)), color-stop(100%, rgba(0, 40, 85, 0)));
+  background: -webkit-radial-gradient(center, ellipse cover, #001429 0%, rgba(0, 37, 78, 0) 84%, rgba(0, 40, 85, 0) 100%);
+  background: -webkit-radial-gradient(center, ellipse, #001429 0%, rgba(0, 37, 78, 0) 84%, rgba(0, 40, 85, 0) 100%);
+  background: radial-gradient(ellipse at center, #001429 0%, rgba(0, 37, 78, 0) 84%, rgba(0, 40, 85, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001429', endColorstr='#002855', GradientType=1 );
   margin-top: 5px;
   margin-top: 0.2953245rem;
-  padding-top: 0px;
-  padding-top: 0rem;
-  padding-bottom: 15px;
-  padding-bottom: 0.96674035rem;
-  margin-bottom: 0px;
-  margin-bottom: 0rem;
+  padding-top: 20px;
+  padding-top: 1.251375rem;
+  padding-bottom: 20px;
+  padding-bottom: 1.251375rem;
+  margin-bottom: 5px;
+  margin-bottom: 0.2953245rem;
 }
 .overthrow-enabled .m-homeScroller__thumbs li {
   list-style: none;
   width: 379px;
-  height: 545px;
-  float: left;
+  height: 465px;
   float: left !important;
   display: inline !important;
   padding: 0 10px 0 10px !important;
 }
+.overthrow-enabled .m-homeScroller__thumbs li:first-child {
+  padding-left: 0;
+}
 .overthrow-enabled .m-homeScroller__thumbs li img {
   width: 100%;
   height: auto;
+  float: left;
+}
+.overthrow-enabled .m-homeScroller__thumbs li a {
+  width: 100%;
 }
 .overthrow-enabled .m-homeScroller__thumbs .ps-scrollbar-x-rail {
-  background: url(../images/noise.png) repeat #e1d7c4;
-  -webkit-box-shadow: #b9a277 0 1px 2px 0 inset, #f6f3ed 0 1px 2px 0;
-  box-shadow: #b9a277 0 1px 2px 0 inset, #f6f3ed 0 1px 2px 0;
+  background: url(../images/noise.png) repeat #000b18;
+  -webkit-box-shadow: black 0 1px 2px 0 inset, #002f64 0 1px 2px 0;
+  box-shadow: black 0 1px 2px 0 inset, #002f64 0 1px 2px 0;
   height: 5px;
   bottom: 12px;
 }
 .overthrow-enabled .m-homeScroller__thumbs .ps-scrollbar-x-rail > .ps-scrollbar-x {
-  background: url(../images/noise.png) repeat #312f2e;
-  height: 8px;
-  bottom: -1px;
-  -webkit-box-shadow: #615c5a 0 2px 2px 0 inset, #645333 0 1px 4px 0;
-  box-shadow: #615c5a 0 2px 2px 0 inset, #645333 0 1px 4px 0;
+  background: url(../images/noise.png) repeat #f4b100;
+  height: 10px;
+  bottom: -3px;
+  -webkit-box-shadow: #ffcf51 0 2px 2px 0 inset, black 0 1px 4px 0;
+  box-shadow: #ffcf51 0 2px 2px 0 inset, black 0 1px 4px 0;
 }
 
 .m-homeScroller .sidescroll-nextprev .sidescroll-nextprev-links {
   top: -10px;
 }
 .m-homeScroller .sidescroll-nextprev .sidescroll-nextprev-links a {
-  height: 581px;
+  height: 550px;
   width: 3.27254253em;
   opacity: 1;
   filter: alpha(opacity=100);
   color: #fffefb;
-  -webkit-transition-property: -webkit-box-shadow;
-  transition-property: box-shadow;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -webkit-transition-timing-function: ease-in;
-  transition-timing-function: ease-in;
-  -webkit-transition-property: -webkit-box-shadow, background-image;
-  transition-property: box-shadow, background-image;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-  -webkit-transition-timing-function: ease-in;
-  transition-timing-function: ease-in;
 }
 .m-homeScroller .sidescroll-nextprev .sidescroll-nextprev-links a.sidescroll-prev {
-  background: url(../images/postfix-arrows.png) no-repeat 2000px 2000px, url(../images/noise-blue.png) repeat, #001E3E;
+  background: url(../images/postfix-arrows.png) no-repeat 2000px 2000px, #001E3E;
   left: -32px;
   background-position: 12px -617px;
   border-radius: 0 70% 70%  0;
   border-right: #334b64 1px solid;
-  -webkit-box-shadow: #2C2A29 10px 0px 7px -7px;
-  -webkit-box-shadow: rgba(44, 42, 41, 0.5) 10px 0px 7px -7px;
-  box-shadow: #2C2A29 10px 0px 7px -7px;
-  box-shadow: rgba(44, 42, 41, 0.5) 10px 0px 7px -7px;
+  border-left: #335377 1px solid;
+  border-left: rgba(51, 83, 119, 0.22) 1px solid;
+  -webkit-box-shadow: #14191F 10px 0px 7px -7px;
+  -webkit-box-shadow: rgba(20, 25, 31, 0.5) 10px 0px 7px -7px;
+  box-shadow: #14191F 10px 0px 7px -7px;
+  box-shadow: rgba(20, 25, 31, 0.5) 10px 0px 7px -7px;
   opacity: 1;
   filter: alpha(opacity=100);
-  -webkit-transition-property: opacity;
-  transition-property: opacity;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -webkit-transition-timing-function: ease-in;
-  transition-timing-function: ease-in;
+  -webkit-transition: -webkit-box-shadow 0.5s cubic-bezier(0.39, 0.58, 0.57, 1);
+  transition: box-shadow 0.5s cubic-bezier(0.39, 0.58, 0.57, 1);
 }
 .m-homeScroller .sidescroll-nextprev .sidescroll-nextprev-links a.sidescroll-prev:hover {
   background-position: 12px -194px;
 }
 .m-homeScroller .sidescroll-nextprev .sidescroll-nextprev-links a.sidescroll-prev.disabled {
-  opacity: 0;
-  filter: alpha(opacity=0);
-  background: url(../images/postfix-arrows.png) no-repeat 12px 72px, #ede7dc url(../images/noise.png) repeat;
-  background-position: 12px 72px;
-  -webkit-box-shadow: #2c2a29 6px 0px 9px -8px;
-  box-shadow: #2c2a29 6px 0px 9px -8px;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  background-position: 1000000000px 1000000000px;
+  -webkit-box-shadow: #14191f 6px 0px 9px -8px;
+  box-shadow: #14191f 6px 0px 9px -8px;
 }
 .m-homeScroller .sidescroll-nextprev .sidescroll-nextprev-links a.sidescroll-next {
-  background: url(../images/postfix-arrows.png) no-repeat 2000px 2000px, url(../images/noise-blue.png) repeat, #001E3E;
+  background: url(../images/postfix-arrows.png) no-repeat 2000px 2000px, #001E3E;
   right: -23px;
   background-position: -371px -617px;
   border-radius: 70% 0 0 70%;
   border-left: #334b64 1px solid;
-  -webkit-box-shadow: #2C2A29 -10px 0px 7px -7px;
-  -webkit-box-shadow: rgba(44, 42, 41, 0.5) -10px 0px 7px -7px;
-  box-shadow: #2C2A29 -10px 0px 7px -7px;
-  box-shadow: rgba(44, 42, 41, 0.5) -10px 0px 7px -7px;
+  border-right: #335377 1px solid;
+  border-right: rgba(51, 83, 119, 0.22) 1px solid;
+  -webkit-box-shadow: #14191F -10px 0px 7px -7px;
+  -webkit-box-shadow: rgba(20, 25, 31, 0.5) -10px 0px 7px -7px;
+  box-shadow: #14191F -10px 0px 7px -7px;
+  box-shadow: rgba(20, 25, 31, 0.5) -10px 0px 7px -7px;
+  -webkit-transition: -webkit-box-shadow 0.5s cubic-bezier(0.39, 0.58, 0.57, 1);
+  transition: box-shadow 0.5s cubic-bezier(0.39, 0.58, 0.57, 1);
 }
 .m-homeScroller .sidescroll-nextprev .sidescroll-nextprev-links a.sidescroll-next:hover {
   background-position: -371px -194px;
@@ -16021,10 +16119,9 @@ nav #nav-primary.collapse {
 .m-homeScroller .sidescroll-nextprev .sidescroll-nextprev-links a.sidescroll-next.disabled {
   opacity: 1;
   filter: alpha(opacity=100);
-  background: url(../images/postfix-arrows.png) no-repeat 12px 72px, #ede7dc url(../images/noise.png) repeat;
-  background-position: -371px 72px;
-  -webkit-box-shadow: #2c2a29 -6px 0px 9px -8px;
-  box-shadow: #2c2a29 -6px 0px 9px -8px;
+  background-position: 1000000000px 1000000000px;
+  -webkit-box-shadow: #14191f -6px 0px 9px -8px;
+  box-shadow: #14191f -6px 0px 9px -8px;
 }
 
 .wvu-masthead-wrapper {
@@ -17539,8 +17636,12 @@ nav #nav-primary.collapse {
   margin-bottom: 0.77339228rem;
 }
 .m-scroller--wrapper .sidescroll-nextprev-links {
-  top: 4%;
+  top: -3%;
   width: 101%;
+}
+.m-scroller--wrapper .sidescroll-nextprev-links a {
+  height: 200px;
+  outline: 0;
 }
 
 #s-footer__site {
@@ -18923,7 +19024,7 @@ body.template-comingSoon #core .main article {
 }
 
 @media (min-width: 110rem) {
-  .template-bio #core .l-bio__playerList ul li a {
+  .template-bio #core .l-bio__playerList ul li a, .template-bio--coaches #core .l-bio__playerList ul li a {
     font-size: 20px;
     font-size: 1.25rem;
     line-height: 30px;
@@ -18931,17 +19032,17 @@ body.template-comingSoon #core .main article {
   }
 }
 @media (min-width: 0) and (max-width: 38rem) {
-  .template-bio #core .container {
+  .template-bio #core .container, .template-bio--coaches #core .container {
     display: table;
   }
-  .template-bio #core .l-bio__details {
+  .template-bio #core .l-bio__details, .template-bio--coaches #core .l-bio__details {
     width: 100%;
     float: right;
     margin-left: 0;
     margin-right: 0;
     clear: none;
   }
-  .template-bio #core .l-bio__details .l-bio__details__page-name {
+  .template-bio #core .l-bio__details .l-bio__details__page-name, .template-bio--coaches #core .l-bio__details .l-bio__details__page-name {
     display: block;
     font-size: 52px;
     font-size: 3.25rem;
@@ -18951,7 +19052,7 @@ body.template-comingSoon #core .main article {
     font-family: "Neue Helvetica W02", Arial, verdana, sans-serif;
     font-weight: 900;
   }
-  .template-bio #core .page-name {
+  .template-bio #core .page-name, .template-bio--coaches #core .page-name {
     display: none;
     width: 100%;
     float: right;
@@ -18967,7 +19068,7 @@ body.template-comingSoon #core .main article {
     line-height: 137px;
     line-height: 8.57705209rem;
   }
-  .template-bio #core .l-bio__main {
+  .template-bio #core .l-bio__main, .template-bio--coaches #core .l-bio__main {
     width: 100%;
     float: right;
     margin-left: 0;
@@ -18975,7 +19076,7 @@ body.template-comingSoon #core .main article {
     clear: none;
     clear: both;
   }
-  .template-bio #core .l-bio__playerList {
+  .template-bio #core .l-bio__playerList, .template-bio--coaches #core .l-bio__playerList {
     width: 100%;
     float: right;
     margin-left: 0;
@@ -18984,28 +19085,28 @@ body.template-comingSoon #core .main article {
   }
 }
 @media (min-width: 38rem) and (max-width: 48rem) {
-  .template-bio #core .l-bio__details {
+  .template-bio #core .l-bio__details, .template-bio--coaches #core .l-bio__details {
     width: 100%;
     float: right;
     margin-left: 0;
     margin-right: 0;
     clear: none;
   }
-  .template-bio #core .l-bio__details img {
+  .template-bio #core .l-bio__details img, .template-bio--coaches #core .l-bio__details img {
     width: 31.03448276%;
     float: left;
     margin-right: -100%;
     margin-left: 0;
     clear: none;
   }
-  .template-bio #core .l-bio__details ul {
+  .template-bio #core .l-bio__details ul, .template-bio--coaches #core .l-bio__details ul {
     width: 65.51724138%;
     float: right;
     margin-left: 0;
     margin-right: 0;
     clear: none;
   }
-  .template-bio #core .l-bio__details .l-bio__details__page-name {
+  .template-bio #core .l-bio__details .l-bio__details__page-name, .template-bio--coaches #core .l-bio__details .l-bio__details__page-name {
     display: block;
     font-size: 52px;
     font-size: 3.25rem;
@@ -19015,10 +19116,10 @@ body.template-comingSoon #core .main article {
     font-family: "Neue Helvetica W02", Arial, verdana, sans-serif;
     font-weight: 900;
   }
-  .template-bio #core .page-name {
+  .template-bio #core .page-name, .template-bio--coaches #core .page-name {
     display: none;
   }
-  .template-bio #core .l-bio__main {
+  .template-bio #core .l-bio__main, .template-bio--coaches #core .l-bio__main {
     width: 100%;
     float: right;
     margin-left: 0;
@@ -19026,7 +19127,7 @@ body.template-comingSoon #core .main article {
     clear: none;
     clear: both;
   }
-  .template-bio #core .l-bio__playerList {
+  .template-bio #core .l-bio__playerList, .template-bio--coaches #core .l-bio__playerList {
     width: 100%;
     float: right;
     margin-left: 0;
@@ -19036,14 +19137,14 @@ body.template-comingSoon #core .main article {
   }
 }
 @media (min-width: 48rem) and (max-width: 60rem) {
-  .template-bio #core .l-bio__details {
+  .template-bio #core .l-bio__details, .template-bio--coaches #core .l-bio__details {
     width: 23.07692308%;
     float: right;
     margin-left: 0;
     margin-right: 0;
     clear: none;
   }
-  .template-bio #core .page-name {
+  .template-bio #core .page-name, .template-bio--coaches #core .page-name {
     width: 74.35897436%;
     float: left;
     margin-right: -100%;
@@ -19051,7 +19152,7 @@ body.template-comingSoon #core .main article {
     clear: none;
     clear: left;
   }
-  .template-bio #core .l-bio__main {
+  .template-bio #core .l-bio__main, .template-bio--coaches #core .l-bio__main {
     width: 74.35897436%;
     float: left;
     margin-right: -100%;
@@ -19059,7 +19160,7 @@ body.template-comingSoon #core .main article {
     clear: none;
     clear: left;
   }
-  .template-bio #core .l-bio__playerList {
+  .template-bio #core .l-bio__playerList, .template-bio--coaches #core .l-bio__playerList {
     width: 100%;
     float: right;
     margin-left: 0;
@@ -19069,38 +19170,38 @@ body.template-comingSoon #core .main article {
   }
 }
 @media (min-width: 60rem) and (max-width: 78rem) {
-  .template-bio #core .l-bio__primary {
+  .template-bio #core .l-bio__primary, .template-bio--coaches #core .l-bio__primary {
     width: 74.57627119%;
     float: left;
     margin-right: -100%;
     margin-left: 0;
     clear: none;
   }
-  .template-bio #core .l-bio__primary .l-bio__details {
+  .template-bio #core .l-bio__primary .l-bio__details, .template-bio--coaches #core .l-bio__primary .l-bio__details {
     width: 31.81818182%;
     float: left;
     margin-right: -100%;
     margin-left: 0;
     clear: none;
   }
-  .template-bio #core .l-bio__primary .l-bio__details__page-name {
+  .template-bio #core .l-bio__primary .l-bio__details__page-name, .template-bio--coaches #core .l-bio__primary .l-bio__details__page-name {
     display: block;
   }
-  .template-bio #core .l-bio__primary .page-name {
+  .template-bio #core .l-bio__primary .page-name, .template-bio--coaches #core .l-bio__primary .page-name {
     width: 65.90909091%;
     float: right;
     margin-left: 0;
     margin-right: 0;
     clear: none;
   }
-  .template-bio #core .l-bio__primary .l-bio__main {
+  .template-bio #core .l-bio__primary .l-bio__main, .template-bio--coaches #core .l-bio__primary .l-bio__main {
     width: 65.90909091%;
     float: right;
     margin-left: 0;
     margin-right: 0;
     clear: none;
   }
-  .template-bio #core .l-bio__playerList {
+  .template-bio #core .l-bio__playerList, .template-bio--coaches #core .l-bio__playerList {
     width: 23.72881356%;
     float: right;
     margin-left: 0;
@@ -19111,38 +19212,38 @@ body.template-comingSoon #core .main article {
   }
 }
 @media (min-width: 78rem) {
-  .template-bio #core .l-bio__primary {
+  .template-bio #core .l-bio__primary, .template-bio--coaches #core .l-bio__primary {
     width: 74.6031746%;
     float: left;
     margin-right: -100%;
     margin-left: 0;
     clear: none;
   }
-  .template-bio #core .l-bio__primary .l-bio__details {
+  .template-bio #core .l-bio__primary .l-bio__details, .template-bio--coaches #core .l-bio__primary .l-bio__details {
     width: 20%;
     float: left;
     margin-right: -100%;
     margin-left: 0;
     clear: none;
   }
-  .template-bio #core .l-bio__primary .l-bio__details__page-name {
+  .template-bio #core .l-bio__primary .l-bio__details__page-name, .template-bio--coaches #core .l-bio__primary .l-bio__details__page-name {
     display: block;
   }
-  .template-bio #core .l-bio__primary .page-name {
+  .template-bio #core .l-bio__primary .page-name, .template-bio--coaches #core .l-bio__primary .page-name {
     width: 77.14285714%;
     float: right;
     margin-left: 0;
     margin-right: 0;
     clear: none;
   }
-  .template-bio #core .l-bio__primary .l-bio__main {
+  .template-bio #core .l-bio__primary .l-bio__main, .template-bio--coaches #core .l-bio__primary .l-bio__main {
     width: 77.14285714%;
     float: right;
     margin-left: 0;
     margin-right: 0;
     clear: none;
   }
-  .template-bio #core .l-bio__playerList {
+  .template-bio #core .l-bio__playerList, .template-bio--coaches #core .l-bio__playerList {
     width: 23.80952381%;
     float: right;
     margin-left: 0;
@@ -19152,7 +19253,7 @@ body.template-comingSoon #core .main article {
     padding-left: 16px;
   }
 }
-.template-bio ul {
+.template-bio ul, .template-bio--coaches ul {
   list-style: none;
 }
 
@@ -20328,14 +20429,14 @@ body.template-event .s-postfix__default .m-event__credits h2, body.template-even
 }
 @media (min-width: 60rem) and (max-width: 78rem) {
   body.template-frontpage #core .main {
-    width: 66.10169492%;
+    width: 57.62711864%;
     float: left;
     margin-right: -100%;
     margin-left: 0;
     clear: none;
   }
   body.template-frontpage #core .sidebar {
-    width: 32.20338983%;
+    width: 40.6779661%;
     float: right;
     margin-left: 0;
     margin-right: 0;
@@ -20344,14 +20445,14 @@ body.template-event .s-postfix__default .m-event__credits h2, body.template-even
 }
 @media (min-width: 78rem) {
   body.template-frontpage #core .main {
-    width: 74.6031746%;
+    width: 61.9047619%;
     float: left;
     margin-right: -100%;
     margin-left: 0;
     clear: none;
   }
   body.template-frontpage #core .sidebar {
-    width: 23.80952381%;
+    width: 36.50793651%;
     float: right;
     margin-left: 0;
     margin-right: 0;
@@ -20490,24 +20591,24 @@ body.template-event .s-postfix__default .m-event__credits h2, body.template-even
   }
 }
 
-.template-sport #core .main figure img {
+.template-sport #core .main figure img, .template-coaches #core .main figure img {
   width: 100%;
 }
-.template-sport #core .main figure figcaption {
+.template-sport #core .main figure figcaption, .template-coaches #core .main figure figcaption {
   color: #6e6259;
 }
-.template-sport #core .sidebar ul li {
+.template-sport #core .sidebar ul li, .template-coaches #core .sidebar ul li {
   list-style: none;
 }
 @media (min-width: 48rem) and (max-width: 110rem) {
-  .template-sport #core .main {
+  .template-sport #core .main, .template-coaches #core .main {
     width: 61.29032258%;
     float: left;
     margin-right: -100%;
     margin-left: 0;
     clear: none;
   }
-  .template-sport #core .sidebar {
+  .template-sport #core .sidebar, .template-coaches #core .sidebar {
     width: 35.48387097%;
     float: right;
     margin-left: 0;
@@ -20516,14 +20617,14 @@ body.template-event .s-postfix__default .m-event__credits h2, body.template-even
   }
 }
 @media (min-width: 110rem) {
-  .template-sport #core .main {
+  .template-sport #core .main, .template-coaches #core .main {
     width: 74.6031746%;
     float: left;
     margin-right: -100%;
     margin-left: 0;
     clear: none;
   }
-  .template-sport #core .sidebar {
+  .template-sport #core .sidebar, .template-coaches #core .sidebar {
     width: 23.80952381%;
     float: right;
     margin-left: 0;
