@@ -16124,6 +16124,192 @@ nav #nav-primary.collapse {
   box-shadow: #14191f -6px 0px 9px -8px;
 }
 
+.m-homeVertScroller .title {
+  max-width: 100%;
+}
+.m-homeVertScroller .timeline {
+  background-image: url("../images/line-1.png");
+  background-position: center;
+  background-repeat: repeat-y;
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+  height: auto;
+  padding: 0px;
+  clear: both;
+  overflow: hidden;
+}
+.m-homeVertScroller .timeline li.year {
+  clear: both;
+  width: 4em;
+  margin: 0 auto;
+  line-height: 4em;
+  background-color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  margin-bottom: 25px;
+  border: 1px solid #002855;
+  box-shadow: 2px 2px 2px #888888;
+  -moz-box-shadow: 2px 2px 2px #888888;
+  -webkit-box-shadow: 2px 2px 2px #888888;
+}
+.m-homeVertScroller .timeline li.year:first-child {
+  margin-top: 0px;
+}
+.m-homeVertScroller .timeline li.year, .m-homeVertScroller .timeline li.event {
+  list-style-type: none;
+  z-index: 999;
+}
+.m-homeVertScroller .timeline li.event {
+  width: 45%;
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 20px;
+  position: relative;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+  -webkit-border-image: none;
+  -o-border-image: none;
+  border-image: none;
+  border-style: solid;
+  border-width: 1px;
+  position: relative;
+}
+.m-homeVertScroller .timeline li.event .image {
+  position: absolute;
+  float: left;
+  background: #be3a34;
+}
+.m-homeVertScroller .timeline li.event .image.bvb {
+  background: url(../images/timeline/bvb.png) no-repeat;
+  background-size: cover;
+  width: 359px;
+  height: 177px;
+  top: 85px;
+  left: -359px;
+}
+.m-homeVertScroller .timeline li.event .image.tennis {
+  background: url(../images/timeline/tennis.png) no-repeat;
+  background-size: cover;
+  width: 581px;
+  height: 177px;
+  top: 32px;
+  left: -581px;
+}
+.m-homeVertScroller .timeline li.event .image.gymnastics {
+  background: url(../images/timeline/Y_clarck.png) no-repeat;
+  background-size: cover;
+  width: 359px;
+  height: 359px;
+  top: -110px;
+  left: -359px;
+}
+.m-homeVertScroller .timeline li.event .image.basketball {
+  background: url(../images/timeline/womensbasketball.png) no-repeat;
+  background-size: cover;
+  width: 359px;
+  height: 177px;
+  top: 52px;
+  left: -359px;
+}
+.m-homeVertScroller .timeline li.event h3 {
+  font-size: 32px;
+  font-size: 2rem;
+  line-height: 40px;
+  line-height: 2.50275rem;
+  margin-top: 25px;
+  margin-top: 1.56421875rem;
+  padding-top: 0px;
+  padding-top: 0rem;
+  padding-bottom: 12px;
+  padding-bottom: 0.77339228rem;
+  margin-bottom: 10px;
+  margin-bottom: 0.59747839rem;
+}
+.m-homeVertScroller .timeline li.event h4 {
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 30px;
+  line-height: 1.8770625rem;
+  margin-top: 0px;
+  margin-top: 0rem;
+  padding-top: 0px;
+  padding-top: 0rem;
+  padding-bottom: 0px;
+  padding-bottom: 0rem;
+  margin-bottom: 12px;
+  margin-bottom: 0.77339228rem;
+}
+.m-homeVertScroller .timeline li.event p {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 20px;
+  line-height: 1.251375rem;
+  margin-top: 0px;
+  margin-top: 0rem;
+  padding-top: 0px;
+  padding-top: 0rem;
+  padding-bottom: 0px;
+  padding-bottom: 0rem;
+  margin-bottom: 10px;
+  margin-bottom: 0.59747839rem;
+}
+.m-homeVertScroller li.event:nth-child(odd) {
+  color: #002855;
+  clear: left;
+  float: left;
+}
+.m-homeVertScroller li.event:nth-child(even) {
+  color: #002855;
+  clear: right;
+  float: right;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.m-homeVertScroller .timeline li.event:nth-child(odd)::after {
+  background: #002855;
+  content: "";
+  height: 2px;
+  position: absolute;
+  right: -11.2%;
+  top: 30px;
+  width: 11.2%;
+}
+.m-homeVertScroller li.event:nth-child(even)::before {
+  background: #002855;
+  content: "";
+  height: 2px;
+  position: absolute;
+  top: 30px;
+  width: 11.2%;
+  left: -11.2%;
+}
+@media (max-width: 640px) {
+  .m-homeVertScroller .timeline li.event {
+    width: 80%;
+    background-color: #fff;
+    border: 1px solid #ff0000;
+    margin: 20px auto;
+    padding: 20px;
+    position: relative;
+  }
+  .m-homeVertScroller li.event:nth-child(odd) {
+    color: green;
+    clear: both;
+    float: none;
+  }
+  .m-homeVertScroller li.event:nth-child(even) {
+    color: red;
+    clear: both;
+    float: none;
+  }
+  .m-homeVertScroller .timeline li.event:nth-child(odd)::after, .m-homeVertScroller li.event:nth-child(even)::before {
+    width: 0px;
+  }
+}
+
 .wvu-masthead-wrapper {
   float: left;
   width: 100%;
