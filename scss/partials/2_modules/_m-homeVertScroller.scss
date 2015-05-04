@@ -65,30 +65,32 @@
         //top: ms(7);
         //left: -(ms(13));
 
+
+
         &.bvb{
             background: url(../images/timeline/bvb.png) no-repeat;
             background-size: cover;
             width: ms(13);
             height: ms(10);
-            top: ms(7);
+            top: ms(4);
             left: -(ms(13));
         }
 
         &.tennis{
             background: url(../images/timeline/tennis.png) no-repeat;
             background-size: cover;
-            width: ms(15);
+            width: ms(13);
             height: ms(10);
-            top: ms(3);
-            left: -(ms(15));
+            top: ms(4);
+            left: -(ms(13));
         }
 
         &.gymnastics{
             background: url(../images/timeline/Y_clarck.png) no-repeat;
             background-size: cover;
-            width: ms(13);
-            height: ms(13);
-            top: -(ms(8));
+             width: ms(13);
+            height: ms(10);
+             top: ms(4);
             left: -(ms(13));
         }
 
@@ -97,9 +99,11 @@
             background-size: cover;
             width: ms(13);
             height: ms(10);
-            top: ms(5);
+            top: ms(4);
             left: -(ms(13));
         }
+
+      
 
     }
 
@@ -160,23 +164,28 @@ li.event:nth-child(even)::before{
     left: -11.2%;
 } 
 
-@media (max-width: 640px) {
+ @include breakpoint( 0 $bp-mobile2-4){
+
     .timeline li.event{
         width: 80%;
         background-color: #fff;
-        border: 1px solid #ff0000;
+     //   border: 1px solid;
         margin: 20px auto;
         padding: 20px;
         position: relative;
+
+        .image{
+            background:none !important;
+        }
     }
     
     li.event:nth-child(odd) {
-        color: green;
+      //  color: green;
         clear: both;
         float: none;
     }
     li.event:nth-child(even) {
-        color: red;
+      //  color: red;
         clear: both;
         float: none;
     }
