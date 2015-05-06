@@ -76,6 +76,15 @@
             left: -(ms(13));
         }
 
+         &.wrestling{
+            background: url(../images/timeline/wrestling.png) no-repeat;
+            background-size: cover;
+            width: ms(13);
+            height: ms(10);
+            top: ms(4);
+            left: -(ms(13));
+        }
+
         &.tennis{
             background: url(../images/timeline/tennis.png) no-repeat;
             background-size: cover;
@@ -100,7 +109,7 @@
             width: ms(13);
             height: ms(10);
             top: ms(4);
-            left: -(ms(13));
+            right: -(ms(13));
         }
 
       

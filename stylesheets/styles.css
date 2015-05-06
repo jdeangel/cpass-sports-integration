@@ -16190,6 +16190,14 @@ nav #nav-primary.collapse {
   top: 42px;
   left: -359px;
 }
+.m-homeVertScroller .timeline li.event .image.wrestling {
+  background: url(../images/timeline/wrestling.png) no-repeat;
+  background-size: cover;
+  width: 359px;
+  height: 177px;
+  top: 42px;
+  left: -359px;
+}
 .m-homeVertScroller .timeline li.event .image.tennis {
   background: url(../images/timeline/tennis.png) no-repeat;
   background-size: cover;
@@ -16212,7 +16220,7 @@ nav #nav-primary.collapse {
   width: 359px;
   height: 177px;
   top: 42px;
-  left: -359px;
+  right: -359px;
 }
 .m-homeVertScroller .timeline li.event h3 {
   font-size: 32px;
