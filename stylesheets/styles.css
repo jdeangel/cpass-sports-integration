@@ -16153,6 +16153,12 @@ nav #nav-primary.collapse {
   -moz-box-shadow: 2px 2px 2px #888888;
   -webkit-box-shadow: 2px 2px 2px #888888;
 }
+.m-homeVertScroller .timeline li.year--clear {
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
 .m-homeVertScroller .timeline li.year:first-child {
   margin-top: 0px;
 }
@@ -16188,7 +16194,7 @@ nav #nav-primary.collapse {
   width: 359px;
   height: 177px;
   top: 42px;
-  left: -359px;
+  right: -359px;
 }
 .m-homeVertScroller .timeline li.event .image.wrestling {
   background: url(../images/timeline/wrestling.png) no-repeat;
@@ -16196,7 +16202,7 @@ nav #nav-primary.collapse {
   width: 359px;
   height: 177px;
   top: 42px;
-  left: -359px;
+  left: 359px;
 }
 .m-homeVertScroller .timeline li.event .image.tennis {
   background: url(../images/timeline/tennis.png) no-repeat;
@@ -16264,19 +16270,23 @@ nav #nav-primary.collapse {
   margin-bottom: 10px;
   margin-bottom: 0.59747839rem;
 }
-.m-homeVertScroller li.event:nth-child(odd) {
+.m-homeVertScroller li.event:nth-child(even) {
   color: #002855;
   clear: left;
   float: left;
+  margin-top: 20px;
 }
-.m-homeVertScroller li.event:nth-child(even) {
+.m-homeVertScroller li.event:nth-child(odd) {
   color: #002855;
   clear: right;
   float: right;
-  margin-top: 100px;
+  margin-top: 20px;
   margin-bottom: 50px;
 }
-.m-homeVertScroller .timeline li.event:nth-child(odd)::after {
+.m-homeVertScroller li.event.second {
+  margin-top: 50px;
+}
+.m-homeVertScroller .timeline li.event:nth-child(even)::after {
   background: #002855;
   content: "";
   height: 2px;
@@ -16285,7 +16295,7 @@ nav #nav-primary.collapse {
   top: 30px;
   width: 11.2%;
 }
-.m-homeVertScroller li.event:nth-child(even)::before {
+.m-homeVertScroller li.event:nth-child(odd)::before {
   background: #002855;
   content: "";
   height: 2px;
@@ -16305,11 +16315,11 @@ nav #nav-primary.collapse {
   .m-homeVertScroller .timeline li.event .image {
     background: none !important;
   }
-  .m-homeVertScroller li.event:nth-child(odd) {
+  .m-homeVertScroller li.event:nth-child(even) {
     clear: both;
     float: none;
   }
-  .m-homeVertScroller li.event:nth-child(even) {
+  .m-homeVertScroller li.event:nth-child(odd) {
     clear: both;
     float: none;
   }

@@ -32,6 +32,12 @@
     -moz-box-shadow: 2px 2px 2px #888888;
     -webkit-box-shadow: 2px 2px 2px #888888;
 }
+.timeline li.year--clear{
+  clear:both;
+  visibility: hidden;
+  height:0;
+  width:0;
+}
 .timeline li.year:first-child{
     margin-top:0px;
 }
@@ -73,7 +79,7 @@
             width: ms(13);
             height: ms(10);
             top: ms(4);
-            left: -(ms(13));
+            right: -(ms(13));
         }
 
          &.wrestling{
@@ -82,7 +88,7 @@
             width: ms(13);
             height: ms(10);
             top: ms(4);
-            left: -(ms(13));
+            left: (ms(13));
         }
 
         &.tennis{
@@ -139,21 +145,24 @@
       
 }
 
-li.event:nth-child(odd) {
+li.event:nth-child(even) {
     color: $WVUBlue;
     clear:left;
     float: left;
+    margin-top:20px;
 
 }
-li.event:nth-child(even) {
+li.event:nth-child(odd) {
     color: $WVUBlue;
     clear: right;
     float: right;
-    margin-top:100px;
+    margin-top:20px;
     margin-bottom:50px;
 }
-
-.timeline li.event:nth-child(odd)::after {
+li.event.second{
+    margin-top:50px;
+}
+.timeline li.event:nth-child(even)::after {
     background:$WVUBlue;
     content: "";
     height: 2px;
@@ -163,7 +172,7 @@ li.event:nth-child(even) {
     width: 11.2%;
     
 }
-li.event:nth-child(even)::before{
+li.event:nth-child(odd)::before{
     background:$WVUBlue;
     content: "";
     height: 2px;
@@ -188,12 +197,12 @@ li.event:nth-child(even)::before{
         }
     }
     
-    li.event:nth-child(odd) {
+    li.event:nth-child(even) {
       //  color: green;
         clear: both;
         float: none;
     }
-    li.event:nth-child(even) {
+    li.event:nth-child(odd) {
       //  color: red;
         clear: both;
         float: none;
