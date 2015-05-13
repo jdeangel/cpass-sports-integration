@@ -159,73 +159,60 @@ editable_region:
     <li>
       <a class="b-sportcard football" href="#">
         <h2 class="b-sportcard__title" >Football</h2>
-        <span class="b-sportcard__description" > Started during the<br>1973-1974 season</span>
       </a>
     </li>
     <li>
       <a class="b-sportcard wrestling" href="#">
         <h2 class=" b-sportcard__title" >Wrestling</h2>
-        <span class="b-sportcard__description" > Started during the<br>1973-1974 season</span>
       </a>
     </li>
     <li>
       <a class="b-sportcard baseball" href="#">
         <h2 class=" b-sportcard__title">Baseball</h2>
-        <span class="b-sportcard__description" href="#"> Started during the<br>1973-1974 season</span>
       </a>
     </li>
     <li> 
       <a class="b-sportcard basketball-m"  href="#">
         <h2 class=" b-sportcard__title" href="#">Men's Basketball</h2>
-        <span class="b-sportcard__description" href="#"> Started during the<br>1973-1974 season</span>
       </a>
     </li>
     <li> 
       <a class="b-sportcard tennis-m"  href="#">
         <h2 class=" b-sportcard__title" href="#">Men's Tennis</h2>
-        <span class="b-sportcard__description" href="#"> Started during the<br>1973-1974 season</span>
       </a>
     </li>
     <li> 
       <a class="b-sportcard soccer"  href="#">
         <h2 class="b-sportcard__title" href="#">Men's Soccer</h2>
-        <span class="b-sportcard__description" href="#"> Started during the<br>1973-1974 season</span>
       </a>
     </li>
     <li>
       <a class="b-sportcard track-m"  href="#">
         <h2 class="b-sportcard__title" href="#">Men's Track and Field</h2>
-        <span class="b-sportcard__description" href="#"> Started during the<br>1973-1974 season</span>
       </a>   
     </li>
     <li>
       <a class="b-sportcard swim-w"  href="#">
         <h2 class="b-sportcard__title" href="#">Women's Swimming</h2>
-        <span class="b-sportcard__description" href="#"> Started during the<br>1973-1974 season</span>
       </a>
     </li>
     <li>
       <a class="b-sportcard basketball-w"  href="#">
         <h2 class=" b-sportcard__title" href="#">Women's Basketball</h2>
-        <span class="b-sportcard__description" href="#"> Started during the<br>1973-1974 season</span>
-      </a>
     </li>
     <li>
       <a class="b-sportcard gymnastics"  href="#">
         <h2 class=" b-sportcard__title" href="#">Women's Gymnastics</h2>
-        <span class="b-sportcard__description" href="#"> Started during the<br>1973-1974 season</span>
       </a>
     </li>
     <li> 
       <a class="b-sportcard tennis-w"  href="#">
         <h2 class="b-sportcard__title" href="#">Women's Tennis</h2>
-        <span class="b-sportcard__description" href="#"> Started during the<br>1973-1974 season</span>
       </a>
     </li>
     <li> 
       <a class="b-sportcard track-w"  href="#">
        <h2 class="b-sportcard__title" href="#">Women's Track and Field</h2>
-       <span class="b-sportcard__description" href="#"> Started during the<br>1973-1974 season</span>
       </a>
     </li>
     </ul>
@@ -239,58 +226,60 @@ editable_region:
   bio__yearsActive: 1963-1965
   frontpage__m-homeScroller: |
     <ul>
-    <li><div class="b-card"><a href="http://discover.cpass.wvu.edu" class="b-featureAthlete"><img alt="View this chart" src="../images/stocks/athletes/maleAthlete.jpg" />
+    <li>
+    <div class="b-card">
+    <a href="http://discover.cpass.wvu.edu" class="b-featureAthlete">
+    <img alt="View this chart" src="../images/stocks/athletes/maleAthlete.jpg" />
     <div class="b-card__details">
-    <div class="b-card__name">Fulton Walker</div>
-    <span class="b-card__sport"><b>Sport:</b> Football</span>
-    <span class="b-card__duration"><b>Played:</b> 1979-81</span>
-    <span class="b-card__description">First African American athlete to participate in sports at WVU</span>
-    </div>
-    </a>      
-    </li>
-    <li><div class="b-card"><a href="http://discover.cpass.wvu.edu" class="b-featureAthlete"><img alt="View this chart" src="../images/stocks/athletes/maleAthlete.jpg" />
-    <div class="b-card__details">
-    <span class="b-card__name">Fulton Walker</span>
-    <span class="b-card__sport"><b>Sport:</b> Football</span>
-    <span class="b-card__duration"><b>Played:</b> 1979-81</span>
-    <span class="b-card__description">First African American athlete to participate in sports at WVU</span>
-    </div>
-    </a>      
-    </li>
-    <li><div class="b-card"><a href="https://www.youtube.com/watch?v=O4XskfT6vNY" class="b-featureAthlete"><img alt="Ride a bike" src="../images/stocks/athletes/femaleAthlete.jpg" />
-    <div class="b-card__details">
-    <span class="b-card__name">Fulton Walker</span>
-    <span class="b-card__sport"><b>Sport:</b> Football</span>
-    <span class="b-card__duration"><b>Played:</b> 1979-81</span>
-    <span class="b-card__description">First African American athlete to participate in sports at WVU</span>
+      <div class="b-card__name"> Fulton Walker </div>
+      <span class="b-card__sport"> <b>Sport: </b> Football</span>
+      <span class="b-card__duration"> <b>Played: </b> 1979-81</span>
+      <span class="b-card__description"> First African American athlete to participate in sports at WVU</span>
     </div>
     </a>
-    </div><!--end .b-card-->
+    </div><!--end b-card-->
     </li>
-    <li><div class="b-card"><a href="https://www.youtube.com/watch?v=O4XskfT6vNY" class="b-featureAthlete"><img alt="Ride a bike" src="../images/stocks/athletes/femaleAthlete.jpg" />
+    <li>
+    <div class="b-card">
+    <a href="http://discover.cpass.wvu.edu" class="b-featureAthlete">
+    <img alt="View this chart" src="../images/stocks/athletes/maleAthlete.jpg" />
     <div class="b-card__details">
-    <span class="b-card__name">Fulton Walker</span>
-    <span class="b-card__sport"><b>Sport:</b> Football</span>
-    <span class="b-card__duration"><b>Played:</b> 1979-81</span>
-    <span class="b-card__description">First African American athlete to participate in sports at WVU</span>
+      <div class="b-card__name"> Fulton Walker </div>
+      <span class="b-card__sport"> <b>Sport: </b> Football</span>
+      <span class="b-card__duration"> <b>Played: </b> 1979-81</span>
+      <span class="b-card__description"> First African American athlete to participate in sports at WVU</span>
     </div>
     </a>
-    </div><!--end .b-card-->
+    </div><!--end b-card-->
     </li>
-    <li><div class="b-card"><a href="https://www.youtube.com/watch?v=O4XskfT6vNY" class="b-featureAthlete"><img alt="Ride a bike" src="../images/stocks/athletes/femaleAthlete.jpg" />
+    <li>
+    <div class="b-card">
+    <a href="http://discover.cpass.wvu.edu" class="b-featureAthlete">
+    <img alt="View this chart" src="../images/stocks/athletes/maleAthlete.jpg" />
     <div class="b-card__details">
-    <span class="b-card__name">Fulton Walker</span>
-    <span class="b-card__sport"><b>Sport:</b> Football</span>
-    <span class="b-card__position"><b>Position:</b> Outfield</span>
-    <span class="b-card__duration"><b>Played:</b> 1979-81</span>
-    <span class="b-card__hometown"><b>From:</b> Martinsburg, WV</span>
-    <span class="b-card__description">First African American athlete to participate in sports at WVU</span>
+      <div class="b-card__name"> Fulton Walker </div>
+      <span class="b-card__sport"> <b>Sport: </b> Football</span>
+      <span class="b-card__duration"> <b>Played: </b> 1979-81</span>
+      <span class="b-card__description"> First African American athlete to participate in sports at WVU</span>
     </div>
     </a>
-    </div><!--end .b-card-->
+    </div><!--end b-card-->
+    </li>
+    <li>
+    <div class="b-card">
+    <a href="http://discover.cpass.wvu.edu" class="b-featureAthlete">
+    <img alt="View this chart" src="../images/stocks/athletes/maleAthlete.jpg" />
+    <div class="b-card__details">
+      <div class="b-card__name"> Fulton Walker </div>
+      <span class="b-card__sport"> <b>Sport: </b> Football</span>
+      <span class="b-card__duration"> <b>Played: </b> 1979-81</span>
+      <span class="b-card__description"> First African American athlete to participate in sports at WVU</span>
+    </div>
+    </a>
+    </div><!--end b-card-->
     </li>
     </ul>
-  frontpage__main: |
+  frontpage__main__old: |
     <div class="facts">
     <h2>Quick Facts</h2>
     <ul>
@@ -322,7 +311,7 @@ editable_region:
     <li>2006–Marlon LeBlanc is hired as the head coach of men’s soccer at WVU, becoming the first African-American to be the head coach of a WVU sports team.</li>
     </ul>
     </div> 
-  frontpage__aside: |
+  frontpage__aside__old: |
     <h4>Personal Records</h4>
     <ul>
     <li class="records">
@@ -355,7 +344,248 @@ editable_region:
     <span class="sport">Mens Soccer</span>
     <span class="info">2 Goals in a game</span>
     </li>
+    </ul>    
+  frontpage__main: |
+    <div class="overview">
+    <h1>Overview</h1>
+    <p>In 1961, the so-called color barrier was broken at WVU as Phillip Edwards became the first African-American student-athlete at WVU, competing in men’s track and field. One year later, Dick Leftridge became the first African-American to play football at WVU. He and Roger Alford were the first African-Americans to receive athletic scholarships from WVU that same year. The inclusion of Title IX in the 1972 U.S. Education Amendments prohibited discrimination based on sex in educational institutions, allowing women to join the athletics family. One of the first African-American female student-athletes at WVU was Cheryl Nabors, who joined the women’s track and field team in 1976. She helped to lead the way for full women’s sport inclusion at WVU. Garrett Ford, a standout running back for the Mountaineers football team, became the first African-American coach hired at WVU when he joined the football coaching staff as an assistant in 1970. The first African-American head coach, however, was not hired until 2006, when Marlon LeBlanc took the reins of the WVU men’s soccer program. This is a compilation of the history of sport integration at WVU and is meant to be a living database to honor those who have paved the way through WVU athletics.</p>
+    </div><!-- /.overview -->
+    <div class="tribute">
+    <h2>2015 Tribute Event</h2>
+    <p>WVU hosted a three-day program celebrating the Brown v. Board of Education decision with a tribute to pioneering African-American student-athletes at West Virginia University. Click here to view itenerary for the event.</p>
+    <a href="#"></a>
+    <h3>Event Photos</h3>
+    <ul>
+    <li><a class="b-featuredLink" href="#"><img src="../images/feat-footer__site__give.jpg" alt="Photo Gallery Link 1"/></a></li>
+    <li><a class="b-featuredLink" href="#"><img src="../images/feat-footer__site__give.jpg" alt="Photo Gallery Link 1"/></a></li>
+    <li><a class="b-featuredLink" href="#"><img src="../images/feat-footer__site__give.jpg" alt="Photo Gallery Link 1"/></a></li>
     </ul>
+    <h3>Tribute to Deceased Pioneers</h3>
+    <iframe width="923" height="519" src="https://www.youtube.com/embed/NMcBued6d7g?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+    </div><!-- /.tribute -->
+  frontpage__sideNav: |
+    <h3>Featured Integrated Sports</h3>
+    <ul>
+    <li>
+        <a href="http://sportsintegration.wvu.edu/mensathletics/football" data-page-id="5756" class="b-sportcard football" id="">
+          <h2 class="b-sportcard__title">Football</h2>
+          <span class="b-sportcard__description"> </span>
+        </a>
+      </li>
+      <li>
+        <a href="http://sportsintegration.wvu.edu/mensathletics/wrestling" data-page-id="5761" class="b-sportcard wrestling" id="">
+          <h2 class=" b-sportcard__title">Wrestling</h2>
+          <span class="b-sportcard__description"> </span>
+        </a>
+      </li>
+      <li>
+        <a href="http://sportsintegration.wvu.edu/mensathletics/baseball" data-page-id="5759" class="b-sportcard baseball" id="">
+          <h2 class=" b-sportcard__title">Baseball</h2>
+          <span class="b-sportcard__description"> </span>
+        </a>
+      </li>
+      <li>
+        <a href="http://sportsintegration.wvu.edu/mensathletics/basketball" data-page-id="5757" class="b-sportcard basketball-m" id="">
+          <h2 class=" b-sportcard__title">Men's Basketball</h2>
+          <span class="b-sportcard__description"> </span>
+        </a>
+      </li>
+      <li>
+        <a href="http://sportsintegration.wvu.edu/mensathletics/tennis" data-page-id="5762" class="b-sportcard tennis-m" id="">
+          <h2 class=" b-sportcard__title">Men's Tennis</h2>
+          <span class="b-sportcard__description"> </span>
+        </a>
+      </li>
+      <li>
+        <a href="http://sportsintegration.wvu.edu/mensathletics/soccer" data-page-id="6230" class="b-sportcard soccer" id="">
+          <h2 class="b-sportcard__title">Men's Soccer</h2>
+          <span class="b-sportcard__description"> </span>
+        </a>
+      </li>
+      <li>
+        <a href="http://sportsintegration.wvu.edu/mensathletics/track" data-page-id="5760" class="b-sportcard track-m" id="">
+          <h2 class="b-sportcard__title">Men's Track and Field</h2>
+          <span class="b-sportcard__description"> </span>
+        </a>
+      </li>
+      <li>
+        <a href="http://sportsintegration.wvu.edu/womens-athletics/swimming" data-page-id="5977" class="b-sportcard swim-w" id="">
+          <h2 class="b-sportcard__title">Women's Swimming</h2>
+          <span class="b-sportcard__description"> </span>
+        </a>
+      </li>
+      <li>
+        <a href="http://sportsintegration.wvu.edu/womens-athletics/basketball" data-page-id="5869" class="b-sportcard basketball-w" id="">
+          <h2 class=" b-sportcard__title">Women's Basketball</h2>
+          <span class="b-sportcard__description"> </span>
+        </a>
+      </li>
+      <li>
+        <a href="http://sportsintegration.wvu.edu/womens-athletics/gymnastics" data-page-id="5976" class="b-sportcard gymnastics" id="">
+          <h2 class=" b-sportcard__title">Women's Gymnastics</h2>
+          <span class="b-sportcard__description"> </span>
+        </a>
+      </li>
+      <li>
+        <a href="http://sportsintegration.wvu.edu/womens-athletics/tennis" data-page-id="5978" class="b-sportcard tennis-w" id="">
+          <h2 class="b-sportcard__title">Women's Tennis</h2>
+          <span class="b-sportcard__description"> </span>
+        </a>
+      </li>
+      <li>
+        <a href="http://sportsintegration.wvu.edu/womens-athletics/track-and-field" data-page-id="5975" class="b-sportcard track-w" id="">
+          <h2 class="b-sportcard__title">Women's Track and Field</h2>
+          <span class="b-sportcard__description"> </span>
+        </a>
+      </li>
+    </ul>
+  timeline__main: | 
+    <h2 class="title text-center">Sports Integration Highlights</h2>
+    <ul class="timeline">
+    <li class="year">1950s</li>
+      
+      <!--<li class="picture"><img src="../images/timeline/bvb.png"></li>-->
+      <li class="event">
+        <div class="image bvb"></div> 
+        <h3 class="heading">Brown v. Board of Education</h3>
+        <h4 class="month"><i class="fa fa-calendar"></i> May 17, 1954</h4>
+      
+        <p>U.S. Supreme Court delivers its decision in Brown v. Board of Education, eliminating the “separate but equal” policy in American public schools, sparking the civil rights movement.</p>
+      </li>
+      
+    <li class="year">1960s</li>
+      <li class="event">
+        <h3 class="heading">Men's Track and Field</h3>
+        <h4 class="month"><i class="fa fa-calendar"></i> 1961 </h4>
+        <p>Phillip Edwards becomes the first African-American student-athlete at WVU, participating in men's track and field.</p>
+      </li>
+      <li class="event second">
+        <h3 class="heading">Football</h3>
+        <h4 class="month"><i class="fa fa-calendar"></i>1962 </h4>
+        
+        <p>Dick Leftridge and Roger Alford become the first African-Americans to receive football scholarships at WVU.</p>
+      </li>
+      <li class="event">
+        <h3 class="heading">Men’s basketball</h3>
+        <h4 class="month"><i class="fa fa-calendar"></i>1964 </h4>
+        
+        <p>Jim Lewis, Ron Williams, Ed Harvard, and Norman Holmes make WVU sports history as the first four African-American players listed on the freshman basketball team.</p>
+      </li>
+      <li class="event">
+        <h3 class="heading">Men’s soccer</h3>
+        <h4 class="month"><i class="fa fa-calendar"></i>1965</h4>
+          
+        <p>George Woods, Jr. becomes the first African-American student-athlete to play men’s soccer at WVU. A goalkeeper, Woods helped WVU win a Southern Conference championship that year.</p>
+      </li>
+      <li class="event">
+          <!--<div class="image wrestling"></div> -->
+          <h3 class="heading">Wrestling</h3>
+          <h4 class="month"><i class="fa fa-calendar"></i> 1965 </h4>
+          <p>Norman Hill becomes the first African-American student-athlete to wrestle at WVU.</p>
+      </li>
+     <!--end 1960s--> 
+    <li class="year">1970s</li>
+        <li class="event">
+          <h3 class="heading">Football</h3>
+          <h4 class="month"><i class="fa fa-calendar"></i>1970</h4>       
+          <p> Garrett Ford becomes the first African-American men’s assistant coach at WVU, coaching running backs.</p>
+        </li>
+        <li class="event second">
+          <h3 class="heading">Football</h3>
+          <h4 class="month"><i class="fa fa-calendar"></i>1971</h4>       
+          <p>Jim Braxton is drafted by the Buffalo Bills and becomes the blocking weapon for star running back O. J. Simpson. As Simpson remarks, most of his 11,236 career rushing yards were due to Braxton.</p>
+        </li>
+        <li class="event">
+          <h3 class="heading">Title IX Passed</h3>
+          <h4 class="month"><i class="fa fa-calendar"></i>June 23, 1972</h4>
+          
+          <p> Title IX of the U.S. Education Amendments is passed, prohibiting discrimination based on sex in educational institutions.</p>
+        </li>
+        <li class="event">
+          <h3 class="heading">Football</h3>
+          <h4 class="month"><i class="fa fa-calendar"></i>1973</h4>       
+          <p>Ben Williams is named the starting quarterback for the Mountaineers, the first African-American to do so.</p>
+        </li>
+        <li class="event">
+          <h3 class="heading">Men's Basketball</h3>
+          <h4 class="month"><i class="fa fa-calendar"></i>1974</h4>       
+          <p>Jackie Joe Robinson becomes the first African-American men’s basketball graduate assistant coach.</p>
+        </li>
+        <li class="event">
+          <h3 class="heading">Men's Basketball</h3>
+          <h4 class="month"><i class="fa fa-calendar"></i>1974</h4>       
+          <p>The first all-African-American starting five in men’s basketball is fielded – Levi Phillips, Eartha Faust, Warren Baker, Jerome Anderson, and Larry Carr.</p>
+        </li>
+        <li class="event">
+          <h3 class="heading">Women’s Track</h3>
+          <h4 class="month"><i class="fa fa-calendar"></i>1976</h4>       
+          <p>Cheryl Nabors helps found first varsity Women's Track and Field team at WVU, becoming one of the first African-American female student-athletes at WVU.</p>
+        </li>
+        <li class="event">
+          <h3 class="heading">Baseball</h3>
+          <h4 class="month"><i class="fa fa-calendar"></i>1976</h4>       
+          <p>Bruce Clinton accepts his scholarship offer to become WVU’s first African-American baseball player.</p>
+        </li>
+        <li class="event">
+           <!--<div class="image tennis"></div>-->
+          <h3 class="heading">Men’s Tennis</h3>
+          <h4 class="month"><i class="fa fa-calendar"></i>1977</h4>       
+          <p>Harry Moore becomes the first African-American student-athlete to participate in men’s tennis at WVU.</p>
+        </li>
+        <li class="event">
+          <h3 class="heading">Athletic Administration</h3>
+          <h4 class="month"><i class="fa fa-calendar"></i>1977</h4>       
+          <p>Garrett Ford becomes WVU's first African-American athletic administrator.</p>
+        </li>
+    <!--end 1970s-->    
+    <li class="year">1980s</li><li class="year--clear"></li>
+        <li class="event">
+          <h3 class="heading">Women's Tennis</h3>
+          <h4 class="month"><i class="fa fa-calendar"></i>1981</h4>       
+          <p>Shirley Robinson becomes the first African-American student-athlete to participate in women’s tennis at WVU.</p>
+        </li>
+        <li class="event second">
+          <h3 class="heading">Women's Basketball</h3>
+          <h4 class="month"><i class="fa fa-calendar"></i>December 21, 1984</h4>        
+          <p> Georgeann Wells becomes the first woman to register a dunk in an official college basketball game. She did it with a men’s-sized ball.</p>
+        </li> 
+        <li class="event">
+          <h3 class="heading">Olympic Wrestling</h3>
+          <h4 class="month"><i class="fa fa-calendar"></i>1985</h4>       
+          <p>Nate Carr becomes the first African-American Olympic sports assistant coach, coaching wrestling.</p>
+        </li>
+        <li class="event">
+          <h3 class="heading">Men's Basketball</h3>
+          <h4 class="month"><i class="fa fa-calendar"></i>1986</h4>       
+          <p>Ron Brown becomes the first African-American full-time men’s basketball assistant coach.</p>
+        </li>
+        <li class="event">
+          <!--<div class="image gymnastics"></div>-->
+          <h3 class="heading">Gymnastics</h3>
+          <h4 class="month"><i class="fa fa-calendar"></i>1987</h4>       <p> Yvette Clark was the first African-American student-athlete to participate in women’s gymnastics at WVU.</p>
+        </li>
+    <!--end 1980s-->
+      <li class="year">1990s</li>
+        <li class="event">
+          <div class="image basketball"></div>
+          <h3 class="heading">Women’s Basketball</h3>
+          <h4 class="month"><i class="fa fa-calendar"></i>1993</h4>
+          <p>WVU welcomes its first African-American women’s basketball assistant coach, Regina Woods.</p>
+        </li> 
+    <!--end 1990s-->
+      <li class="year">2000s</li>
+        <li class="event"> 
+          <h3 class="heading">Men's Soccer</h3>
+          <h4 class="month"><i class="fa fa-calendar"></i>2006</h4>
+          <p>Marlon LeBlanc is hired as the head coach of men’s soccer at WVU, becoming the first African-American to be named as the head coach of a WVU sports team.</p>
+        </li>
+        <li class="event second">
+          <h3 class="heading">Women's Basketball</h3>
+          <h4 class="month"><i class="fa fa-calendar"></i>2006</h4>
+          <p>The first all African-American starting five– Ashley Powell, Britney Davis-White, LaQuita Owens, Chakia Cole and Olayinka Sanni.</p>
+        </li>
+    </ul>
+
 
 site_name: "A History of Sports Integration at WVU"
 

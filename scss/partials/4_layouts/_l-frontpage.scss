@@ -19,32 +19,53 @@ body.template-frontpage{
 	#prefix{
 	}
 	#core{
+    
+    .tribute{
+    	h2{}
+    	ul{}
+    	li{}
+    	.b-featuredLink{
+    		h3{ @include adjust-font-size-to($font-size-med-2);}
+    		img{}
+    	}
+    }
+
+
 
 		@include breakpoint($bp-mobile1-1 $bp-mobile2-1+1rem){
 		   @include grid-mobile1;
-		   .main{@include grid-span(4,1); clear:both;}
-		   .sidebar{@include grid-span(4,1); }
-		 }
+		   .main{@include grid-span(4,1); clear:both;
+		   	  .tribute{
+		   	  	li{}
+		   	  	.b-featuredLink{}
+
+		   	  }//end .tribute .
+		   }//end .main
+		   .sideNav{@include grid-span(4,1); }
+		 }//end breakpoint
 		 @include breakpoint(($bp-mobile2-1+1rem) $bp-tablet-1){
 		   @include grid-mobile2;
 		   .main{@include grid-span(6,1); clear:both;}
-		   .sidebar{@include grid-span(6,1); }
-		 }
+		   .sideNav{@include grid-span(6,1); }
+		 }//end breakpoint
 		 @include breakpoint($bp-tablet-1 $bp-desktop1-1){
 		   @include grid-tablet;
 		   .main{@include grid-span(5,1); }
-		   .sidebar{@include grid-span(3,6); }
-		 }
+		   .sideNav{@include grid-span(3,6); }
+		 }//end breakpoint
 		 @include breakpoint($bp-desktop1-1 $bp-desktop2-1){
 		   @include grid-desktop1;
 		   .main{@include grid-span(7,1); }
-		   .sidebar{@include grid-span(5,8); }
-		 }
+		   .sideNav{@include grid-span(5,8); }
+		 }//end breakpoint
 		 @include breakpoint($bp-desktop2-1){
 		   @include grid-desktop2;
 		   .main{@include grid-span(10,1); }
-		   .sidebar{@include grid-span(6,11); }
-		 }
+		   .sideNav{@include grid-span(6,11); }
+		 }//end breakpoint
+
+
+
 	}// end #core
 	#postfix{
 	}

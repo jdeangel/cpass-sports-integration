@@ -1,0 +1,63 @@
+.m-sportcards{
+	width:100%;
+	float:right;
+
+	 
+	ul{
+		width:100%;
+		padding-left:0 !important;
+	}
+	li{
+		width:40%;
+		float:left;
+
+		.b-sportcard__title{
+			color: $white !important;
+			line-height:$lh-size-large !important;
+				font-size: $font-size-large-2 !important;
+				//@include adjust-leading-to( $ms-3, $font-size-large-2); 
+				@include rhythm($ms-1, 0, $ms-2n, $ms-3n, $font-size-large-2);
+		}//end b-sportcard__title
+	}//end li
+
+		 
+	&[data-eq-state="small"]{
+		li{
+			font-size: $font-size-small-2 !important;
+		    width:100%;
+		 }
+	}//end elementQueiry
+	&[data-eq-state="medium"]{
+		li{
+		  font-size: $font-size-med-2 !important;
+		  width:100%;
+		 }
+	}//end elementQueiry
+	&[data-eq-state="large"]{
+		li{
+		  font-size: $font-size-large-2 !important;
+		  width:49%;
+		  &:nth-child(odd){
+		  	margin-right:2%;
+		  }
+        }
+	}//end elementQueiry
+	&[data-eq-state="x-large"]{
+		li{
+		  font-size: $font-size-xlarge-2 !important;
+		  width:49%;
+		  &:nth-child(odd){
+		  	margin-right:2%;
+		  }
+        }//end li
+	}//end elementQueiry
+	&[data-eq-state="xx-large"]{
+		li{
+		  font-size: $font-size-xlarge-2 !important;
+		  width:49%;
+		  &:nth-child(odd){
+		  	margin-right:2%;
+		  }
+        }//end li
+	}//end elementQueiry
+}//end m-sportscards
