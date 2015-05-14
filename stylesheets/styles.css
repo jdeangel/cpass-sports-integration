@@ -20680,6 +20680,7 @@ body.template-frontpage #core .b-featuredLink h3 {
 }
 body.template-frontpage #core .b-featuredLink img {
   padding: 0;
+  width: 100%;
 }
 @media (min-width: 0) and (max-width: 31rem) {
   body.template-frontpage #core .main {
