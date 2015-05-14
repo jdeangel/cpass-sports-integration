@@ -12,9 +12,9 @@
 		float:left;
 
 		.b-sportcard__title{
-			color: $white !important;
-			line-height:$lh-size-large !important;
-				font-size: $font-size-large-2 !important;
+			color: $white ;
+			line-height:$lh-size-large ;
+				font-size: $font-size-large-2;
 				//@include adjust-leading-to( $ms-3, $font-size-large-2); 
 				@include rhythm($ms-1, 0, $ms-2n, $ms-3n, $font-size-large-2);
 		}//end b-sportcard__title
@@ -23,41 +23,61 @@
 		 
 	&[data-eq-state="small"]{
 		li{
-			font-size: $font-size-small-2 !important;
-		    width:100%;
+			width:100%;
+		    .b-sportcard__title{ 
+		     font-size: $font-size-large;
+		     line-height:ms(3);
+		  	}
+		    
 		 }
 	}//end elementQueiry
 	&[data-eq-state="medium"]{
 		li{
-		  font-size: $font-size-med-2 !important;
-		  width:100%;
+		 width:100%;
+		 .b-sportcard__title{ 
+		    	font-size: $font-size-large;
+		     line-height:ms(3);
+		  	}//end .b-sportcard_title
 		 }
 	}//end elementQueiry
 	&[data-eq-state="large"]{
 		li{
-		  font-size: $font-size-large-2 !important;
 		  width:49%;
+		 
 		  &:nth-child(odd){
 		  	margin-right:2%;
-		  }
+		  }//end n-th child odd
+
+		  .b-sportcard__title{ 
+		  	font-size: $font-size-large;
+		   line-height:ms(3) ;
+			}//end .b-sportcard_title
         }
 	}//end elementQueiry
 	&[data-eq-state="x-large"]{
 		li{
-		  font-size: $font-size-xlarge-2 !important;
-		  width:49%;
+		   width:49%;
+
 		  &:nth-child(odd){
-		  	margin-right:2%;
-		  }
+		  	margin-right:2%;}
+
+		    .b-sportcard__title{ 
+		    	font-size: $font-size-large;
+		     line-height:ms(2);
+		  	}//end .b-sportcard_title
         }//end li
 	}//end elementQueiry
 	&[data-eq-state="xx-large"]{
 		li{
-		  font-size: $font-size-xlarge-2 !important;
-		  width:49%;
-		  &:nth-child(odd){
+		   &:nth-child(odd){
 		  	margin-right:2%;
 		  }
+		  .b-sportcard__title{ 
+		    	font-size: $font-size-large;
+		     line-height:ms(1);
+		  	}//end .b-sportcard_title
+		  width:49%;
+		 
         }//end li
 	}//end elementQueiry
 }//end m-sportscards

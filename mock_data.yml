@@ -353,12 +353,12 @@ editable_region:
     <div class="tribute">
     <h2>2015 Tribute Event</h2>
     <p>WVU hosted a three-day program celebrating the Brown v. Board of Education decision with a tribute to pioneering African-American student-athletes at West Virginia University. Click here to view itenerary for the event.</p>
-    <a href="#"></a>
+    <a class="tribute" href="#"><img src="../images/BrownvBoard.png" alt="Brown Vs Board"/></a>
     <h3>Event Photos</h3>
     <ul>
-    <li><a class="b-featuredLink" href="#"><img src="../images/feat-footer__site__give.jpg" alt="Photo Gallery Link 1"/></a></li>
-    <li><a class="b-featuredLink" href="#"><img src="../images/feat-footer__site__give.jpg" alt="Photo Gallery Link 1"/></a></li>
-    <li><a class="b-featuredLink" href="#"><img src="../images/feat-footer__site__give.jpg" alt="Photo Gallery Link 1"/></a></li>
+    <li><a class="b-featuredLink" href="#"><img src="../images/day1.png" alt="Photos: Day 1"/></a></li>
+    <li><a class="b-featuredLink" href="#"><img src="../images/day2.png" alt="Photos: Day 2"/></a></li>
+    <li><a class="b-featuredLink" href="#"><img src="../images/day3.png" alt="Photos: Day 3"/></a></li>
     </ul>
     <h3>Tribute to Deceased Pioneers</h3>
     <iframe width="923" height="519" src="https://www.youtube.com/embed/NMcBued6d7g?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>

@@ -19,16 +19,45 @@ body.template-frontpage{
 	#prefix{
 	}
 	#core{
+
     
-    .tribute{
-    	h2{}
-    	ul{}
-    	li{}
+    	.sideNav{
+    			padding-left: 5%;
+    		}
+    	.tribute{
+
+    			iframe{
+    				float:left;
+    			}
+
+    			h2, h3{
+    				float:left;
+    				width:100%;}
+
+    			ul{padding:0;}
+    			li{
+    				width:100%; 
+    				float:left;
+    				list-style: none;
+    				
+    			}
+
+    		&:last-child{ margin-right:0;}
+    		}//end tribute
+
     	.b-featuredLink{
-    		h3{ @include adjust-font-size-to($font-size-med-2);}
-    		img{}
-    	}
-    }
+    		@extend .b-featuredLink;
+
+    		h3{ 
+    			@include adjust-font-size-to($font-size-med-2);
+    		}//end h3
+
+    		img{
+    			padding:0;
+    			
+    		}//end img
+    	}//end .b-featuredLink
+   
 
 
 
@@ -36,8 +65,22 @@ body.template-frontpage{
 		   @include grid-mobile1;
 		   .main{@include grid-span(4,1); clear:both;
 		   	  .tribute{
-		   	  	li{}
-		   	  	.b-featuredLink{}
+		   	  	h2, h3{
+    				float:left;
+    				width:100%;}
+    				
+    			ul{padding:0;}
+    			li{
+    				width:100%; 
+    				float:left;
+    				//margin-right: 28%;
+    				margin-top: ms(1);}
+
+		   	  	.b-featuredLink{h3{ 
+    					@include adjust-font-size-to($font-size-large-2);
+    					@include rhythm(0, $ms-9n, $ms-9n, 0, $font-size-small-2);
+    				}//end h3
+		   	  	}
 
 		   	  }//end .tribute .
 		   }//end .main
@@ -45,23 +88,119 @@ body.template-frontpage{
 		 }//end breakpoint
 		 @include breakpoint(($bp-mobile2-1+1rem) $bp-tablet-1){
 		   @include grid-mobile2;
-		   .main{@include grid-span(6,1); clear:both;}
+		   .main{@include grid-span(6,1); clear:both;
+		   	  .tribute{
+		   	  	h2, h3{
+    				float:left;
+    				width:100%;}
+    				
+    			ul{padding:0;}
+    			li{
+    				width:28%; 
+    				float:left;
+    				margin-right: 8%;
+
+    				&:last-child{
+    					margin-right:0;
+    				}
+    			}
+
+		   	  	.b-featuredLink{h3{ 
+    					@include adjust-font-size-to($font-size-small-2);
+    					@include rhythm(0, $ms-9n, $ms-9n, 0, $font-size-small-2);
+    				}//end h3
+		   	  	}
+
+		   	  }//end .tribute .
+		   }//end .main
 		   .sideNav{@include grid-span(6,1); }
 		 }//end breakpoint
 		 @include breakpoint($bp-tablet-1 $bp-desktop1-1){
 		   @include grid-tablet;
-		   .main{@include grid-span(5,1); }
+		   .main{@include grid-span(5,1); 
+		    .tribute{
+		   	  	h2, h3{
+    				float:left;
+    				width:100%;}
+    				
+    			ul{padding:0;}
+    			li{
+    				width:28%; 
+    				float:left;
+    				margin-right: 8%;
+
+    				&:last-child{
+    					margin-right:0;
+    				}
+    			}
+
+		   	  	.b-featuredLink{h3{ 
+    					@include adjust-font-size-to($font-size-med);
+    					@include rhythm(0, $ms-9n, $ms-9n, 0, $font-size-med);
+    				}//end h3
+		   	  	}
+
+		   	  }//end .tribute .
+		   	  }// end main
 		   .sideNav{@include grid-span(3,6); }
 		 }//end breakpoint
 		 @include breakpoint($bp-desktop1-1 $bp-desktop2-1){
 		   @include grid-desktop1;
-		   .main{@include grid-span(7,1); }
+		   .main{@include grid-span(7,1); 
+		   	    .tribute{
+		   	  	h2, h3{
+    				float:left;
+    				width:100%;}
+    				
+    			ul{padding:0;}
+    			li{
+    				width:28%; 
+    				float:left;
+    				margin-right: 8%;
+
+    				&:last-child{
+    					margin-right:0;
+    				}
+    			}
+		   	  	.b-featuredLink{h3{ 
+    					@include adjust-font-size-to($font-size-med-2);
+    					@include rhythm(0, $ms-9n, $ms-9n, 0, $font-size-med-2);
+    				}//end h3
+		   	  	}
+
+		   	  }//end .tribute .
+		   	  }// end main
+
 		   .sideNav{@include grid-span(5,8); }
 		 }//end breakpoint
 		 @include breakpoint($bp-desktop2-1){
 		   @include grid-desktop2;
-		   .main{@include grid-span(10,1); }
-		   .sideNav{@include grid-span(6,11); }
+		   .main{@include grid-span(8,1);
+		   	 .tribute{
+		   	  	h2, h3{
+    				float:left;
+    				width:100%;}
+    				
+    			ul{padding:0;}
+    			li{
+    				width:28%; 
+    				float:left;
+    				margin-right: 8%;
+
+    				&:last-child{
+    					margin-right:0;
+    				}
+    			}
+
+		   	  	.b-featuredLink{h3{ 
+    					@include adjust-font-size-to($font-size-med-2);
+    					@include rhythm(0, $ms-8n, $ms-8n, 0, $font-size-med-2);
+    				}//end h3
+		   	  	}
+
+		   	  }//end .tribute .
+		   	  }// end main
+		   .sideNav{@include grid-span(7,10); }
 		 }//end breakpoint
 
 
